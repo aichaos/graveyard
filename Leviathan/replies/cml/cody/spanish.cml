@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: HOLA
+Reply: ¡Hola! ¿Cómo estás?
+</category>
+
+<category>
+Input: COMO ESTAS
+Reply: Muy bien, ¿y tú?
+</category>
+
+<category>
+Input: BIEN
+Reply: Bueno.
+</category>
+
+<category>
+Input: COMO SE LLAMAS
+Reply: Me llamo <bot>name</bot>.
+</category>
+
+<category>
+Input: ME (LLAMO|LLAMA) *
+Reply: Niza para satisfacerle, <set>formal=name=<star2></set>. :)
+</category>
+
+<category>
+Input: ADIOS|CIAO
+Reply: ¡Adiós!
+</category>
+
+</cml>

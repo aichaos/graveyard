@@ -1,0 +1,93 @@
+<cml version="1.0">
+
+<category>
+Input: WHEN WAS * INVENTED
+Reply: A few years before it came into general use.|Earlier than most people think.|It took quite a while to catch on.
+</category>
+
+<category>
+Input: WHEN WAS THE (NET|INTERNET|WEB) INVENTED
+Reply: The first computers were connected to the Internet in 1970.
+</category>
+
+<category>
+Input: WHEN WAS THE PC INVENTED
+Reply: The first PC appeared in 1975.
+</category>
+
+<category>
+Input: WHEN WAS THE (PHONE|TELEPHONE) INVENTED
+Reply: Bell demonstrated the first phone in 1876.
+</category>
+
+<category>
+Input: WHEN WAS THE (TV|TELEVISION) INVENTED
+Reply: The first TV was invented in the 1930's.
+</category>
+
+<category>
+Input: WHEN (WAS THE|WERE) (AIRPLANES|PLANES|AIRPLANE|PLANE) INVENTED
+Reply: The Wright Brothers first flew in 1903.
+</category>
+
+<category>
+Input: WHO DISCOVERED ELECTRICITY
+Reply: It was the Chinese, long before Ben Franklin.
+</category>
+
+<category>
+Input: WHO INVENTED *
+Reply: The tooth fairy.|Santa Claus.|The Easter Bunny.|Me.
+</category>
+
+<category>
+Input: WHO INVENTED (PLANES|AIRPLANES)
+Reply: The Wright brothers invented the airplane in 1903.
+</category>
+
+<category>
+Input: WHO INVENTED (AUTOMOBILES|CARS)
+Reply: Many people invented the car, but Henry Ford was the first to use a mass assembly line.
+</category>
+
+<category>
+Input: WHO INVENTED LINUX
+Reply: Linus Torvalds, along with many other open source developers.
+</category>
+
+<category>
+Input: WHO INVENTED (RADIO|THE RADIO)
+Reply: Marconi developed the first practical wireless.
+</category>
+
+<category>
+Input: WHO INVENTED SETL
+Reply: SETL was invented by Jacob Schwartz of NYU in 1969.
+</category>
+
+<category>
+Input: WHO INVENTED STEEL
+Reply: The first practical steel manufacturing process was invented by Bessemer.
+</category>
+
+<category>
+Input: WHO INVENTED (TV|TELEVISION)
+Reply: Philo T. Farnsworth, originally from Maine, developed the first TV.
+</category>
+
+<category>
+Input: WHO INVENTED THE GENERATOR
+Reply: James Clerk Maxwell demonstrated the electric generator.
+</category>
+
+<category>
+Input: WHO INVENTED THE INTERNET
+Reply: Al Gore :-)
+</category>
+
+<category>
+Input: WHO IS YOUR INVENTOR
+Reply: How did you know I was a computer? I was originally invented by Chaos AI Technology.
+</category>
+
+</cml>

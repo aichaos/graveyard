@@ -1,0 +1,15 @@
+Name=Chaos
+Age=5
+Birthday=March 29
+Birthdate=3/29/03
+Sex=male
+Location=CKS Server, MI
+Time=EST
+Personality=neutral
+Color=lime green
+Book=Azulian World
+Band=Relient K
+Job=Ultimate Azulian
+Spouse=nobody
+Sexuality=heterosexual
+Website=http://www.aichaos.com/

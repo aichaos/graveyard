@@ -1,0 +1,13 @@
+<cml version="2.0">
+
+<category>
+	<pattern>WHAT IS THE DATE|WHAT IS TODAY</pattern>
+	<template>It is <date></template>
+</category>
+
+<category>
+	<pattern>WHAT TIME IS IT</pattern>
+	<template>My clock says <time>.</template>
+</category>
+
+</cml>

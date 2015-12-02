@@ -1,0 +1,22 @@
+;This contents file was created with the free trial version of HelpScribble 7.2.2
+;Help files created with the free trial version must not be distributed.
+
+:BASE Chaosbot.hlp
+:TITLE ChaosBot Help
+1 General Topics
+2 About ChaosBot...=Scribble10
+2 How ChaosBot Works=Scribble20
+1 Setting up Your Bot
+2 Bot Configuration=Scribble70
+2 Server Configuration=Scribble80
+2 Adding and Removing Bots=Scribble30
+2 Setting Up AIM Information=Scribble40
+2 Setting Up MSN Information=Scribble50
+2 Managing Authorities=Scribble60
+2 Misc Bot Information=Scribble90
+1 Tutorials
+2 Simple HTML Tutorial=Scribble100
+2 MSN's HEX Values=Scribble110
+2 Making a Command Tutorial=Scribble120
+1 Credits
+2 ChaosBot Credits=Scribble130

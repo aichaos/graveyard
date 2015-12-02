@@ -1,0 +1,4 @@
+AIM-admin001
+AIM-anotheradmin
+MSN-admin@yoursite.com
+IRC-channelAdmin

@@ -1,0 +1,71 @@
+// Colors!                       \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 3:45 PM 1/4/2005    \\
+// Modified: 3:52 PM 1/4/2005    \\
+//-------------------------------\\
+
++ globalcolorresponse *
+- I see.
+- Oh, <star1> is a pretty color.
+- I like that color.
+
++ red
+@ globalcolorresponse red
+
++ blue
+@ globalcolorresponse blue
+
++ lime
+@ globalcolorresponse lime
+
++ yellow
+@ globalcolorresponse yellow
+
++ fuchsia
+@ globalcolorresponse fuchsia
+
++ orange
+@ globalcolorresponse orange
+
++ maroon
+@ globalcolorresponse maroon
+
++ navy
+@ globalcolorresponse navy
+
++ green
+@ globalcolorresponse green
+
++ gold
+@ globalcolorresponse gold
+
++ purple
+@ globalcolorresponse purple
+
++ brown
+@ globalcolorresponse brown
+
++ cyan
+@ globalcolorresponse cyan
+
++ teal
+@ globalcolorresponse teal
+
++ turquoise
+@ globalcolorresponse turquoise
+
++ black
+@ globalcolorresponse black
+
++ white
+@ globalcolorresponse white
+
++ gray
+@ globalcolorresponse gray
+
++ grey
+@ globalcolorresponse grey
+
++ silver
+@ globalcolorresponse silver

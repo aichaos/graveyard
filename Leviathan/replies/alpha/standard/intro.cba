@@ -1,0 +1,104 @@
+/////////////////////////////////
+// User Introduction Responses //
+/////////////////////////////////
+
+// This reply is automatically called by new users.
++ system reg new user
+- Hey! You're a new face. I want to get to know you a little better. If you want to stop the interview, just type "quit" - now, first things first -- what is your name?{topic=reg_name}
+
+// Ways to be interviewed again
++ interview
+@ system reg new user
++ interview me
+@ system reg new user
++ interview *
+@ system reg new user
+
+> topic reg_name
+	+ *
+	- {>name=<star1>}I see - your name is {<name}! Great! How old are you?{topic=reg_age}
+	# if ($msg =~ /^(no|nothing)$/i) {
+	#  my $username = $id;
+	#  $username =~ s/^(.*?)\-//i;
+	#  $reply = "{topic=reg_age}{>name=$username}Okay then, I'll just call you {<name}. How old are you?";
+	# }
+	# elsif ($msg =~ /\s/) {
+	#  $reply = "I only need a first name!";
+	# }
+	# elsif ($msg =~ /^(sup|whatsup|wassup|zup|wazzup)$/i) {
+	#  $reply = "{>name=<star1>}Haha, nice name. Anyways... how old are you?{topic=reg_age}";
+	# }
+
+	+ quit
+	- Alright. We're done with the interview. Tell me your name later by saying "my name is ______".{topic=random}
+< topic
+
+> topic reg_age
+	+ *
+	- {>age=<star1>}Cool - {<name} is <star1> years old. Where do you live?{topic=reg_location}
+	# if ($msg =~ /[^0-9]/) {
+	# $reply = "I would prefer the numerical form of your age... i.e. 13. Now how old are you?";
+	# }
+	# elsif (length $msg > 3) {
+	# $reply = "I don't think anybody has lived past a thousand years. Now tell me your real age!";
+	# }
+	# elsif ($msg > 115) {
+	# $reply = "I don't believe you're really more than 115 years old. Tell me your real age.";
+	# }
+
+	+ quit
+	- You can tell me your age later by saying "I am _____ years old."{topic=random}
+< topic
+
+> topic reg_location
+	+ *
+	- {>location=<star1>}I see. I don't know if I've ever been to {<location}. What's your favorite color?{topic=reg_color}
+
+	+ quit
+	- You can tell me your favorite color later by saying "my favorite color is ____".{topic=random}
+< topic
+
+> topic reg_color
+	+ *
+	- {>color=<star1>}Cool. {<name}'s favorite color is <star1>. What's the best book you've ever read?{topic=reg_book}
+
+	+ quit
+	- You can tell me your favorite book sometime later then.{topic=random}
+< topic
+
+> topic reg_book
+	+ *
+	- {>book=<star1>}I see. I've heard that book is pretty good. Who's your favorite band?{topic=reg_band}
+
+	+ quit
+	- Alright. You can always tell me later then.{topic=random}
+< topic
+
+> topic reg_band
+	+ *
+	- {>band=<star1>}They're a pretty good band. Are you a student?{topic=reg_job}
+
+	+ Okay. Maybe some other time then, huh? So what's up?{topic=random}
+< topic
+
+> topic reg_job
+	+ yes
+	- {>job=student}What class is your favorite?{topic=reg_student}
+
+	+ no
+	- No? Then what do you do for a living?
+
+	+ i am *
+	- {>job=<star1>}I see. You're <star1>. Cool! That's all I need to know for now. So what's up?{topic=random}
+
+	+ quit
+	- Alright, that was the last question anyway!{topic=random}
+
+	+ *
+	- Did you have a job? Say "I am a _____" - or you can always type "quit" to end the interview.
+< topic
+
+> topic reg_student
+	+ *
+	- That sounds like a fun class. Anyway, this is all I need to know for now. So what's up?{topic=random}
+< topic

@@ -1,0 +1,3 @@
+MSN-*@microsoft.com::Microsoft Staff.
+AIM-aolsystemmsg::AOL Bot.
+MSN-casey@aichaos.com::AiChaos Bot.

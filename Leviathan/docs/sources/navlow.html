@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="styles.css">
+<script language="JavaScript1.2">
+<!--
+
+//Smart Folding Menu tree- By Dynamic Drive (rewritten 03/03/02)
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var head="display:''"
+img1=new Image()
+img1.src="fold.gif"
+img2=new Image()
+img2.src="open.gif"
+
+var ns6=document.getElementById&&!document.all
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+
+function checkcontained(e){
+var iscontained=0
+cur=ns6? e.target : event.srcElement
+i=0
+if (cur.id=="foldheader")
+iscontained=1
+else
+while (ns6&&cur.parentNode||(ie4&&cur.parentElement)){
+if (cur.id=="foldheader"||cur.id=="foldinglist"){
+iscontained=(cur.id=="foldheader")? 1 : 0
+break
+}
+cur=ns6? cur.parentNode : cur.parentElement
+}
+
+if (iscontained){
+var foldercontent=ns6? cur.nextSibling.nextSibling : cur.all.tags("UL")[0]
+if (foldercontent.style.display=="none"){
+foldercontent.style.display=""
+cur.style.listStyleImage="url(open.gif)"
+}
+else{
+foldercontent.style.display="none"
+cur.style.listStyleImage="url(fold.gif)"
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=checkcontained
+
+//-->
+</script>
+</head>
+<body class="navpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="nav">
+
+<div align="center"><b>.: Navigation :.</b></div>
+
+<b>General</b><br>
+<a href="../html/home.html" target="view">Home</a><br>
+<a href="../html/about.html" target="view">About...</a><br>
+<a href="../html/credits.html" target="view">Credits</a><br>
+<a href="../html/changes.html" target="view">Change Log</a><br>
+
+<b>Getting Started</b><br>
+<a href="../html/perl.html" target="view">1. Get Perl</a><br>
+<a href="../html/config.html" target="view">2. Config</a><br>
+<a href="../html/author.html" target="view">3. Authorities</a><br>
+<a href="../html/bots.html" target="view">3. Setup Bots</a><br>
+<a href="../html/run.html" target="view">4. Running It</a><br>
+
+<b>In-Depth</b><br>
+<a href="../html/commands.html" target="view">Commands</a><br>
+<a href="../html/brains.html" target="view">Brains</a><br>
+<a href="../html/subs.html" target="view">Subroutines</a><br>
+<a href="../html/chaos.html" target="view">Anatomy of $chaos</a><br>
+<a href="../html/server.html" target="view">Server Tools</a><br>
+<a href="../html/gui.html" target="view">GUI Interface</a><br>
+
+<b>Tutorials</b><br>
+<a href="../html/tutcmd.html" target="view">Commands</a><br>
+<a href="../html/tutbrain.html" target="view">Brains</a><br>
+<a href="../html/tutmsn.html" target="view">MSN Colors</a><br>
+
+<b>Links</b><br>
+<a href="http://www.aichaos.com/" target="_blank">AiChaos, Inc.</a><br>
+<a href="http://www.bot-depot.com/" target="_blank">Bot-Depot</a><br>
+<p>
+
+<div align="center">[<a href="nav.html">javascript</a>]</div>
+
+</font>
+</body>
+</html>

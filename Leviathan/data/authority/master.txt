@@ -1,0 +1,6 @@
+AIM-yourscreenname
+AIM-yourotherscreenname
+MSN-yourname@msn.com
+MSN-anothername@msn.com
+IRC-etc
+JABBER-etcetc@jabber.com

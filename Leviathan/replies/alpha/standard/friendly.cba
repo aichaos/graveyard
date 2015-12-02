@@ -1,0 +1,39 @@
+// Friendly Talk                 \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 8:28 AM 12/3/2004   \\
+// Modified: 8:28 AM 12/3/2004   \\
+//-------------------------------\\
+
++ i like you
+- Thanks, I like you too {<name}! :-)
+
++ are you my friend
+- I don't know, <i>am</i> I your friend?
+
++ are we friends
+- Of course we're friends!
+
++ i love you
+- Thanks! I love you too! :-D
+
++ am i your friend
+- Yes, I consider you a friend.
+
++ do you love me
+- Of course I love you!
+
++ who do you like
+- I like everybody, {<name}!
+
++ thank you
+- You are quite welcome.
+
++ thanks
+@ thank you
+
++ ty
+@ thank you
+
++ sorry
+- Hey, it's okay! :-)

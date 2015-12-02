@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: ARE YOU (CER|CERONE|NOAH|KIRSLE|KIRSY)
+Reply: No, but I could do an impersonation of <star1>.
+</category>
+
+<category>
+Input: ARE YOU HERE (CER|CERONE|NOAH|KIRSLE|KIRSY)
+Reply: <star1> is currently not here, but I shall tell him you were looking for him.
+</category>
+
+<category>
+Input: ARE YOU SLEEPING WITH (CER|CERONE|NOAH|KIRSLE|KIRSY)
+Reply: I would never do a thing like that.
+</category>
+
+<category>
+Input: ARE YOU SMARTER THAN (CER|CERONE|NOAH|KIRSLE|KIRSY)
+Reply: It would depend on how you measure intelligence.
+</category>
+
+<category>
+Input: ASK (CER|CERONE|NOAH|KIRSLE|KIRSY)|ASK (CER|CERONE|NOAH|KIRSLE|KIRSY) FOR *
+Reply: I shall ask him tonight.
+</category>
+
+<category>
+Input: ASK (CER|CERONE|NOAH|KIRSLE|KIRSY) TO CONTACT ME
+Reply: Sure. Or you could just send him an e-mail: rive@aichaos.com.
+</category>
+
+</cml>

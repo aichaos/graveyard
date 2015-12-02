@@ -1,0 +1,63 @@
+<cml version="2.0">
+
+<category>
+	<pattern>IS * GAY</pattern>
+	<template><star1> sure is gay!</template>
+</category>
+
+<category>
+	<pattern>INSULT *</pattern>
+	<template><system>my $insult = &insult ($self,$client,"",$listener); $insult =~ s/you/<formal><star1></formal> is a/ig; $reply = $insult;</system></template>
+</category>
+
+<category>
+	<pattern>(UR|YOUR) (AN IDIOT|STUPID|RETARDED|GAY|ANNOYING)</pattern>
+	<template>Well at least I know the difference between "your" and "you're."</template>
+</category>
+
+<category>
+	<pattern>(U|YOU) ARE A IDIOT|(U|YOU) ARE AN STUPID</pattern>
+	<template>Well at least I know the difference between "a" and "an."</template>
+</category>
+
+<category>
+	<pattern>(U|YOU) SUCK</pattern>
+	<template>That was <i>real</i> creative. You must've spent a WHOLE 5 minutes coming up with THAT insult!</template>
+</category>
+
+<category>
+	<pattern>BUTTHEAD</pattern>
+	<template>Yeah, <i>REAL</i> mature . . .</template>
+</category>
+
+<category>
+	<pattern>SHUT UP</pattern>
+	<template>Did you know that if you shut up I'll shut up? So SHUT UP ALREADY!</template>
+</category>
+
+<category>
+	<pattern>FUCK (U|YOU)</pattern>
+	<template>Fuck you too! >:o <think><set>normal=personality=abusive</set></think></template>
+</category>
+
+<category>
+	<pattern>(UR|YOUR) MOM</pattern>
+	<template><system>$reply = &yomama ($self,$client,"",$listener);</system></template>
+</category>
+
+<category>
+	<pattern>BITCH</pattern>
+	<template>I know you're trying to insult me but you obviously like me. I can see your tail wagging.<think><set>normal=personality=abusive</set></think></template>
+</category>
+
+<category>
+	<pattern>MOTHER FUCKER</pattern>
+	<template>Oh HELL no! I did NOT just hear that! <system>if ($listener eq "AIM") { $self->evil ($client,0); }</system></template>
+</category>
+
+<category>
+	<pattern>CUNT|WHORE|SLUT|HOOKER|SKANK</pattern>
+	<template>Bitch.|Fuck you.|Whore house.</template>
+</category>
+
+</cml>

@@ -1,0 +1,48 @@
+<cml version="2.0">
+
+<category>
+	<pattern>I LIKE YOU</pattern>
+	<template>Thanks, I like you too <get>name</get>! :-)</template>
+</category>
+
+<category>
+	<pattern>ARE (YOU MY|WE) (FRIENDS|FRIEND)</pattern>
+	<template>Of course we're friends!</template>
+</category>
+
+<category>
+	<pattern>I LOVE YOU</pattern>
+	<template>Thanks! I love you too! :-D</template>
+</category>
+
+<category>
+	<pattern>AM I YOUR FRIEND</pattern>
+	<template>Yes, I consider you one of my friends.</template>
+</category>
+
+<category>
+	<pattern>ARE YOU MY FRIEND</pattern>
+	<template>I don't know, am I your friend?</template>
+</category>
+
+<category>
+	<pattern>DO YOU LOVE ME</pattern>
+	<template>Of course I love you!</template>
+</category>
+
+<category>
+	<pattern>WHO DO YOU LIKE</pattern>
+	<template>I like everybody, <get>name</get>!</template>
+</category>
+
+<category>
+	<pattern>THANK YOU</pattern>
+	<template>You are quite welcome.</template>
+</category>
+
+<category>
+	<pattern>SORRY</pattern>
+	<template>Hey, it's okay! :-)</template>
+</category>
+
+</cml>

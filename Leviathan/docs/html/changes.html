@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Change Log</b><p>
+
+<b><font color="#FF0000">Version 1.5.1 Patch</font></b><br>
+<ul>
+	<li><b>Bot Connection Mechanism</b> patched: uses pure Perl instead of XML to define connections.</li>
+</ul>
+
+<b><font color="#FF0000">Version 1.5</font></b><br>
+<ul>
+	<li><b>Message Queues</b> inverted. Code is executed <i>before</i> the time is spent. The time now is used as a
+		"cool down" limit. In this manner, AIM bots will respond more quickly depending on how busy they are.</li>
+	<li><b>GUI</b> has been reprogrammed.</li>
+</ul>
+
+<b><font color="#FF0000">Version 1.4</font></b><br>
+<ul>
+	<li><b>GUI Temporarily Suspended:</b> Due to drastic changes in Leviathan.pl, the GUI hasn't been updated
+		and is therefore suspended (however, the source "GUI.txt" is included if you want to edit it yourself).</li>
+	<li><b>Bot Settings Change:</b> Instead of files in the "bots" folder, you now define all your bots in
+		"config/connections.xml" - the downside is that you have to use XML instead of plain text.
+		However, now it's easier to add mirrors. If you have 5 AIM bots that use the same reply data,
+		and then decide to change their brain, you just have to make one change. Also, you can turn
+		individual mirrors on or off (or turn the entire bot on or off).</li>
+	<li><b>Timestamps Subroutine Update:</b> Time::Format is now being used, so strings such as "Weekday,
+		Month d yyyy @ H:mm:ss A.M." will work. However, for backwards compatibility the old tags will
+		still work as well (however, &lt;day_year&gt; has been removed).</li>
+	<li><b>Games Broadcast Handler Update:</b> Now supports Yahoo, IRC, and Jabber users to participate in
+		multiplayer games.</li>
+	<li><b>Yahoo Messenger</b> listener added (still in beta; may not sign on if many other bots are also
+		connected).</li>
+	<li><b>Games::Manager renamed to Games::Multiplayer::Manager</b> by request of CPAN admins (also:
+		<a href="http://search.cpan.org/~kirsle/Games-Multiplayer-Manager-1.00/lib/Games/Multiplayer/Manager.pm" target="_blank">CPAN
+		Documentation on Games::Multiplayer::Manager</a>)</li>
+</ul>
+
+<b><font color="#FF0000">Version 1.3</font></b><br>
+<ul>
+	<li><b>Graphical User Interface</b> added.</li>
+	<li><b>Eliza Brain Update:</b> New Eliza objects are created for each user of an Eliza bot, so when
+		Eliza tries to bring up something from past conversation, it won't mix up users (even though
+		that can be quite humorous).</li>
+	<li><b>User Profile Update:</b> User profiles now only contain the required data initially (stars, points,
+		temporary blocks, etc.) However, &profile_send will add new variables to a profile as it needs them,
+		giving you unlimited range of variables. (Run "util/Levi1.2 Profile Updater.pl" to update user profiles
+		from older versions of Leviathan).</li>
+	<li><b>Alpha Brain Updates:</b> The Alpha brain (Chatbot::Alpha 1.32) now has support for topics, as well
+		as many bug fixes (i.e. ways to break out of infinite loops or recursion errors).</li>
+	<li><b>Command Update:</b> Commands marked as "Hidden" will not only be excluded from the menu, but the "usage"
+		command will pretend as if the command doesn't exist.</li>
+	<li><b>Documentation:</b> Links for registering new usernames for the messengers have been added to the "Setup Bots"
+		page in the documentation.</li>
+</ul>
+
+<b><font color="#FF0000">Version 1.2</font></b><br>
+<ul>
+	<li><b>Added Listeners:</b> TOC and SMTP. TOC is an AIM listener that uses Net::AIM (some people had
+		problems with Net::OSCAR). The SMTP listener will enable you to set up e-mail auto-responders.</li>
+	<li><b>Reply Sentence-Splitting:</b> The bots will now split up your sentences and give you a paragraph
+		of replies in return (i.e. "Hello. What's up?" --&gt; "Hey! Not much, you?").</li>
+	<li><b>HTTP "Files":</b> A few special "files" on the HTTP listener have been added:</li>
+	<ul>
+		<li>Accessing <b>/blocked.cgi?user=<font color="#0000FF">SENDER-username</font></b> will return
+		whether or not they are blocked (in <b>&lt;blocked&gt;:&lt;why&gt;</b> format).</li>
+		<li>Accessing <b>/warner.cgi?user=<font color="#0000FF">SENDER-username</font></b> will return
+		whether or not they're on the Warners List.</li>
+	</ul>
+	<li><b>HTTP Dynamic Pages</b> don't write temporary files anymore; the updated page codes are sent without
+		actually sending files.</li>
+	<li><b>Commands Added:</b><br>
+		!warnlist - Administrator Only - Modify the warners list<br>
+		!warn - Botmaster Only - Issue an AIM warning</li>
+</ul>
+
+<b><font color="#FF0000">Version 1.1</font></b><br>
+<ul>
+	<li><b>Messenger capability is now less strict.</b> The bot won't <i>require</i> messenger modules that
+		aren't going to be needed.</li>
+	<li><b>MSN ClientCaps</b> are now fixed.</li>
+	<li><b>Command indexing</b> now prints a notification for each command indexed (much like it does for
+		including subroutines and handlers).</li>
+	<li><b>Menu command update:</b> The menu sorts categories more efficiently, so if you have 10 or more
+		categories they will remain in numerical, not ASCII, order.</li>
+	<li><b>Reload command update:</b> The !reload command now reloads startup configuration and substitution
+		data.</li>
+	<li><b>Bot fonts</b> will now revert to defaults if the font could not be found (don't need to worry
+		about itty bitty fonts on AIM anymore!)</li>
+	<li><b>Timestamp</b> bugs fixed (a request for &lt;month_num&gt; will return from 1 to 12, not 0 to 11).</li> 
+	<li><b>Including module Games::Manager</b> for multiplayer games ($chaos->{games} holds the object).</li>
+	<li><b>Bug fix in AIM Chatrooms' timestamps</b> (&lt;mins&gt; now filters in correctly).</li>
+	<li><b>Minor bug fixes</b> in the handler files.</li>
+	<li><b>Documentation</b> - "low-fi.html" is now even "lower-fi" - consists only of navigation and content frames.</li>
+</ul><p>
+
+<b><font color="#FF0000">Version 1.0 -- Initial Release</font></b><br>
+<ul>
+	<li><i>AiChaos Leviathan was created as an improved replacement to CKS Juggernaut. These
+		changes are mentioning the major differences between Juggernaut and Leviathan.</i></li>
+	<li><b>Bot data update</b>: using "Client:" to identify the messenger no longer works, using
+		"Listener:" is now used to define the messenger.</li>
+	<li><b>Client format update</b>: The $listener has been dropped, and $client now is formatted
+		as "SENDER-username" (i.e. MSN-name@domain.com, or AIM-screenname).</li>
+	<li><b>User data update</b>: A few new keys have been introduced, including those used for
+		temporary block systems. Also, there are 20 Custom Keys that you can use in
+		commands, etc. for keeping your own types of data.</li>
+	<li><b>The Jabber listener</b> has been introduced.</li>
+	<li><b>Message queueing</b> now is per username, instead of having one global queue.</li>
+	<li><b>Alpha brain</b> added.</li>
+	<li><b>Brains update</b>: instead of having "&lt;brain&gt;_get" and "&lt;brain&gt;_load" files and
+		subs, they are included in a single file. The returning hashref defines what the
+		names of the subs are, so the bot can load them.</li>
+	<li><b><u>Every</u> included file returns information</b> about itself in a hashref, not just commands.</li>
+	<li><b>Commands</b> - The !menu command is more dynamic; adding a category is as simple as creating
+		a command that ties to that category. The !menu command generates the category list dynamically.</li>
+	<li><b>Main configuration</b> file is now in Perl form, allowing you to set any variable and not being limited
+		to the ones Juggernaut gives you.</li>
+	<li><b>New Blocking Method</b>: Anytime the bot has to block somebody by itself, it uses temporary
+		blocks. The block equation is <font face="Courier New" size="2">(number of times blocked)<sup>2</sup> * 15
+		minutes</font>.</li>
+	<li><b>BlackList Update</b>: The !blacklist command now takes a <u>reason</u> the user was banned; this
+		reason is saved in the blacklist and returned to that user when they start a conversation (MSN).</li>
+	<li><b>Conversation Logs Update</b>: Collective conversation logs are now kept in "logs/chat", and the
+		top-level "logs" folder is used for smaller logs (i.e. alerts, warnings, etc.)</li>
+	<li>The $chaos hashref has been reorganized. Details:<p>
+		<b>Added Top-Level Keys:</b><br>
+		$chaos->{version} - Current program version number.<br>
+		$chaos->{author} - Program's author.<br>
+		$chaos->{debug} - Debug Mode On/Off.<p>
+
+		<b>Renamed/Moved Keys:</b><br>
+		$chaos->{_system} has been renamed to $chaos->{system}<br>
+		$chaos->{_users} has been renamed to $chaos->{clients}<br>
+		$chaos->{_data} has been renamed to $chaos->{data}<br>
+		Configuration data has been moved from $chaos->{_system}->{config} to $chaos->{config}<br>
+		Bot data has been moved from top-level keys into the $chaos->{bots} key.</li>
+</ul>
+
+</font>
+</body>
+</html>

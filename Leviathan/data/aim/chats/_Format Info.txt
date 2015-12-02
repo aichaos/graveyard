@@ -1,0 +1,28 @@
+Format Information for Bot Chat Settings (AIM):
+
+The first line of the bot's chat file will be a single number (either 0
+or 1). If 1, the bot can be invited to any room. If 0, the bot will deny
+all invites.
+
+Chat rooms are always started after the first line. The first line is
+supposed to be for the bot's "allowability" to join any room. If the first
+line is not a 0 or 1 value, you will be alerted when your bot connects.
+
+The chat rooms are formatted as follows:
+	Room Name===auto join (0|1)===able to be removed (0|1)
+
+Room Name = The name of the chatroom
+Auto Join = Binary value:
+	1 = The bot will automatically join the room on connection.
+	0 = The bot will not automatically join.
+Able to be removed = If the bot can be commanded to leave by anybody.
+	1 = Only an Admin may send the bot away.
+	0 = Anybody can send the bot away.
+
+	### Example: ###
+Chaos AI Technology===1===1
+Bot Chat===0===1
+
+If you set 0 for both auto-join and able to be removed, then you really
+don't need to include that in your list (unless you have it set to not
+allow unspecified chat invitations).

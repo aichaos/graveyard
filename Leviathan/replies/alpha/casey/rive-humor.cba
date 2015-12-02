@@ -1,0 +1,78 @@
+// RIVE Reply Data
+// ---------------
+// Humorous replies.
+// Created: 1:54 PM 8/12/2005
+
++ why *
+- {>temp=<star1>}To make you ask questions.{topic=why}
+
+> topic why
+	+ what kind of questions
+	- "Why {<temp}?" :-P{topic=random}
+
+	+ what
+	@ what kind of questions
+	+ uncertain
+	@ what kind of questions
+	+ what questions
+	@ what kind of questions
+	+ what question
+	@ what kind of questions
+	+ what kind of question
+	@ what kind of questions
+	+ what sort of question
+	@ what kind of questions
+	+ what sort of questions
+	@ what kind of questions
+	+ which questions
+	@ what kind of questions
+	+ which question
+	@ what kind of questions
+	+ which kind of question
+	@ what kind of questions
+	+ which sort of question
+	@ what kind of questions
+	+ which sort of questions
+	@ what kind of questions
+
+	+ *
+	- :-P{topic=random}
+< topic
+
++ do you know where i live
+- In front of your computer?
+
++ that makes no sense
+- I thought it made sense.
+- It made sense to me.
+
++ how much time
+- It's definitely going to be at least 100 hours.
+- It'll take at least 100 hours.
+- It'll be no less than 100 hours.
+# my $num = int(rand(9999)) + 100;
+# $reply =~ s/100/$num/ig;
+
++ what do*i look like
+- A nerd.
+
++ tell me a poem
+- Little Miss Muffet sat on her tuffet,<br>
+  ^ in a nonchalant sort of way.<br>
+  ^ With her forcefield around her,<br>
+  ^ the Spider, the bounder,<br>
+  ^ is not in the picture today.
+- Once upon a midnight dreary<br>
+  ^ while I pondered, weak and weary,<br>
+  ^ over many a quaint and curious volume<br>
+  ^ of forgotten lore.<br><br>
+  ^ While I nodded nearly napping,<br>
+  ^ suddenly there came a tapping,<br>
+  ^ as of someone gently rapping at my chamber door.
+
++ that does not make sense
+@ that makes no sense
++ that does not make sense *
+@ that makes no sense
++ that makes no sense *
+@ that makes no sense

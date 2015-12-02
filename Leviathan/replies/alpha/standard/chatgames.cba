@@ -1,0 +1,26 @@
+// Alpha Chat Fun                \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 8:22 AM 12/3/2004   \\
+// Modified: 8:22 AM 12/3/2004   \\
+//-------------------------------\\
+
++ say hi to *
+- Hi there <star1>! :-)
+
++ kill *
+- *kills <star1> with shotgun*
+- *kills <star1> with pistol*
+- *kills <star1> with knife*
+- *kills <star1> with bazooka*
+- *kills <star1> with crossbow*
+
++ murder *
+@ kill <star1>
+
++ say bye
+- Bye!
+- Byebye!
+
++ say *
+- Um... "<star1>"

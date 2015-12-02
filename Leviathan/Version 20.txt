@@ -1,0 +1,120 @@
+AiChaos Leviathan Version 2.0
+=============================
+
+FIRST THINGS FIRST: The Moderators and Administrators list currently
+	matches that of the last state of our bots. Edit these!!!
+	The Botmasters list though has been dimmed down as has been
+	the case in older Leviathan versions.
+
+This version was never released on AiChaos prior to April 10, 2006.
+This is the version of Leviathan that AiChaos's own bots ran off of.
+Somewhere between the 1.5.1 patch release and now, the Leviathan
+project was abandoned for the Aiden project, and this version was
+never released.
+
+It has been a long time since I've worked on this version of Leviathan,
+so at this time I cannot provide a Change Log for this version. I know
+it has some changes above version 1.5.1, but I wouldn't be able to tell
+you what these changes are.
+
+NOTE: The Graphical User Interface for this version is NOT included.
+I personally did not use the GUI when running my bots because there were
+several bots running and the GUI is more likely to freeze up in this case.
+Either that or I broke something and couldn't fix it. I don't remember
+exactly, but the GUI is nowhere to be found for Version 2.0. I can't
+guarantee the one from 1.5.x will work with it either.
+
+Included in this release, though, are some "hidden files" that I had
+personal use for but never included in the public releases. I'll outline
+what these files are and exactly what their purposes were here:
+_____________________________________
+
+BRAIN: Guardians
+
+	This was a never-released brain made specifically for the
+	CKS Guardians bots. These bots were to be employed for our
+	own monitoring purposes, for instance to keep an eye on a bot
+	whom we think is using plagiarized AiChaos software.
+
+	While the Guardian bots were going to do a lot more, currently
+	the brain only has four functions:
+
+		- Add a human to "Watch Humans" group on Buddylist.
+		- Remove humans from that group.
+		- Add a bot to the "Watch Bots" group.
+		- Remove bots from that group.
+
+	Upon initialization, the brain would begin a queued loop of
+	calling &guardians_active every 10 seconds. This subroutine was
+	to be used for doing things unprovoked, like querying things on
+	its own without being commanded to do so. This subroutine was
+	never put to good use.
+
+	Another subroutine in the brain, &guardian_botchat, was to handle
+	a controlled conversation between the Guardian and another AIM
+	bot, which would likely be one suspected for plagiarism.
+
+	Upon receiving a message, the brain would return <noreply> unless
+	the user was on the "data/authority/aichaos.txt" list (being an
+	AiChaos Administrator). This list is used nowhere else in Leviathan.
+
+HIDDEN COMMAND: ./commands/_hidden/probe.pl
+
+	Name:        !probe
+	Description: Probe a Bot
+	Usage:       !probe <bot username>
+
+	When issued this command, the bot would set up topics for the user
+	in question to direct them to this same command. The bot would ask
+	the suspect a few "questions" and see how it replied. For instance,
+	it would send the suspect the "!juggernaut" command to see if the
+	bot returned Juggernaut's proper copyright details.
+
+	Upon completion of the interview, it would return to the one who
+	called this command how the other bot responded and whether or not
+	you should be worried about it. It would then block the bot temporarily
+	to prevent the bot from continuing to chat with your Leviathan,
+	because bots don't accomplish anything by chatting with one another.
+
+HIDDEN COMMAND: ./commands/_hidden/valentine.pl
+
+	Name:        !valentine
+	Description: Happy Valentine's Day!
+	Usage:       !valentine
+
+	This was just an easter egg command. It returns a heart made out
+	of # signs.
+
+DATA FOLDERS:
+
+	All the files (buddylists, profiles, welcome messages, etc.) for
+	each of the original AiChaos bots are included. You can even find
+	CksGuardians' profile here, although it's not much to look at.
+
+	The authority folder's moderators and admins list has been left
+	completely untouched from our AiChaos bots. You'll probably want to
+	edit these!
+
+	The botmasters list has been dimmed down to the same old "example
+	example etc. etc." stuff from past releases.
+
+	The Blacklist and Warners List from the AiChaos bots is also included.
+
+LOCAL LIBRARY:
+
+	The current state of Net::YIM, as well as Matt Austin's abandoned YahooSimple
+	project, has revealed some kind of error with the connection: if a Yahoo
+	bot runs all by itself (no other bots running to slow it down), it connects
+	and operates just fine. Else, it won't sign on.
+
+	Don't bother myself or Matt Austin with errors with the Yahoo connection.
+	I'm not the genius behind the connection, and Matt Austin abandoned the
+	project and probably won't help you.
+
+	If you really need a Yahoo bot, use something other than Perl. ;)
+
+ALPHA BRAINS:
+
+	In addition to the "Alice, Eliza, and Standard" Chatbot::Alpha bot brains,
+	this release also includes the brains from the AiChaos bots: Casey, Cody,
+	and Chaos.

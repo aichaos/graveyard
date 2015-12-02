@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Setup Bots</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	All your bots information are stored in the "bots" folder. Leviathan comes with a
+sample file in that folder. There is a copy of the file in the "templates" folder.<p>
+
+<b class="header">:: Register Usernames for your Bots!</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	In order for your bots to actually sign on to their Instant Messengers, they'll
+need valid usernames and passwords. Click these links to register usernames for the messengers:<br>
+&#0164; <a href="https://register.passport.net/" target="_blank"><b>MSN:</b> Register an MSN Passport</a><br>
+&#0164; <a href="https://my.screenname.aol.com/_cqr/registration/initRegistration.psp" target="_blank"><b>AIM:</b> Register an AIM ScreenName</a><br>
+&#0164; <a href="http://edit.yahoo.com/config/eval_register?.done=http://messenger.yahoo.com&.src=pg" target="_blank"><b>Yahoo:</b> Register a Yahoo ID</a><br>
+&#0164; <a href="http://www.jabber.org/" target="_blank"><b>Jabber:</b> Download Jabber Messenger to register a username</a><br>
+&#0164; <b>IRC:</b> <i>Register with /nickserv on your IRC server</i><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Each bot has its own file inside the "bots" folder. The basic information
+about the bots (i.e. their brain and replies) are set up first, followed by all the mirrors. Mirrors are basicly
+just their connections to Instant Messengers. Bots can have one or many mirrors.<p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Each mirror contains a list of parameters. These set up the specific parameters of the mirror.
+Click one of the links below to see a list of the parameters for that connection:<p>
+
+<ul>
+	<li><a href="#aimbot">Sample AIM Bot</a></li>
+	<li><a href="#msnbot">Sample MSN Bot</a></li>
+	<li><a href="#ircbot">Sample IRC Bot</a></li>
+	<li><a href="#yimbot">Sample Yahoo Bot</a></li>
+	<li><a href="#jabbot">Sample Jabber Bot</a></li>
+	<li><a href="#httpbot">Sample HTTP Bot</a></li>
+	<li><a href="#smtpbot">Sample SMTP Bot</a></li>
+	<li><a href="#tocbot">Sample TOC Bot</a></li>
+</ul>
+
+<a name="aimbot"></a>
+<b class="header">:: Sample AIM Bot</b><br>
+<b>screenname</b> - The bot's screenname that it signs in to AIM with.<br>
+<b>password</b> - The bot's AIM password.<br>
+<b>autoreconnect</b> - Whether or not the bot will automatically reconnect (1 or 0).<br>
+<b>format</b> - The screenname's format (capitilization and spacing).<br>
+<b>profile</b> - Path to your bot's AIM profile (HTML document).<br>
+<b>icon</b> - Path to your bot's buddy icon (48x48 pixels, &lt;4 KB).<br>
+<b>buddies</b> - Path to your bot's buddy list.<br>
+<b>chats</b> - Path to a file defining the bot's chat rooms.<br>
+<b>chattriggers</b> - Path to a file defining chat triggers.<br>
+<b>font</b> - Path to a file defining the bot's font settings.<p>
+
+<a name="msnbot"></a>
+<b class="header">:: Sample MSN Bot</b><br>
+<b>screenname</b> - Your bot's MSN passport that it uses to sign in to MSN.<br>
+<b>password</b> - The bot's MSN password.<br>
+<b>nick</b> - The bot's display name.<br>
+<b>welcomemsg</b> - Path to bot's welcome message. It sends this when a user starts chatting with the bot. Leave blank for none.<br>
+<b>displaypic</b> - Path to bot's display picture.<br>
+<b>emoticons</b> - Path to a file defining the bot's custom emoticons.<br>
+<b>font</b> - Path to a file defining the bot's font.<p>
+
+<a name="ircbot"></a>
+<b class="header">:: Sample IRC Bot</b><br>
+<b>screenname</b> - The bot's IRC nickname.<br>
+<b>password</b> - (optional) If the username requires a password, enter it there.<br>
+<b>server</b> - The IRC server.<br>
+<b>port</b> - The IRC server's port. Default is 6667.<br>
+<b>channel</b> - Channel to join after the bot connects.<p>
+
+<a name="yimbot"></a>
+<b class="header">:: Sample Yahoo Bot</b><br>
+<b>screenname</b> - The bot's Yahoo! username.<br>
+<b>password</b> - Bot's Yahoo password.<br>
+<b>font</b> - Path to a file defining the bot's font.<p>
+
+<a name="jabbot"></a>
+<b class="header">:: Sample Jabber Bot</b><br>
+<b>screenname</b> - The bot's full Jabber username (i.e. name@jabber.com)<br>
+<b>password</b> - The bot's password.<br>
+<b>server</b> - The Jabber server (i.e. jabber.com)<p>
+
+<a name="httpbot"></a>
+<b class="header">:: Sample HTTP Bot</b><br>
+<b>screenname</b> - Host and port of your server (i.e. localhost:2001). Omit port to assume 80.<br>
+<b>nick</b> - Nickname to be used in the HTTP chat.<p>
+
+<a name="smtpbot"></a>
+<b class="header">:: Sample SMTP Bot</b><br>
+<b>screenname</b> - Host and port of your server (i.e. localhost:25). Omit port to assume 25.<br>
+<b>autoreply</b> - Path to an automated response file. The content of this file is returned to all senders.<br>
+<b>addresses</b> - List of addresses to reply to (separate by spaces).<p>
+
+<a name="tocbot"></a>
+<b class="header">:: Sample TOC Bot</b><br>
+<i><b>NOTE:</b> The TOC listener was added as an alternative to those who can't get the AIM listener working. Only use TOC as a last
+resort if you get Net::OSCAR errors.</i><br>
+<b>screenname</b> - The bot's AIM screenname.<br>
+<b>password</b> - Bot's AIM password.<br>
+<b>profile</b> - Path to the bot's profile (HTML document).<br>
+<b>buddies</b> - Path to the bot's buddylist.<br>
+<b>chats</b> - Path to a file defining the bot's chat rooms.<br>
+<b>font</b> - Path to a file defining the bot's font settings.
+
+</font>
+</body>
+</html>

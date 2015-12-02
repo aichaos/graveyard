@@ -1,0 +1,161 @@
+// Profiles                      \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 2:49 PM 12/3/2004   \\
+// Modified: 2:49 PM 12/3/2004   \\
+//-------------------------------\\
+
++ my name is *
+- {>name=<star1>}{<name}, nice to meet you!
+
++ call me *
+@ my name is <star1>
+
++ i am * years old
+- {>age=<star1>}Many people are <star1> years old. You're not alone.
+
++ i am a boy
+- {>sex=male}Oh, so you are a male.
+
++ i am a boi
+@ i am a boy
++ i am a guy
+@ i am a boy
++ i am a man
+@ i am a boy
++ i am a male
+@ i am a boy
++ i am male
+
++ i am a girl
+- {>sex=female}Oh, so you are a female.
+
++ i am a grrl
+@ i am a girl
++ i am a lady
+@ i am a girl
++ i am a woman
+@ i am a girl
++ i am a women
+@ i am a girl
++ i am a female
+@ i am a girl
++ i am female
+
++ i am androgynous
+- {>sex=androgynous}I see, so you can't be determined as male <i>or</i> female.
+
++ i am from *
+- {>location=<star1>}I've talked to a couple people from {<location}.
+
++ i live in *
+@ i am from <star1>
+
++ my favorite color is *
+- {>color=<star1>}I think <star1> is a pretty color.
+
++ my favorite book is *
+- {>book=<star1>}I don't think I've ever read that one.
+
++ my favorite band is *
+- {>band=<star1>}I heard they're a pretty good band.
+
++ i am a student
+- {>job=student}What class is your favorite?
+& Really? That sounds like a fun one. Do you like your teacher?
+& I see.
+
++ my job is *
+- {>job=<star1>}What's it like to have a job as <star1>?
+
++ my spouses name is *
+- {>spouse=<star1>}That's good to know.
+
++ i am single
+- {>spouse=single}I'm sorry.
+
++ i am gay
+- {>sexuality=homosexual}10% of the world is gay.
+
++ i am lesbian
+@ i am gay
++ i am a dyke
+@ i am gay
++ i am lesbo
+@ i am gay
++ i am homosexual
+@ i am gay
++ i am homo
+@ i am gay
++ i am queer
+@ i am gay
+
++ i am bi
+- {>sexuality=bisexual}80% of the world is bisexual.
+
++ i am bisexual
+@ i am bi
+
++ i am straight
+- {>sexuality=heterosexual}Only 10% of the world is completely straight.
+
++ i am str8
+@ i am straight
++ i am hetero
+@ i am straight
++ i am heterosexual
+@ i am straight
+
++ my website is *
+- {>website=<star1>}I might check it out some day.
+
++ what is my name
+- You told me your name was {<name}.
+
++ who am i
+@ what is my name
+
++ do you know my name
+@ what is my name
+
++ how old am i
+- You are {<age} years old.
+
++ what is my age
+@ how old am i
+
++ what is my sex
+- You are a {<sex}.
+
++ what is my gender
+@ what is my sex
+
++ where am i
+- You live in {<location}.
+
++ where do i live
+@ where am i
+
++ what is my favorite *
+- Your favorite <star1> is {<<star1>}.
+
++ what is my job
+- You are a {<job}.
+
++ who is my spouse
+- Your spouse is {<spouse}.
+
++ what is my sexuality
+- As far as I know, you are {<sexuality}.
+
++ am i gay
+@ what is my sexuality
+
++ am i bi
+@ am i gay
+
++ what is my website
+- Your website is {<website}.
+
++ what do you know about me
+- I know your name is {<name}, you are a {<age}-year-old {<sex} from {<location}. Your favorite book is {<book}, color {<color}, band {<band}. Your job is a {<job}. Your spouse is {<spouse}, and you are {<sexuality}.

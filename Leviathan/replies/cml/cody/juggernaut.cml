@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: WHAT IS JUGGERNAUT
+Reply: <system>$reply = about ($self,$client,$listener,$msg);</system>
+</category>
+
+<category>
+Input: HOW DO YOU (ADD|REMOVE|CREATE|DELETE) BOTS
+Reply: In CKS Juggernaut, simply drop or remove a file from the "bots" folder.
+</category>
+
+<category>
+Input: HOW DO I USE THE SERVER
+Reply: You need the modules HTTP-Daemon and HTTP-Status, and you just run the Server.bat file.
+</category>
+
+<category>
+Input: WHO CREATED JUGGERNAUT
+Reply: Juggernaut was created by Chaos AI Technology in 2004.
+</category>
+
+<category>
+Input: WHERE CAN I GET JUGGERNAUT
+Reply: You can probably download Juggernaut from http://www.aichaos.com/ or http://www.bot-depot.com/
+</category>
+
+<category>
+Input: WHAT LANGUAGE (IS|WAS) JUGGERNAUT WRITTEN IN
+Reply: CKS Juggernaut was originally written in Perl. I am currently unaware of any implementations in other languages.
+</category>
+
+</cml>

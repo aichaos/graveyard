@@ -1,0 +1,197 @@
+# Substitution Data
+# Format:
+#    Level==In==Out
+#
+# Level: 0 = replace ANYWHERE in message
+#        1 = replace ONLY IF ALONE in message
+#    In: The item originally in the message
+#   Out: What the item will be replaced with
+
+# HTML Characters.
+0==&quot;=="
+0==&apos;=='
+0==&amp;==&
+0==&lt;==<
+0==&gt;==>
+
+# English Conjunctions.
+0==I'M==I am
+0==I'D==I would
+0==I'VE=I have
+0==I'LL=I will
+0==DON'T==do not
+0==YOU'D==you would
+0==YOU'RE==you are
+0==YOU'VE==you have
+0==YOU'LL==you will
+0==HE'D==he would
+0==HE'S==he is
+0==HE'LL==he will
+0==SHE'D==she would
+0==SHE'S==she is
+0==SHE'LL==she will
+0==THEY'D==they would
+0==THEY'RE==they are
+0==THEY'VE==they have
+0==THEY'LL==they will
+0==WE'D==we would
+0==WE'RE==we are
+0==WE'VE==we have
+0==WE'LL==we will
+0==WHATS==what is
+0==WHAT'S==what is
+0==WHAT'RE==what are
+0==WHAT'VE==what have
+0==WHAT'LL==what will
+0==CAN'T==can not
+0==WHOS==who is
+0==WHO'S==who is
+0==WHO'D==who would
+0==WHO'LL==who will
+0==DON'T==do not
+
+# Abbreviations.
+1==L A==LA
+1==O K==OK
+1==P S==PS
+1==U S A==USA
+1==U. S. A.==USA
+1==U. S.==USA
+1==PH.D.==PhD
+1==MR.==mr
+1==MS.==ms
+1==MRS.==ms
+1==DR.==dr
+
+# Common misspellings.
+1==OHH==oh
+1==BECUSE==because
+1==BECASUE==because
+1==BECUASE==because
+1==BELEIVE==believe
+1==PRACTISE==practice
+1==REDUCTIONALISM==reductionism
+1==ITS AT==it is a
+1==FAV==favorite
+1==FAVE==favorite
+1==YESI==yes I
+1==YESIT==yes it
+1==IAM==I am
+1==WELLI==well I
+1==WELLIT==well it
+1==AMFINE==am fine
+1==AMAN==am an
+1==AMON==am on
+1==AMNOT==am not
+1==REALY==really
+1==IAMUSING==I am using
+1==AMLEAVING==am leaving
+1==YUO==you
+1==YOURE==you are
+1==DIDNT==did not
+1==AIN'T==is not
+1==AINT==is not
+
+# Variations to other words.
+1==HI==hello
+1==HEY==hello
+1==YEAH==yes
+1==YEP==yes
+1==YHA==yes
+1==SI==yes
+1==WANNA==want to
+1==HAFTA==have to
+1==NAH==no
+1==NOPE==no
+1==NAY==no
+
+# Chat Talk.
+0==BRB==be right back
+0==BBL==be back later
+0==GTG==got to go
+0==G2G==got to go
+0==GOTTA==got to
+0==LYL==love you lots
+1==BF==boyfriend
+1==GF==girlfriend
+1==B/F==boyfriend
+1==G/F==girlfriend
+1==B/F/F==best friend forever
+
+# Web language.
+0==.COM==dot com
+0==.NET==dot net
+0==.ORD==dot org
+0==.EDU==dot edu
+0==.UK==dot uk
+0==.JP==dot jp
+0==.AU==dot au
+0==.CO==dot co
+0==.AC==dot ac
+0==.TK==dot tk
+0==.INFO==dot info
+0==WWW.==www dot
+0==FTP.==ftp dot
+0==.JAR== jar
+0==.ZIP== zip
+0==.TAR== tar
+0==.TAR.GZ== tar gz
+
+# Conjunctions.
+0==, but ==. 
+0==, and ==. 
+
+# AiChaos Replacements.
+1==CKSJUGGERNAUT==juggernaut
+1==CKSNEXUSBOT==nexusbot
+1==ALPHABOT==alpha
+1==LEVIATHANBOT==leviathan
+
+# Aliases.
+0==YEAH==yes
+0==YEPP==yes
+0==YEP==yes
+0==YUPP==yes
+0==YUP==yes
+0==NOPE==no
+0==HAHAHA==lol
+0==HAHA==lol
+0==HAH==lol
+0==HEHEHE==lol
+0==HEHE==lol
+0==HEH==lol
+
+# Smiley faces.
+0==:)==smile
+0==:-)==smile
+0==:-D==grin
+0==:D==grin
+0==:-P==tongue
+0==:P==tongue
+0==:-(==sad
+0==:(==sad
+0==:'(==cry
+0==;)==wink
+0==;-)==wink
+0==:-$==shy
+0==:$==shy
+0==:-[==shy
+0==:[==shy
+0==:-/==uncertain
+0==:/==uncertain
+0==:-\==uncertain
+0==:\==uncertain
+0==:-S==uncertain
+0==:S==uncertain
+0==8-)==cool
+0==8)==cool
+0==:-*==kissyface
+0==:-!==foot
+
+# Really lazy chat talk.
+1==U==you
+1==MI==me
+1==YO==hello
+1==R==are
+1==UR==your
+1==IM==i am

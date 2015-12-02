@@ -1,0 +1,1190 @@
+<HTML><HEAD>
+	<TITLE>CKS Juggernaut</TITLE>
+	<META NAME="AUTHOR" CONTENT="2004 Chaos AI Technology">
+	<META NAME="GENERATOR" CONTENT="HelpScribble 7.3.2 from http://www.helpscribble.com/">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#009900" VLINK="#009900" ALINK="#FF0000">
+<A NAME="hs10">
+<FONT FACE="Arial" COLOR="#800000" SIZE="5"><B>
+<IMG SRC="logo.png" WIDTH="483" HEIGHT="208" BORDER="0"></B></FONT><BR>
+<BR>
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>CKS Juggernaut</B></FONT><BR>
+<FONT FACE="Verdana" COLOR="#FF0000" SIZE="2"><B>Chaos AI Technology</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Table of Contents</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs20"><FONT FACE="Verdana" SIZE="2">About CKS Juggernaut</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs30"><FONT FACE="Verdana" SIZE="2">Features</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs40"><FONT FACE="Verdana" SIZE="2">Installing Perl</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs50"><FONT FACE="Verdana" SIZE="2">Adding/Removing Bots</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs60"><FONT FACE="Verdana" SIZE="2">Managing Authorities</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs70"><FONT FACE="Verdana" SIZE="2">The Configuration Files</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Advanced Bot Information</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs80"><FONT FACE="Verdana" SIZE="2">Bot Brains</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs180"><FONT FACE="Verdana" SIZE="2">Command Footers</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Advanced Tutorials</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs90"><FONT FACE="Verdana" SIZE="2">Simple CML Tutorial</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs190"><FONT FACE="Verdana" SIZE="2">ChaosML Tutorial</A></FONT><FONT FACE="Verdana" COLOR="#800000" SIZE="2"> </FONT><I><FONT FACE="Verdana" COLOR="#0000FF" SIZE="2">(new!)</I></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs100"><FONT FACE="Verdana" SIZE="2">About MSN Hex Colors</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs110"><FONT FACE="Verdana" SIZE="2">MSN Display Pic/Emoticon Specifications</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs120"><FONT FACE="Verdana" SIZE="2">Creating a Command</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Licenses, Copyrights &amp; Credits</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs130"><FONT FACE="Verdana" SIZE="2">GNU General Public License</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs140"><FONT FACE="Verdana" SIZE="2">Copyright Information</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs150"><FONT FACE="Verdana" SIZE="2">Credits</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Bot Promotion Methods</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="http://www.bot-depot.com/forums/index.php?showforum=8"><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">Bot-Depot Promote a Bot Forum</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="http://www.botwork.com/bot_list.html"><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">BotWork Bot List</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="http://www.aichaos.com/?display=lyst"><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">CKS Bot Lyst</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs160"><FONT FACE="Verdana" SIZE="2">Change Log</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs170"><FONT FACE="Verdana" SIZE="2">Known Bugs</A></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">_________________________________________</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Copyright © 2004 </FONT><A HREF="http://www.aichaos.com/"><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">Chaos AI Technology</A></FONT><FONT FACE="Verdana" SIZE="2">.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs20">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+About CKS Juggernaut</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>About CKS Juggernaut</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">CKS Juggernaut is a freeware chatterbot program created by Chaos AI Technology. Juggernaut is able to sign a robot on to AOL Instant Messenger, MSN/Windows Messenger, Internet Relay Chat, and also has a webserver interface so that you and your visitors can talk to your bot on the web.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">CKS Juggernaut has lots of options to customize your chatterbots. For example, Juggernaut has a selection of </FONT><A HREF="#hs80"><FONT FACE="Verdana" SIZE="2">Brains</A></FONT><FONT FACE="Verdana" COLOR="#800000" SIZE="2"> </FONT><FONT FACE="Verdana" SIZE="2">that your bot can use in its responses. Also, each individual bot that connects to the web can have its own information that is independant of other bots running from the same program.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Check out the </FONT><A HREF="#hs30"><FONT FACE="Verdana" SIZE="2">Features</A></FONT><FONT FACE="Verdana" COLOR="#800000" SIZE="2"> </FONT><FONT FACE="Verdana" SIZE="2">list for more information.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs30">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Features</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Features of CKS Juggernaut</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">CKS Juggernaut has many features. Some of them are as follows:</FONT><BR>
+
+<LI><FONT FACE="Verdana" SIZE="2">Comes with over 120 commands.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Has a built-in temporary blocking system (to stop abusers)</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">A Stars system, a repeat offender will eventually be banned permanently.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Has a lot of IM games--games that can be played with the bot or with other players.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">A webserver inteface (you can chat with your bot online).</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Four levels of authority: Client (common user), Moderator, Administrator, and Botmaster.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Support for multiple Moderators, Admins, and Masters.*</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Socket controls for MSN: You can list, join, or terminate conversations.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">MSN Chatroom support with chat topics.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">AIM Chatroom support with chat topics.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Built-in guestbook capability.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">A command that shows the bot's current statistics.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Easy-to-manage bot connections. All bots run from a single Perl script!</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Support for virtually unlimited screennames to be signed in at once!</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Highly customizable--you may have two bots running from one script, but they can have opposite personalities!</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">Support for choosable and customizable brains for the bots to reply with.</FONT>
+<LI><FONT FACE="Verdana" SIZE="2">And much, more more!</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">*Be cautious about your Master users. The Master level has access to very powerful commands that can manipulate data on your computer. Chaos AI Technology cannot be held responsible for any damages your computer may take as a result of granting Master powers to somebody other than yourself.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs40">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Installing Perl</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Installing Perl</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">In order to run the bot, you will need to install Perl onto your machine. Here is some detailed information:</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B> Required Version of Perl: </B>5.8.X</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Download Location: </B></FONT><A HREF="http://www.activestate.com/Products/Download/Download.plex?id=ActivePerl"><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">http://www.activestate.com/Products/Download/Download.plex?id=ActivePerl</A></FONT><FONT FACE="Courier New" COLOR="#800000" SIZE="2">
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs50">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Adding/Removing Bots</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Adding/Removing Bots</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Upon the extraction of your copy of Juggernaut, a folder titled "bots" should exist in the folder you extracted Juggernaut to. This "bots" folder is where all of your bots' connection information is stored, in individual text files (one file for each of your bots). There are a few sample files in there. You may edit and change the sample files to match your own bots' data, or you can create new files.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Note: </B>If you add/create your own new files to this folder, please remove the sample files from the folder, because the sample usernames probably don't exist or you don't have the passwords, and your bots obviously won't connect without both information being accurate.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Adding Bots:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">To add a new bot, just drop a text document (.TXT) into the "bots" folder. The filename isn't important, but the contents inside are (see below for some examples).</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Removing Bots:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">To remove a bot's connection, simply move or delete that bot's text document out of the "bots" folder, and (re)start your bot.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Universal Required Information:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">No matter what the messenger, all bot files will have the following data inside them:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>ScreenName </B></I>- This is the username the bot uses to connect with (could</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; be an AIM screenname, an MSN e-mail address, or IRC nickname for example).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Password </B></I>- Self-explanatory, this is the password that it connects with.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Client </B></I>- The bot's messenger name (i.e. AIM, MSN, IRC, etc.). Juggernaut only</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; supports a limited amount of messengers, so if you put in a messenger</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; that's not supported you'll get error messages.</FONT><BR>
+<BR>
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>Sample Bot Connections</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Sample AIM Bot</B></FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">ScreenName: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">codycks</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Password: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">asecret</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Auto Reconnect: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">1</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Client: AIM</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Brain: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">Juggernaut</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Reply: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./replies/cml/cody</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Data: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/profiles/Cody.txt</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Format: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">CodyCKS</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Profile: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/aim/profiles/Cody.html</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Buddies: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/aim/buddies/CKS.txt</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Chats: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/aim/chats/Cody.txt</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Chat Triggers: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/aim/triggers/Cody.txt</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Font: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/aim/fonts/Cody.txt</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Specifications:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>ScreenName </B></I>- The bot's screenname. In this example, it is codycks</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Password </B></I>- The password that this bot uses to sign on to AIM.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Auto Reconnect </B></I>- If 0, the bot won't automatically reconnect. If 1, it does.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Client </B></I>- The messenger that this bot signs on to. This is an AIM bot, so it says "AIM"</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Brain </B></I>- This bot is going to use the Juggernaut reply system.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Reply </B></I>- The folder that the Juggernaut replies would be found in.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Data </B></I>- Bots have names and ages too! This bot's data file is found in that path.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Format </B></I>- How the bot formats its screenname (capitilization and spacing).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Profile </B></I>- The path to the bot's AIM profile data.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Buddies </B></I>- Where the bot's buddylist can be found.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Chats </B></I>- The list of rooms that the bot would auto-join or be locked to.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Chat Triggers </B></I>- Little sayings that the AIM bot replies to in chat.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Font </B></I>- Where the bot's font color, size, style and face can be found in.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Sample MSN Bot</B></FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">ScreenName: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">cody@aichaos.com</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Password: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">asecret</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Client: MSN</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Brain: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">Nexus</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Reply: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./replies/nexus.txt</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Nick: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">Cody</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">WelcomeMsg: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/msn/welcome/Cody.txt</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">DisplayPic: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/msn/dp/Ferako.png</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Emoticons: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/msn/emo/cks.png</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Data: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/profiles/Cody.txt</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Font: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/msn/fonts/Cody.txt</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Specifications:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>&nbsp; <I>ScreenName </B></I>- For an MSN bot, this would be the bot's e-mail address (passport).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Password </B></I>- The password this bot uses to sign in to MSN.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Client </B></I>- For an MSN bot, this would be... MSN</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Brain </B></I>- This bot uses the Nexus brain (the learning brain)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Reply </B></I>- For Nexus, the Reply data is a single text document (not a folder, like in Juggernaut).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Nick </B></I>- The bot's MSN display name.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>WelcomeMsg </B></I>- The file that contains what the bot has to say to a new conversation.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>DisplayPic </B></I>- The path to the bot's display picture (MSN 6+)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Emoticons </B></I>- The path to the bot's emoticon set (MSN 6+)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Data </B></I>- Bots need names and ages, etc, too!</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Font </B></I>- Path to the bot's font face, color, and style.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Sample IRC Bot</B></FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">ScreenName: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">Ferako</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Password:</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Client: IRC</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Server: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">irc.whatnet.org</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Port: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">6667</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Channel: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">#lobby</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Brain: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">Eliza</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Reply:</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">Data: </FONT><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">./data/profiles/Cody.txt</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Specifications:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>ScreenName </B></I>- The nickname the bot would use on IRC.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Password </B></I>- Required only for registered nicknames.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Client </B></I>- IRC, since this is an IRC bot.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Server </B></I>- The IRC server host.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Port </B></I>- The IRC port for that server.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Channel </B></I>- The channel that the bot should join on connect.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Brain </B></I>- This bot uses the Eliza (psychologist bot) brain.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Reply </B></I>- Eliza doesn't use reply data. This could be blank or anything else. Not used.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; <I><B>Data </B></I>- Again, the bot's profile data.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs60">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Managing Authorities</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Managing Authorities</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><I>What are authorities?</I></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> Authorities are the higher-level users of your bot. By default, all common users are classified as "clients" until you promote them. Moderators, Administrators, and Botmasters are the authorities in CKS Juggernaut.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>The Botmaster Level</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><B><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">DISCLAIMER</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; The Master level has access to very powerful commands that could</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; potentially damage or manipulate the data on your computer. The</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Master level is reserved for just that, the bot's MASTER. Do NOT give</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; out Master controls to ANYBODY except for YOURSELF. Chaos AI</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Technology takes no responsibility for anything that happens to your</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; computer as a result of ignoring this disclaimer.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Adding the Masters</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Your bot's master list is stored in ./data/authority/master.txt. There are</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; a few sample usernames in there. The format for masters, as well as all</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; other authorities, goes as follows:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; LISTENER-USERNAME</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; For example, some MSN and AIM users:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; AIM-TheBotMaster</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; MSN-master@mysite.com</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; MSN-my_other_email@mysite.com</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>The Administrator Level</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Adding the Admins</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; The Admin users are stored in a list at ./data/authority/admin.txt. Again,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; they are sorted by LISTENER-USERNAME. See the Master description for</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; examples.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>The Moderator Level</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Adding the Moderators</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Moderators list is at ./data/authority/moderator.txt, again formatted the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; same way that your Admins and Masters lists are, by LISTENER-USERNAME.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs70">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+The Configuration Files</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>The Configuration Files</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">In your bot's <B>config </B>folder, there are several files with the extension .cfg - don't let these file extensions bother you, they are inherently plain-text documents. Just edit them in Notepad to modify their contents.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Here is the details of what's inside these files:</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>startup.cfg - Your bot's startup configuration</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Command Char </B></I>- The character(s) that triggers commands. i.e. if the command</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; char is #, commands are used like #menu, #about, etc.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Google Key </B></I>- Not required, but it's used for the Google search command. You can</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; register your own Google key </FONT><A HREF="http://www.google.com/apis/"><FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">here</A></FONT><FONT FACE="Verdana" SIZE="2">.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Email Server </B></I>- An SMTP server that you use to send e-mails. Again, not required, but</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; is used by the !email command to send e-mails.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Email From </B></I>- The sender of all e-mails sent from your bot.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Email Subject </B></I>- The subject of all e-mails sent from your bot.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Email Name </B></I>- The name of your bot, for the e-mail footer (i.e. "This e-mail was sent from a</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; bot named &lt;email name&gt;")</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>MSN Chat Allowed </B></I>- This is a 0 or 1 flag. If 1, the bot will stay in conversations when mulitple</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; people are present. If 0, the bot will leave conversations automatically when somebody</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; joins.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>substitution.cfg - Your bot's substitution data</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> This file contains all the word(s) that your bot will replace in the message. For example, it could</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> turn "U" into "YOU" to make it easier, on your bot's part, to return good responses to the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> message.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> The items are formatted as follows:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; LEVEL==BEFORE==AFTER</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; <I><B>Level </B></I>- 0 = replace no matter where it's at, 1 = replace if item is alone</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; <I><B>Before </B></I>- This is what the user has in their message,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; <I><B>After </B></I>- And this is what the bot replaces it with.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>server.cfg - Your bot's webserver information</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> This file is only used if you run the webserver bot.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Server Host </B></I>- The host that the server will run on. A value of <B>localhost </B>usually works</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; just fine.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Server Port </B></I>- The port. If it's port 80, going to simple http://localhost/ will access your</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; site. If not, you'll need to append the port to the URL, like</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; http://localhost:2001/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2001 is the default port number.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Bot Name </B></I>- For web conversations, this bot name appears above the bot's replies.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Brain </B></I>- Webserver bots need brains too.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Reply </B></I>- Reply path or file for the brain specified (see Brains for more information)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Data </B></I>- Your bot's personal data.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>gui.cfg - Settings for the Graphical User Interface</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Background </B></I>- The main background color of the GUI dialog box.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Font Face </B></I>- The main font face.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Font Color </B></I>- Main font color.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Status BG </B></I>- Background color for the GUI's status bar.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Status Font </B></I>- Font used on the status bar.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <I><B>Status Color </B></I>- Status bar font color.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs80">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Bot Brains</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Bot Brains</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">CKS Juggernaut currently supports the brains listed here. Here on this page is listed the variable/value pairs that must be in your bots' connection data, and a short description/requirements on each brain.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Juggernaut</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">This is the original brain for CKS Juggernaut (hence the name). The reply data is a directory (folder) path. CKS Juggernaut runs on one or many CML files.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Brain: Juggernaut</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B> Reply: ./replies/cml/sample</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>&nbsp; </B>(example)</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Nexus</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">The brain from a previous Chaos AI Technology creation, Nexus learns new replies from conversation. It can tend to be quite annoying at times, especially when it first starts out. Nexus's reply data is a single text document.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Brain: Nexus</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B> Reply: ./replies/nexus.txt</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; (example)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Note: The file for its brain does not have to exist when you first create the bot. Once it starts talking, the file is created/updated automatically.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Eliza</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">A simple implementation of the classic Eliza bot. This bot doesn't take any reply data, so you can leave the Reply: variable blank in your bot's data (or put anything you like, it's not used).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Brain: Eliza</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B> Reply:
+</B></FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs90">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Simple CML Tutorial</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs20"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Simple CML Tutorial</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">CML (Chaos Markup Language) is a really simple text-based reply system. A sample CML file's source may look like this:</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">&lt;cml version="1.0"&gt;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" SIZE="2">&lt;category&gt;</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">Input: HELLO</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">Reply: Hello there &lt;get&gt;name&lt;/get&gt;!</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">&lt;/category&gt;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" SIZE="2">&lt;/cml&gt;</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>The Elements</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">The CML markup is composed of many HTML-like elements. Here are their usages and descriptions:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;cml&gt;...&lt;/cml&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; The wrapper for the CML file. It may take the attribute <B>version</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; (as shown above), but that attribute is not currently used (maybe</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; when the next version of CML is created it will be looked at more</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; closely).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;category&gt;...&lt;/category&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; The container for one reply item.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Input:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; This is what the user would say. This should be in ALL CAPS and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; contain minimal punctuation or symbols. You can use any common</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Perl regex here (i.e. parenthesis for narrower matching options).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; A wildcard (*) can be used here too and retrieved by the &lt;star#&gt;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; tags.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Reply:</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; This contains the bot's reply to that input.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>*</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Wildcards (*'s) are used in the Input: portion of a category, and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; their matched values are put into &lt;star1&gt; to &lt;star9&gt;. A maximum</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; of 9 wildcards can be used in one message.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;star1&gt; - &lt;star9&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; These will contain the values matched by the wildcards or regeces.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;bot&gt;variable&lt;/bot&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Inserts a bot variable (see? That Data: variable comes in handy now)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;get&gt;variable&lt;/get&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Gets a variable about a user (i.e. name or age)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;set&gt;style=variable=value&lt;/get&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Sets a variable about the user.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; style = formal (initial caps), or normal (lowercase)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; variable = the variable (i.e. name or age)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; value = what the new value should be</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;system&gt;...&lt;/system&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Anything inside these tags will be evaluated as Perl code.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;date&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Current localtime date.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;time&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Current value of time()
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs100">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+About MSN Hex Colors</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>About MSN Hex Colors</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">If you have experience with HTML color codes, MSN's hex codes are similar, except you reverse the colors (instead of red-green-blue it goes blue-green-red).</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">And if you don't have much experience, here's some basic colors and their codes:</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#0000FF" SIZE="2">FF0000 Blue</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2">0000FF Red</FONT><BR>
+<FONT FACE="Courier New" COLOR="#00FF00" SIZE="2">00FF00 Lime*</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF00FF" SIZE="2">FF00FF Fuchsia*</FONT><BR>
+<FONT FACE="Courier New" COLOR="#00FFFF" SIZE="2">FFFF00 Cyan</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FFFF00" SIZE="2">00FFFF Yellow</FONT><BR>
+<FONT FACE="Courier New" COLOR="#000080" SIZE="2">990000 Navy</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800000" SIZE="2">000099 Berghundi</FONT><BR>
+<FONT FACE="Courier New" COLOR="#008000" SIZE="2">009900 Green*</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">990099 Purple*</FONT><BR>
+<FONT FACE="Courier New" COLOR="#008080" SIZE="2">999900 Teal</FONT><BR>
+<FONT FACE="Courier New" COLOR="#808000" SIZE="2">009999 Gold</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">FFFFFF White*</FONT><BR>
+<FONT FACE="Courier New" COLOR="#C0C0C0" SIZE="2">CCCCCC Silver*</FONT><BR>
+<FONT FACE="Courier New" COLOR="#808080" SIZE="2">999999 Gray*</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">000000 Black*</FONT><BR>
+<BR>
+<FONT FACE="Courier New" SIZE="2">*These codes are the same as HTML codes because they're palindromes.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs110">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+MSN Display Pic/Custom Emoticon Specifications</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>MSN Display Pic/Custom Emoticon Specifications</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Display Pictures</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; ¤ Standard size is 96x96 pixels</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; ¤ Must be a PNG image of 256 colors.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Custom Emoticons</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; ¤ Standard height is 19 pixels, width may be between 19 and 300 pixels.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; ¤ Must be a PNG image of 256 colors.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs120">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Making a Command Tutorial</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Making a Command Tutorial</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">This tutorial will teach you how to make a simple command: one that returns a random number between two numbers that the user specifies!</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>1. </B>Open the command template at "docs/command template.pl"</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>2. </B>Save the file in the "commands" folder as "random.pl"</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>3. </B>Change the header of the command to show data similar to this (you can word parts however you choose, the header is not important):</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;CKS Juggernaut&gt;</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> #&nbsp;&nbsp;&nbsp;&nbsp; .:...::&nbsp;&nbsp;&nbsp;&nbsp; Command Name // !random</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> #&nbsp;&nbsp;&nbsp; .::&nbsp;&nbsp; ::.&nbsp;&nbsp;&nbsp;&nbsp; Description // Generates a random number.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # ..:;;. ' .;;:..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Usage // !random &lt;start&gt;-&lt;end&gt;</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> #&nbsp;&nbsp;&nbsp; .&nbsp; '''&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp; Permissions // Public</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> #&nbsp;&nbsp;&nbsp;&nbsp; :;,:,;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Listener // All Listeners</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> #&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright // 2004 Chaos AI Technology</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>4. </B>Rename the sub from <B>sub command </B>to <B>sub random</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>5. </B>In the space between <B>my ($self,$client,$msg,$listener) = @_; </B>and <B>return "command reply";</B>, insert this code:</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # See if they have a message.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> if (length $msg == 0) {</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">&nbsp; return "Give me two numbers, i.e.\n\n"</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">&nbsp;&nbsp; . "!random 1-100";</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> }</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # Get the two numbers.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> my ($a,$b) = split(/\-/, $msg, 2);</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # Find the range.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> my $range = $b - $a;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # Pick the random number.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> my $out = int(rand($range)) + $a;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>6. </B>Edit the <B>return "command reply"; </B>to read <B>return "$out";</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>7. </B>Edit the data in the footer of the command to reflect your command's information.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"><B>8. </B>Save the command and reload your bot (send it the !reload command).</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Just in case you got lost somewhere, the completed command should look like this:</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;CKS Juggernaut&gt;</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">#&nbsp;&nbsp;&nbsp;&nbsp; .:...::&nbsp;&nbsp;&nbsp;&nbsp; Command Name // !random</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">#&nbsp;&nbsp;&nbsp; .::&nbsp;&nbsp; ::.&nbsp;&nbsp;&nbsp;&nbsp; Description // Generates a random number.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"># ..:;;. ' .;;:..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Usage // !random &lt;start&gt;-&lt;end&gt;</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">#&nbsp;&nbsp;&nbsp; .&nbsp; '''&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp; Permissions // Public</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">#&nbsp;&nbsp;&nbsp;&nbsp; :;,:,;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Listener // All Listeners</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">#&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright // 2004 Chaos AI Technology</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">sub random {</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> my ($self,$client,$msg,$listener) = @_;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # See if they have a message.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> if (length $msg == 0) {</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">&nbsp; return "Give me two numbers, i.e.\n\n"</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">&nbsp;&nbsp; . "!random 1-100";</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> }</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # Get the two numbers.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> my ($a,$b) = split(/\-/, $msg, 2);</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # Find the range.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> my $range = $b - $a;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> # Pick the random number.</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> my $out = int(rand($range)) + $a;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> return "$out";</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">}</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">{</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> Category =&gt; "Random Stuff",</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> Description =&gt; "Get a random number between two numbers!",</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> Usage =&gt; "!random &lt;start&gt;-&lt;end&gt;",</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2"> Listener =&gt; "All",</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">};
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs130">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+GNU General Public License</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>GNU General Public License</B></FONT><BR>
+<BR>
+<CENTER><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2"><B>GNU GENERAL PUBLIC LICENSE</B></FONT></CENTER><BR>
+<CENTER><FONT FACE="Verdana" SIZE="2">Version 2, June 1991</FONT></CENTER><BR>
+<CENTER></CENTER><BR>
+<CENTER><FONT FACE="Verdana" SIZE="2">Copyright (C) 1989, 1991 Free Software Foundation, Inc.</FONT></CENTER><BR>
+<CENTER><FONT FACE="Verdana" SIZE="2">59 Temple Place, Suite 330, Boston, MA&nbsp; 02111-1307&nbsp; USA</FONT></CENTER><BR>
+<CENTER><FONT FACE="Verdana" SIZE="2">Everyone is permitted to copy and distribute verbatim copies</FONT></CENTER><BR>
+<CENTER><FONT FACE="Verdana" SIZE="2">of this license document, but changing it is not allowed.</FONT></CENTER><BR>
+<BR>
+<CENTER><FONT FACE="Verdana" SIZE="2"><B>Preamble</B></FONT></CENTER><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> The licenses for most software are designed to take away your</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">freedom to share and change it.&nbsp; By contrast, the GNU General Public</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">License is intended to guarantee your freedom to share and change free</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">software--to make sure the software is free for all its users.&nbsp; This</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">General Public License applies to most of the Free Software</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Foundation's software and to any other program whose authors commit to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">using it.&nbsp; (Some other Free Software Foundation software is covered by</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">the GNU Library General Public License instead.)&nbsp; You can apply it to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">your programs, too.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> When we speak of free software, we are referring to freedom, not</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">price.&nbsp; Our General Public Licenses are designed to make sure that you</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">have the freedom to distribute copies of free software (and charge for</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">this service if you wish), that you receive source code or can get it</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">if you want it, that you can change the software or use pieces of it</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">in new free programs; and that you know you can do these things.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> To protect your rights, we need to make restrictions that forbid</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">anyone to deny you these rights or to ask you to surrender the rights.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">These restrictions translate to certain responsibilities for you if you</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">distribute copies of the software, or if you modify it.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> For example, if you distribute copies of such a program, whether</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">gratis or for a fee, you must give the recipients all the rights that</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">you have.&nbsp; You must make sure that they, too, receive or can get the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">source code.&nbsp; And you must show them these terms so they know their</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">rights.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> We protect your rights with two steps: (1) copyright the software, and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">(2) offer you this license which gives you legal permission to copy,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">distribute and/or modify the software.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> Also, for each author's protection and ours, we want to make certain</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">that everyone understands that there is no warranty for this free</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">software.&nbsp; If the software is modified by someone else and passed on, we</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">want its recipients to know that what they have is not the original, so</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">that any problems introduced by others will not reflect on the original</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">authors' reputations.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> Finally, any free program is threatened constantly by software</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">patents.&nbsp; We wish to avoid the danger that redistributors of a free</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">program will individually obtain patent licenses, in effect making the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">program proprietary.&nbsp; To prevent this, we have made it clear that any</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">patent must be licensed for everyone's free use or not licensed at all.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> The precise terms and conditions for copying, distribution and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">modification follow.</FONT><BR>
+<BR>
+<CENTER><FONT FACE="Verdana" SIZE="2"><B>GNU GENERAL PUBLIC LICENSE</B></FONT></CENTER><BR>
+<CENTER><FONT FACE="Verdana" SIZE="2"><B>TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION</B></FONT></CENTER><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 0. This License applies to any program or other work which contains</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">a notice placed by the copyright holder saying it may be distributed</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">under the terms of this General Public License.&nbsp; The "Program", below,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">refers to any such program or work, and a "work based on the Program"</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">means either the Program or any derivative work under copyright law:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">that is to say, a work containing the Program or a portion of it,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">either verbatim or with modifications and/or translated into another</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">language.&nbsp; (Hereinafter, translation is included without limitation in</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">the term "modification".)&nbsp; Each licensee is addressed as "you".</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Activities other than copying, distribution and modification are not</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">covered by this License; they are outside its scope.&nbsp; The act of</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">running the Program is not restricted, and the output from the Program</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">is covered only if its contents constitute a work based on the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Program (independent of having been made by running the Program).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Whether that is true depends on what the Program does.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 1. You may copy and distribute verbatim copies of the Program's</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">source code as you receive it, in any medium, provided that you</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">conspicuously and appropriately publish on each copy an appropriate</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">copyright notice and disclaimer of warranty; keep intact all the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">notices that refer to this License and to the absence of any warranty;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">and give any other recipients of the Program a copy of this License</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">along with the Program.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">You may charge a fee for the physical act of transferring a copy, and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">you may at your option offer warranty protection in exchange for a fee.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 2. You may modify your copy or copies of the Program or any portion</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">of it, thus forming a work based on the Program, and copy and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">distribute such modifications or work under the terms of Section 1</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">above, provided that you also meet all of these conditions:</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> a) You must cause the modified files to carry prominent notices</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> stating that you changed the files and the date of any change.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> b) You must cause any work that you distribute or publish, that in</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> whole or in part contains or is derived from the Program or any</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> part thereof, to be licensed as a whole at no charge to all third</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> parties under the terms of this License.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> c) If the modified program normally reads commands interactively</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> when run, you must cause it, when started running for such</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> interactive use in the most ordinary way, to print or display an</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> announcement including an appropriate copyright notice and a</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> notice that there is no warranty (or else, saying that you provide</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> a warranty) and that users may redistribute the program under</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> these conditions, and telling the user how to view a copy of this</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> License.&nbsp; (Exception: if the Program itself is interactive but</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> does not normally print such an announcement, your work based on</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> the Program is not required to print an announcement.)</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">These requirements apply to the modified work as a whole.&nbsp; If</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">identifiable sections of that work are not derived from the Program,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">and can be reasonably considered independent and separate works in</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">themselves, then this License, and its terms, do not apply to those</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">sections when you distribute them as separate works.&nbsp; But when you</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">distribute the same sections as part of a whole which is a work based</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">on the Program, the distribution of the whole must be on the terms of</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">this License, whose permissions for other licensees extend to the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">entire whole, and thus to each and every part regardless of who wrote it.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Thus, it is not the intent of this section to claim rights or contest</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">your rights to work written entirely by you; rather, the intent is to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">exercise the right to control the distribution of derivative or</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">collective works based on the Program.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">In addition, mere aggregation of another work not based on the Program</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">with the Program (or with a work based on the Program) on a volume of</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">a storage or distribution medium does not bring the other work under</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">the scope of this License.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 3. You may copy and distribute the Program (or a work based on it,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">under Section 2) in object code or executable form under the terms of</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Sections 1 and 2 above provided that you also do one of the following:</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; a) Accompany it with the complete corresponding machine-readable</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; source code, which must be distributed under the terms of Sections</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; 1 and 2 above on a medium customarily used for software interchange; or,</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; b) Accompany it with a written offer, valid for at least three</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; years, to give any third party, for a charge no more than your</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; cost of physically performing source distribution, a complete</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; machine-readable copy of the corresponding source code, to be</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; distributed under the terms of Sections 1 and 2 above on a medium</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; customarily used for software interchange; or,</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; c) Accompany it with the information you received as to the offer</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; to distribute corresponding source code.&nbsp; (This alternative is</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; allowed only for noncommercial distribution and only if you</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; received the program in object code or executable form with such</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; an offer, in accord with Subsection b above.)</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">The source code for a work means the preferred form of the work for</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">making modifications to it.&nbsp; For an executable work, complete source</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">code means all the source code for all modules it contains, plus any</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">associated interface definition files, plus the scripts used to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">control compilation and installation of the executable.&nbsp; However, as a</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">special exception, the source code distributed need not include</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">anything that is normally distributed (in either source or binary</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">form) with the major components (compiler, kernel, and so on) of the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">operating system on which the executable runs, unless that component</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">itself accompanies the executable.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">If distribution of executable or object code is made by offering</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">access to copy from a designated place, then offering equivalent</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">access to copy the source code from the same place counts as</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">distribution of the source code, even though third parties are not</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">compelled to copy the source along with the object code.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 4. You may not copy, modify, sublicense, or distribute the Program</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">except as expressly provided under this License.&nbsp; Any attempt</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">otherwise to copy, modify, sublicense or distribute the Program is</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">void, and will automatically terminate your rights under this License.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">However, parties who have received copies, or rights, from you under</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">this License will not have their licenses terminated so long as such</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">parties remain in full compliance.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 5. You are not required to accept this License, since you have not</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">signed it.&nbsp; However, nothing else grants you permission to modify or</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">distribute the Program or its derivative works.&nbsp; These actions are</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">prohibited by law if you do not accept this License.&nbsp; Therefore, by</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">modifying or distributing the Program (or any work based on the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Program), you indicate your acceptance of this License to do so, and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">all its terms and conditions for copying, distributing or modifying</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">the Program or works based on it.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 6. Each time you redistribute the Program (or any work based on the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Program), the recipient automatically receives a license from the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">original licensor to copy, distribute or modify the Program subject to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">these terms and conditions.&nbsp; You may not impose any further</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">restrictions on the recipients' exercise of the rights granted herein.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">You are not responsible for enforcing compliance by third parties to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">this License.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 7. If, as a consequence of a court judgment or allegation of patent</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">infringement or for any other reason (not limited to patent issues),</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">conditions are imposed on you (whether by court order, agreement or</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">otherwise) that contradict the conditions of this License, they do not</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">excuse you from the conditions of this License.&nbsp; If you cannot</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">distribute so as to satisfy simultaneously your obligations under this</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">License and any other pertinent obligations, then as a consequence you</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">may not distribute the Program at all.&nbsp; For example, if a patent</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">license would not permit royalty-free redistribution of the Program by</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">all those who receive copies directly or indirectly through you, then</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">the only way you could satisfy both it and this License would be to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">refrain entirely from distribution of the Program.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">If any portion of this section is held invalid or unenforceable under</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">any particular circumstance, the balance of the section is intended to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">apply and the section as a whole is intended to apply in other</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">circumstances.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">It is not the purpose of this section to induce you to infringe any</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">patents or other property right claims or to contest validity of any</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">such claims; this section has the sole purpose of protecting the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">integrity of the free software distribution system, which is</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">implemented by public license practices.&nbsp; Many people have made</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">generous contributions to the wide range of software distributed</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">through that system in reliance on consistent application of that</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">system; it is up to the author/donor to decide if he or she is willing</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">to distribute software through any other system and a licensee cannot</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">impose that choice.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">This section is intended to make thoroughly clear what is believed to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">be a consequence of the rest of this License.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 8. If the distribution and/or use of the Program is restricted in</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">certain countries either by patents or by copyrighted interfaces, the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">original copyright holder who places the Program under this License</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">may add an explicit geographical distribution limitation excluding</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">those countries, so that distribution is permitted only in or among</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">countries not thus excluded.&nbsp; In such case, this License incorporates</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">the limitation as if written in the body of this License.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 9. The Free Software Foundation may publish revised and/or new versions</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">of the General Public License from time to time.&nbsp; Such new versions will</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">be similar in spirit to the present version, but may differ in detail to</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">address new problems or concerns.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Each version is given a distinguishing version number.&nbsp; If the Program</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">specifies a version number of this License which applies to it and "any</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">later version", you have the option of following the terms and conditions</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">either of that version or of any later version published by the Free</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Software Foundation.&nbsp; If the Program does not specify a version number of</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">this License, you may choose any version ever published by the Free Software</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Foundation.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 10. If you wish to incorporate parts of the Program into other free</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">programs whose distribution conditions are different, write to the author</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">to ask for permission.&nbsp; For software which is copyrighted by the Free</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Software Foundation, write to the Free Software Foundation; we sometimes</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">make exceptions for this.&nbsp; Our decision will be guided by the two goals</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">of preserving the free status of all derivatives of our free software and</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">of promoting the sharing and reuse of software generally.</FONT><BR>
+<BR>
+<CENTER><FONT FACE="Verdana" SIZE="2"><B>NO WARRANTY</B></FONT></CENTER><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.&nbsp; EXCEPT WHEN</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.&nbsp; THE ENTIRE RISK AS</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.&nbsp; SHOULD THE</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">REPAIR OR CORRECTION.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> 12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">POSSIBILITY OF SUCH DAMAGES.</FONT><BR>
+<BR>
+<CENTER><FONT FACE="Verdana" SIZE="2"><B>END OF TERMS AND CONDITIONS</B></FONT></CENTER><BR>
+<CENTER></CENTER><BR>
+<CENTER><FONT FACE="Verdana" SIZE="2"><B>How to Apply These Terms to Your New Programs</B></FONT></CENTER><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> If you develop a new program, and you want it to be of the greatest</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">possible use to the public, the best way to achieve this is to make it</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">free software which everyone can redistribute and change under these terms.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> To do so, attach the following notices to the program.&nbsp; It is safest</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">to attach them to the start of each source file to most effectively</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">convey the exclusion of warranty; and each file should have at least</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">the "copyright" line and a pointer to where the full notice is found.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; &lt;one line to give the program's name and a brief idea of what it does.&gt;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; Copyright (C) &lt;year&gt;&nbsp; &lt;name of author&gt;</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; This program is free software; you can redistribute it and/or modify</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; it under the terms of the GNU General Public License as published by</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; the Free Software Foundation; either version 2 of the License, or</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; (at your option) any later version.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; This program is distributed in the hope that it will be useful,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; but WITHOUT ANY WARRANTY; without even the implied warranty of</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.&nbsp; See the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; GNU General Public License for more details.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; You should have received a copy of the GNU General Public License</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; along with this program; if not, write to the Free Software</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA&nbsp; 02111-1307&nbsp; USA</FONT><BR>
+<BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Also add information on how to contact you by electronic and paper mail.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">If the program is interactive, make it output a short notice like this</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">when it starts in an interactive mode:</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; Gnomovision version 69, Copyright (C) year name of author</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; This is free software, and you are welcome to redistribute it</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp;&nbsp; under certain conditions; type `show c' for details.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">The hypothetical commands `show w' and `show c' should show the appropriate</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">parts of the General Public License.&nbsp; Of course, the commands you use may</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">be called something other than `show w' and `show c'; they could even be</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">mouse-clicks or menu items--whatever suits your program.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">You should also get your employer (if you work as a programmer) or your</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">school, if any, to sign a "copyright disclaimer" for the program, if</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">necessary.&nbsp; Here is a sample; alter the names:</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Yoyodyne, Inc., hereby disclaims all copyright interest in the program</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; `Gnomovision' (which makes passes at compilers) written by James Hacker.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; &lt;signature of Ty Coon&gt;, 1 April 1989</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Ty Coon, President of Vice</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">This General Public License does not permit incorporating your program into</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">proprietary programs.&nbsp; If your program is a subroutine library, you may</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">consider it more useful to permit linking proprietary applications with the</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">library.&nbsp; If this is what you want to do, use the GNU Library General</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">Public License instead of this License.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs140">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Copyright Information</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Copyright Information</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Chaos AI Technology, the Azulians, and Cody Ferako are copyright © 2004 Cerone Kirsle.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">CKS Juggernaut is copyright © 2004 Chaos AI Technology.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">This bot uses code, excluding Perl libraries, 100% created only by Chaos AI Technology alone. No codes were borrowed or stolen from any other sources. Credits go to the creators of the modules and various contributors as listed in the Credits section.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs150">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+CKS Juggernaut Credits</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>CKS Juggernaut Credits</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Programmer</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> ¤ Cerone Kirsle</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Contributors</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> William Hutchinson, Chaos AI Technology</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> Matt &lt;matt@cellus-usa.com&gt;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> Bot-Depot</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Testers</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> Michael McDonald, Chaos AI Technology</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> Daniel da Silva, Chaos AI Technology</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Module Creators</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> Keenie, Eric, &amp; Bot-Depot -- MSN Module</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> Matthew Sachs -- Net::OSCAR
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs160">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Change Log</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#FF0000" SIZE="4"><B><U>Change Log</U></B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>3.6 to 4.0</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Included strict and warnings, Juggernaut's code is now more efficient (or better form, anyway).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated the sub &amp;get_date, now it can return any string by filtering in information. For more details:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; &amp;get_date (&lt;location&gt;, &lt;string&gt;[, &lt;time zone&gt;]);</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Examples:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; # Get local time.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; $time_local = &amp;get_date ('local','&lt;hour_12&gt;:&lt;min&gt;:&lt;secs&gt; &lt;ext&gt;');</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; # Get the year according to GM time.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp;&nbsp; $year = &amp;get_date ('gm', '&lt;year_full&gt;');</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Command sorting feature: the "commands" folder can have additional subfolders, and each subfolder is opened and loaded as a commands folder. The subfolders can only go one level deep. <B>Note: </B>Putting commands into a folder does NOT determine their category in the menu!</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Flood checker reprogrammed. If a user sends more than 7 messages in 10 seconds, they are blocked for 5 minutes X the number of messages sent past the 7th. If they double that limit, sending 14 messages in 10 seconds, they are banned for 24 hours. Sending 21 messages (3X the limit), banned for 72 hours.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><B><FONT FACE="Verdana" SIZE="2">New Copyright Policy: </B>It hasn't been mentioned before, but starting in this release of Juggernaut, you MUST keep the !juggernaut command intact as part of the copyright deal.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>3.5 to 3.6</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added a message queue for AIM connections (only for normal IM's though).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Upgraded MSN library to MSN.pm 2.0 - so, major code changes for the MSN connections.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated Azulian Tag game, it now operates on AIM, MSN, and IRC - The first command that uses all three connections.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">A few added MSN handlers.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">There is now a "Send IM" feature on the GUI. However, the catch is that the main GUI is frozen while the dialog box is on screen (i.e. your bots will freeze and possibly lose their connections).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Dropped the Flash chat for the HTTP Bot (the Flash chat ran horribly slow).</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>3.2 to 3.5</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated AIM handlers. $chaos-&gt;{$sn}-&gt;{current_user}-&gt;{in_chat} will be 1 if the user is in the chat talking to the bot, or 0 if normal IM. Also, $chaos-&gt;{$sn}-&gt;{current_user}-&gt;{chat} will be the $chat object for use elsewhere in the bot.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Made some updates to the GUI. Now it should be able to run more smoothly without being as likely to freeze or lag too horribly. Also, I've added a "Bot Data" wizard so you can add, remove, and edit your bots' files from the GUI itself!</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated the !perl command so you are able to use $msn and $chat instead of typing out the full hash paths to those variables.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Finally got around to creating a !shop command. There is also !donate and !info that have to do with points too.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Made an update to the ChaosML Brain. Now the <B>&lt;random&gt; </B>tag should work correctly (the usage is slightly difference, </FONT><A HREF="#hs190"><FONT FACE="Verdana" SIZE="2">click here for details...</A></FONT><FONT FACE="Verdana" SIZE="2">)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added a "settings" folder. Similar to config, except files in there are require'd and executed right away (good for setting hashref variables from the very beginning).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Timestamp customization. You can make the bot log times in the format of "Wednesday, August 18 2004 @ 9:21:53 PM" instead of the standard localtime. Customize the format in ./settings/timeformat.pl</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>3.0 to 3.2</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Upgraded AIM bots to Net::OSCAR 1.11 - They now have buddy icon &amp; typing status support.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Created ChaosML (aka CML 2.0) brain.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated the &amp;panic function: Now the warnings are recorded at ./data/panic.txt</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated the repeat-ban system: now the limit is 10 repeats, and after the 7th, 8th, and 9th repeat they get a warning, and on the 10th they're banned for 24 hours.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated user profiles to have "Time=" and "Personality=" instead of That1 through That3. Time zones can be determined in the !tz command, and the sub &amp;time_offset can return the offset of a time zone (or 0 for undefined)</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">MSN socket changes are now logged just like messages.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>2.9.00 to 3.0</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated MSN handlers. </FONT><FONT FACE="Courier New" COLOR="#800080" SIZE="2">$chaos-&gt;{$handle}-&gt;{current_user}-&gt;{nick} </FONT><FONT FACE="Verdana" SIZE="2">now contains the nickname (display name) of the current user for use elsewhere in the bot.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated the !away command: you can give the MSN bot plain English statuses, like "be right back", "out to lunch", etc. and have their status change accordingly.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Changed the menu system. Each command has a footer that specifies which category it will be put into in the menu, and you can type </FONT><FONT FACE="Courier New" COLOR="#800080" SIZE="2">!menu lost </FONT><FONT FACE="Verdana" SIZE="2">to see all commands that don't have those footers.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Now all data (users' data &amp; temporary blocks) are loaded on startup.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Userdata is more efficient, their files are only opened if they haven't yet been loaded.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Fixed a bug with brains that don't require preloading.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Fixed bugs in the MSN actions for !away and !return, so now the status changes will work with the new MSN module.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>2.5.00 to 2.9.00</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Fixed brain support. Now it's easy to add or create your own bot brains.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated MSN kill sockets command, the bot won't abandon the chatroom.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added the Eliza brain to the bot.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>2.3.00 to 2.5.00</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">­ </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added support for the IRC listener.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added a Moderator authority level.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added support for multiple responses. Separate each response with &lt;:&gt;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added a tag for AIM bots to send their messages as auto-responses.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added a few commands.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>2.0.00 to 2.3.00</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated MSN.pm to 1.3.11 Beta. Bot should work in multiperson MSN conversations, and the Graphical User Interface is less likely to freeze with the new MSN module. If it causes problems, the previous MSN.pm can be found in the "backup" folder.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Created graphical user interface.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added an auto-reconnect function to AIM bots.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added AIM chatroom triggers: Small messages that the bot will respond to in chats, without having to be talked to directly.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>1.5.01 to 2.0.00</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added built in AIM chatroom settings. You can now specify certain AIM chats for the bot to automatically join or only leave at command of an Admin.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added chat topic support for AIM chatrooms (type "botscreenname topic [new topic]" to get or set the topic).&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Fixed bugs in AIM buddy in/chat buddy in - it keeps online buddies in a hash and will only print their status once, instead of every time the buddylist updates.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added more flexibility for the bot e-mail command, information such as FROM: and SUBJECT: data is now in the startup.cfg file.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added an option for multiperson MSN conversations to be allowed or not - there was a bug in MSN.pm that would freeze the bot in such a conversation, so it's not recommended to allow it.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">The shop functionality is still currently suspended. If anyone wants to help me, feel free to contact me or something.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>1.1.00 to 1.5.01</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added flexibility in bot brains: each bot screenname is able to have its own brain type (Nexus or Juggernaut) and have a different reply set than another bot.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Updated webserver to have same brain flexibility as normal Juggernaut bot.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Removed the auto flood checker.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added points system, your users can earn points by playing games.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added display picture and custom emoticon support for MSN bots.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" COLOR="#0000FF" SIZE="2"><B>1.0.00 to 1.1.00</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added bot profiles. Each bot can have their own set of "client data" such as name and age, just like its users can!&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Update to profile.cml, the bot now stores user gender as "male/female" instead of how the user describes theirself.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Added support for MSN welcome messages.&nbsp;</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> </FONT><FONT FACE="Verdana" COLOR="#FF0000" SIZE="2">• </FONT><FONT FACE="Verdana" SIZE="2">Bot leaves the conversation automatically if it's not a multiperson chat that the bot supports (i.e. the bot's chatroom)
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs170">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Known Bugs</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Known Bugs</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>With the Graphical User Interface (GUI)</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; ¤ Bot may run slow, or randomly halt for periods of time.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; ¤ AIM bots with chat-auto-join may freeze or pause the GUI.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; ¤ Having an IRC connection will freeze the GUI.
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs180">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+Command Footers</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>Command Footers</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">The new menu/command system includes command footers. The footers are used to determine how the command is listed and shown in the menu, and includes descriptions, how to use the command, and what messenger it's for.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">The keys that ALL commands share are the following:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Category </B>- What category the command goes into.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Description </B>- The description of the command.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Usage </B>- How to use the command.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Listener </B>- The messenger it's for (i.e. "AIM/MSN", "AIM", "All", etc.)</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">There are also a few optional keys that only a few commands use:</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Hidden </B>- If 1, the command won't be listed in the menu.</FONT><BR>
+<FONT FACE="Verdana" SIZE="2"> <B>Restrict </B>- Restricts the command to a certain user group (i.e. Mod, Admin, Master).</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Commands with restrictions will not be shown to users who don't qualify for</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; that level. Also, any menu category that contains a restricted command will</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; not be shown (i.e. if you put an Admin command in the "General" category,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; only Admins &amp; Masters can even VIEW the General category at all, even though</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; the rest of the commands are public!).</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">Here's an example of a command footer with all the keys (blue = optional ones, red = required ones):</FONT><BR>
+<BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">{</FONT><BR>
+<FONT FACE="Courier New" COLOR="#0000FF" SIZE="2"> Hidden =&gt; 1,</FONT><BR>
+<FONT FACE="Courier New" COLOR="#0000FF" SIZE="2"> Restrict =&gt; 'Botmaster',</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2"> Category =&gt; 'Botmaster Commands',</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2"> Description =&gt; 'Big secret command',</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2"> Usage =&gt; '!secret',</FONT><BR>
+<FONT FACE="Courier New" COLOR="#FF0000" SIZE="2"> Listener =&gt; 'All',</FONT><BR>
+<FONT FACE="Courier New" COLOR="#800080" SIZE="2">};
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+<A NAME="hs190">
+<FONT FACE="Arial" COLOR="#0000FF" SIZE="5"><B>
+ChaosML Tutorial</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">¤ </FONT><A HREF="#hs10"><FONT FACE="Verdana" SIZE="2">Back to Index</A></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>What is ChaosML?</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">ChaosML is also known as CML 2.0. While it is an upgrade from the original Juggernaut CML, it is formatted so differently that the two are incompatible with eachother.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">A ChaosML file is formatted like this:</FONT><BR>
+<FONT FACE="Courier New" SIZE="2"> &lt;cml version="2.0"&gt;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" SIZE="2"> &lt;category&gt;</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">&nbsp; &lt;pattern&gt;HELLO&lt;/pattern&gt;</FONT><BR>
+<FONT FACE="Courier New" SIZE="2">&nbsp; &lt;template&gt;Hello there &lt;get&gt;name&lt;/get&gt;! :-)&lt;/template&gt;</FONT><BR>
+<FONT FACE="Courier New" SIZE="2"> &lt;/category&gt;</FONT><BR>
+<BR>
+<FONT FACE="Courier New" SIZE="2"> &lt;/cml&gt;</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2">ChaosML has many of the same tags as CML 1.0, and a couple new tags. Here are all the supported tags:</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"><B>ChaosML Supported Tags</B></FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;cml&gt;...&lt;/cml&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; This is the wrapper for the CML file, and takes the attribute "version" which</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; should equal 2.0 (see example above)</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;category&gt;...&lt;/category&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; The wrapper for one reply item, just like before.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;pattern&gt;...&lt;/pattern&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; This is the new "Input" area. Between &lt;pattern&gt; and &lt;/pattern&gt; goes what</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; the user would have to say to trigger that response.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;template&gt;...&lt;/template&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; This is the response for that input.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;that&gt;...&lt;/that&gt; </FONT><I><FONT FACE="Verdana" COLOR="#0000FF" SIZE="2">(new!)</I></B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; (Optional) This field would be how the bot last replied, in all caps and with</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; no puncuation or special characters. A good example is the Knock Knock</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; replies found in ./replies/cml/standard/humor.cml</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;topic&gt;...&lt;/topic&gt; </FONT><I><FONT FACE="Verdana" COLOR="#0000FF" SIZE="2">(new!)</I></B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; (Optional) Replies under a certain topic would have higher matching priority</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; than the replies outside of the topic (see &lt;settopic&gt; for information on</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; setting the topics). This function currently does not work.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;date&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Inserts the current localtime().</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;time&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Inserts the current value of time().</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;client&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Inserts the client's username.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;listener&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Inserts the client's listener ID.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;sn&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Inserts the bot's username.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;nextreply&gt; </FONT><I><FONT FACE="Verdana" COLOR="#0000FF" SIZE="2">(new!)</I></B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Separates replies, each side of a &lt;nextreply&gt; will be sent in a different</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; reply.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;think&gt;...&lt;/think&gt; </FONT><I><FONT FACE="Verdana" COLOR="#0000FF" SIZE="2">(new!)</I></B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Anything between &lt;think&gt; and &lt;/think&gt; will be evaluated in the background</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; and not shown in the message. This is useful, for example, if you want to set</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; a user's variable without showing the value that was just set.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;set&gt;style=variable=value&lt;/set&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; This will set a variable for the user. <B>style </B>would be either formal (Initial Caps,</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Like For A Name Or Location), or normal for lowercase. Variable is the variable's</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; name, and value is what the new value should be.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;get&gt;variable&lt;/get&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Gets a user's variable and inserts it into the reply.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;bot&gt;variable&lt;/bot&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Inserts a bot's profile variable.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;settopic=new topic&gt; </FONT><I><FONT FACE="Verdana" COLOR="#0000FF" SIZE="2">(new!)</I></B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Updates the topic (see &lt;topic&gt;...&lt;/topic&gt; above). Set the topic to "random"</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; to delete the topic.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;formal&gt;...&lt;/formal&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Formalizes the text between &lt;formal&gt; and &lt;/formal&gt;.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;sentence&gt;...&lt;/sentence&gt; </FONT><I><FONT FACE="Verdana" COLOR="#0000FF" SIZE="2">(new!)</I></B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Makes the contained text Sentence Case.</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;random&gt;...&lt;/random&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Makes a sub-list of random items. For example, a reply could say "A random</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; number from 1 to 9 is: &lt;random&gt;1 2 3 4 5 6 7 8 9&lt;/random&gt;" and choose</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; a random number. You can use single-items separated by spaces, or larger</FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; items separated by comma's, i.e. &lt;random&gt;You will be rich,You will be famous,etc...&lt;/random&gt;</FONT><BR>
+<BR>
+<FONT FACE="Verdana" SIZE="2"> <B>&lt;system&gt;...&lt;/system&gt;</B></FONT><BR>
+<FONT FACE="Verdana" SIZE="2">&nbsp; Executes code between these tags as Perl code (can be dangerous).
+</FONT>
+<P><FONT SIZE=-1>This manual was created with the free trial version of <A HREF="http://www.helpscribble.com/">HelpScribble</A>.<BR>This notice will not appear in manuals created with the full version.</FONT></P>
+<BR><BR><BR>
+</BODY></HTML>

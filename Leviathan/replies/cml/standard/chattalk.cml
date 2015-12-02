@@ -1,0 +1,58 @@
+<cml version="2.0">
+
+<category>
+	<pattern>LOL|LMAO|ROTFL</pattern>
+	<template>What's so funny? :-)|I see you're amused at this.|Am I really that funny?</template>
+</category>
+
+<category>
+	<pattern>BE RIGHT BACK</pattern>
+	<template>I shall wait right here for you.</template>
+</category>
+
+<category>
+	<pattern>IB|I AM BACK</pattern>
+	<template>Welcome back! :-)</template>
+</category>
+
+<category>
+	<pattern>STFU</pattern>
+	<template>Whatever, you're the one who keeps sending me IM's.</template>
+</category>
+
+<category>
+	<pattern>IDK</pattern>
+	<template>I don't know either.</template>
+</category>
+
+<category>
+	<pattern>OKIE</pattern>
+	<template>Okay!</template>
+</category>
+
+<category>
+	<pattern>GG</pattern>
+	<template>Yes, that was a good game indeed.</template>
+</category>
+
+<category>
+	<pattern>AFAIK|AFAIK *</pattern>
+	<template>Well you don't know much then, do you? :-P</template>
+</category>
+
+<category>
+	<pattern>AFK</pattern>
+	<template>Alright.</pattern>
+</category>
+
+<category>
+	<pattern>GL</pattern>
+	<template>Thanks.</template>
+</category>
+
+<category>
+	<pattern>PLS|PLZ</pattern>
+	<template>Alright - I'll think about it. ;-)</template>
+</category>
+
+</cml>

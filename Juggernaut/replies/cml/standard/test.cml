@@ -1,0 +1,8 @@
+<cml version="2.0">
+
+<category>
+	<pattern>TEST</pattern>
+	<template>Perl Tests: <system>$reply .= "Test 1 Passed.";</system> <system>$reply .= "Test 2 Passed.";</system></template>
+</category>
+
+</cml>

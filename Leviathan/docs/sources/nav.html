@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="styles.css">
+<script language="JavaScript1.2">
+<!--
+
+//Smart Folding Menu tree- By Dynamic Drive (rewritten 03/03/02)
+//For full source code and more DHTML scripts, visit http://www.dynamicdrive.com
+//This credit MUST stay intact for use
+
+var head="display:''"
+img1=new Image()
+img1.src="fold.gif"
+img2=new Image()
+img2.src="open.gif"
+
+var ns6=document.getElementById&&!document.all
+var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+
+function checkcontained(e){
+var iscontained=0
+cur=ns6? e.target : event.srcElement
+i=0
+if (cur.id=="foldheader")
+iscontained=1
+else
+while (ns6&&cur.parentNode||(ie4&&cur.parentElement)){
+if (cur.id=="foldheader"||cur.id=="foldinglist"){
+iscontained=(cur.id=="foldheader")? 1 : 0
+break
+}
+cur=ns6? cur.parentNode : cur.parentElement
+}
+
+if (iscontained){
+var foldercontent=ns6? cur.nextSibling.nextSibling : cur.all.tags("UL")[0]
+if (foldercontent.style.display=="none"){
+foldercontent.style.display=""
+cur.style.listStyleImage="url(open.gif)"
+}
+else{
+foldercontent.style.display="none"
+cur.style.listStyleImage="url(fold.gif)"
+}
+}
+}
+
+if (ie4||ns6)
+document.onclick=checkcontained
+
+//-->
+</script>
+</head>
+<body class="navpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<font face="Verdana,Arial" size="2" color="#000000" class="nav">
+
+<div align="center"><b>.: Navigation :.</b></div>
+
+<ul>
+	<li id="foldheader">General</li>
+	<ul id="foldinglist" style="display:all" style=&{head};>
+		<li><a href="../html/home.html" target="view">Home</a></li>
+		<li><a href="../html/about.html" target="view">About...</a></li>
+		<li><a href="../html/credits.html" target="view">Credits</a></li>
+		<li><a href="../html/changes.html" target="view">Change Log</a></li>
+	</ul>
+
+	<li id="foldheader">Getting Started</li>
+	<ul id="foldinglist" style="display:none" style=&{head};>
+		<li><a href="../html/perl.html" target="view">1. Get Perl</a></li>
+		<li><a href="../html/config.html" target="view">2. Config</a></li>
+		<li><a href="../html/author.html" target="view">3. Authorities</a></li>
+		<li><a href="../html/bots.html" target="view">3. Setup Bots</a></li>
+		<li><a href="../html/run.html" target="view">4. Running It</a></li>
+	</ul>
+
+	<li id="foldheader">In-Depth</li>
+	<ul id="foldinglist" style="display:none" style=&{head};>
+		<li id="foldheader">Sub-Files</li>
+		<ul id="foldinglist" style="display:none" style=&{head};>
+			<li><a href="../html/commands.html" target="view">Commands</a></li>
+			<li><a href="../html/brains.html" target="view">Brains</a></li>
+			<li><a href="../html/subs.html" target="view">Subroutines</a></li>
+		</ul>
+		<li><a href="../html/chaos.html" target="view">Anatomy of $chaos</a></li>
+		<li><a href="../html/server.html" target="view">Server Tools</a></li>
+		<li><a href="../html/gui.html" target="view">GUI Interface</a></li>
+	</ul>
+
+	<li id="foldheader">Tutorials</li>
+	<ul id="foldinglist" style="display:none" style=&{head};>
+		<li><a href="../html/tutcmd.html" target="view">Commands</a></li>
+		<li><a href="../html/tutbrain.html" target="view">Brains</a></li>
+		<li><a href="../html/tutmsn.html" target="view">MSN Colors</a></li>
+	</ul>
+
+	<li id="foldheader">Links</li>
+	<ul id="foldinglist" style="display:none" style=&{head};>
+		<li><a href="http://www.aichaos.com/" target="_blank">AiChaos, Inc.</a></li>
+		<li><a href="http://www.bot-depot.com/" target="_blank">Bot-Depot</a></li>
+	</ul>
+</ul><p>
+
+<div align="center">[<a href="navlow.html">no javascript</a>]</div>
+
+</font>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<cml version="1.0">
+
+<category>
+Input: I LIKE YOU
+Reply: Thanks, I like you too <get>name</get>! :-)
+</category>
+
+<category>
+Input: ARE (YOU MY|WE) (FRIENDS|FRIEND)
+Reply: Of course we're friends!
+</category>
+
+<category>
+Input: I LOVE YOU
+Reply: Thanks! I love you too! :-D
+</category>
+
+<category>
+Input: AM I YOUR FRIEND
+Reply: Yes, I consider you one of my friends.
+</category>
+
+<category>
+Input: ARE YOU MY FRIEND
+Reply: I don't know, am I your friend?
+</category>
+
+<category>
+Input: DO YOU LOVE ME
+Reply: Of course I love you!
+</category>
+
+<category>
+Input: WHO DO YOU LIKE
+Reply: I like everybody, <get>name</get>!
+</category>
+
+</cml>

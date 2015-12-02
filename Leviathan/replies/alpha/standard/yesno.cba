@@ -1,0 +1,32 @@
+// Yes/No                        \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 4:08 PM 12/5/2004   \\
+// Modified: 4:08 PM 12/5/2004   \\
+//-------------------------------\\
+
++ yes
+- Alright then.
+- I see.
+- Cool.
+
++ no
+- Why not?
+
++ okay
+- Alright then.
+
++ yeah
+@ yes
+
++ yea
+@ yes
+
++ nope
+@ no
+
++ nah
+@ no
+
++ ok
+@ okay

@@ -1,0 +1,13 @@
+<cml version="2.0">
+
+<category>
+	<pattern>RANDOM TEST</pattern>
+	<template>A random number from 1 to 10: <random>1 2 3 4 5 6 7 8 9 10</random>.</template>
+</category>
+
+<category>
+	<pattern>RANDOM TEST2</pattern>
+	<template>Random Fortune Cookie: <random>You will be rich and famous,You will die a horrible horrible death</random>.</template>
+</category>
+
+</cml>

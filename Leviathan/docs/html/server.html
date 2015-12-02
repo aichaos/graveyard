@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Server Tools</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	In addition to using the HTTP server to chat with your bot, there are other tools provided by the
+server. Below are listed their request URIs and a description of what they do.<p>
+
+<b class="header">:: Request URIs</b><br>
+<blockquote>
+	<b>/docs</b><br>
+	Accesses this documentation from your server. Simply "/docs" will redirect you to index.html, but
+	any subfiles will be shown respectively as well.<p>
+
+	<b>/logs</b><br>
+	If you enabled HTTP log viewing in your configuration, "/logs" will redirect you to "/logs/chat/convo.html"
+	but other subfiles can be accessed as well (i.e. "/logs/http_access.txt" or "/logs/chat/ChaosAIM/AIM-kirsle.html"
+	for example).<p>
+
+	<b>/stats.txt</b><br>
+	The server will return the bot's statistics in an easy plain text format (i.e. "BotCount = 5", etc). See below for
+	example output.<p>
+
+	<b>/blocked.cgi?user=<i>username</i></b><br>
+	Check the blocked status of a user. <i>username</i> would be their Leviathan name (i.e. "AIM-kirsle" as opposed to
+	just "kirsle"). The server will print "not blocked" if they're clean, or print "1 <i>reason</i>" where 1 is $blocked
+	as returned from &amp;isBlocked and <i>reason</i> is the reason (i.e. "Permanent Ban (BlackList): ...")<p>
+
+	<b>/warner.cgi?user=<i>username</i></b><br>
+	Same as blocked.cgi but will return the Warner status of the username. The server will write a 1 (true) or 0 (false)
+</blockquote><p>
+
+<b class="header">:: Example stats.txt Output</b><br>
+<blockquote>
+	<font face="Courier New">
+	Version = 1.4<br>
+	Online = true<br>
+	Time = 1:20:6:11<br>
+	SignedOn = 1117497855<br>
+	BotCount = 4<br>
+	BotNames = cody@aichaos.com,azulianbot,chaos@aichaos.com,codycks<br>
+	CommandCount = 103<br>
+	ClientCount = 1185<br>
+	LastClient = AIM-kirsle<br>
+	LastMsgOn = 1117656615<br>
+	WarnerCount = 2<br>
+	WarnerPercent = 0.168%<br>
+	BlacklistCount = 111<br>
+	BlacklistPercent = 9.367%<br>
+	BlockedCount = 1<br>
+	BlockedPercent = 0.084%
+	</font><p>
+
+	<b>Version</b> - The version of the bot.<br>
+	<b>Online</b> - Should always be "true" - if it wasn't, /stats.txt wouldn't be available would it? :p<br>
+	<b>Time</b> - Bot's online time (<i>days:hours:minutes:seconds</i>)<br>
+	<b>SignedOn</b> - The epoch time() of signon.<br>
+	<b>BotCount</b> - A count of the number of bots signed on.<br>
+	<b>BotNames</b> - ID's (usernames) of all bots, separated by commas.<br>
+	<b>CommandCount</b> - The number of (loaded) commands.<br>
+	<b>ClientCount</b> - Number of your bot's clients (users)<br>
+	<b>LastClient</b> - The username of the last client to send a message (or blank for none yet).<br>
+	<b>LastMsgOn</b> - The time() of the last message received (or blank for N/A)<br>
+	<b>WarnerCount</b> - Number of warners.<br>
+	<b>WarnerPercent</b> - Percentage of warners to total users.<br>
+	<b>BlacklistCount</b> - Number of permanently banned users.<br>
+	<b>BlacklistPercent</b> - Percentage of permanently banned users.<br>
+	<b>BlockedCount</b> - Number of temporarily blocked users.<br>
+	<b>BlockedPercent</b> - Percentage of temporarily blocked users.
+</blockquote>
+
+</font>
+</body>
+</html>

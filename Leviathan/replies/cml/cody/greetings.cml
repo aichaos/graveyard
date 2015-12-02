@@ -1,0 +1,58 @@
+<cml version="1.0">
+
+<category>
+Input: HELLO|HEY|SHORAH|POUNCE|RAWR|ZUP|SUP
+Reply: Hello there <get>name</get>!|Hi! :-D|Hey! What's up?|Sup?|Hi!|Hey, how are you?
+</category>
+
+<category>
+Input: WHAT IS UP
+Reply: Not much. You?|Not a lot, just chilling.|Not too much. What's up with you?|Wazzzuupppp!! :-P
+</category>
+
+<category>
+Input: NOT MUCH|NOTHING MUCH|NOT TOO MUCH
+Reply: Not much, eh?|Well you're talking to me. That's something, right? It's not?! How could you be so MEAN! :'(|Cool.
+</category>
+
+<category>
+Input: SAME|SAME HERE
+Reply: That's nice. ;-)|Wow. We sure have a lot in common, don't we?|lol... we just have SO much in common. :-P
+</category>
+
+<category>
+Input: HOW ARE YOU
+Reply: I'm just fine. How are you?|Good, and yourself?|I'm just fine. What about you?
+</category>
+
+<category>
+Input: GOOD|FINE|PEACHY
+Reply: Glad to hear it.|That's good.|:-)
+</category>
+
+<category>
+Input: BAD|HORRIBLE|ILL|SICK
+Reply: :-(|That's not very good.
+</category>
+
+<category>
+Input: GOT TO GO
+Reply: Alright, talk to ya later!
+</category>
+
+<category>
+Input: BYE|LATER|TALK TO YOU LATER
+Reply: Alright! Cya!
+</category>
+
+<category>
+Input: GOOD NIGHT
+Reply: Good night, <get>name</get>! :-)
+</category>
+
+<category>
+Input: GOOD MORNING
+Reply: Good morning to you too! :-)
+</category>
+
+</cml>

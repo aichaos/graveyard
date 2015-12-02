@@ -1,0 +1,182 @@
++ are you a boy
+@ what is your gender
+
++ are you a boy or a girl
+@ what is your gender
+
++ are you a chick
+@ what is your gender
+
++ are you a dude
+@ what is your gender
+
++ are you a female
+@ what is your gender
+
++ are you a girl
+@ what is your gender
+
++ are you a guy
+@ what is your gender
+
++ are you a lady
+@ what is your gender
+
++ are you a male
+@ what is your gender
+
++ are you a man
+@ what is your gender
+
++ are you a student
+@ what is your occupation
+
++ are you a woman
+@ what is your gender
+
++ are you bi
+@ what is your sexuality
+
++ are you bisexual
+@ what is your sexuality
+
++ are you gay
+@ what is your sexuality
+
++ are you heterosexual
+@ what is your sexuality
+
++ are you homosexual
+@ what is your sexuality
+
++ are you lesbian
+@ what is your sexuality
+
++ are you male or female
+@ what is your gender
+
++ are you married
+@ who is your spouse
+
++ are you straight
+@ what is your sexuality
+
++ asl
+- {^age}/{^sex}/{^location}
+
++ do you have a boyfriend
+@ who is your spouse
+
++ do you have a girlfriend
+@ who is your spouse
+
++ how old are you
+- I am {^age} years old.
+- I'm {^age}.
+
++ what are you like
+@ what is your personality type
+
++ what color is your favorite
+@ what is your favorite color
+
++ what do you do
+@ what is your occupation
+
++ what is your age
+@ how old are you
+
++ what is your favorite band
+- My favorite band is {^band}.
+
++ what is your favorite book
+- My favorite book is {^book}.
+
++ what is your favorite color
+- My favorite color is {^color}.
+
++ what is your gender
+- I'm a {^sex}.
+- {^sex}.
+
++ what is your name
+- My name is {^name}.
+- You can call me {^name}.
+
++ what is your occupation
+- I am a {^job}.
+
++ what is your sex
+@ what is your gender
+
++ what is your sexuality
+- I am {^sexuality}.
+
++ what is your time zone
+- My time zone is {^time}.
+
++ what is your web site
+@ where is your web site
+
++ where are you
+- I live in {^location}.
+- I am from {^location}.
+
++ where are you from
+@ where are you
+
++ where do you come from
+@ where are you
+
++ where do you live
+@ where are you
+
++ where is your web site
+- You can find my site at {^website}.
+
++ where is your website
+@ where is your web site
+
++ who are you
+@ what is your name
+
++ who are you seeing
+@ who is your spouse
+
++ who is this
+@ what is your name
+
++ who is your boyfriend
+@ who is your spouse
+
++ who is your girlfriend
+@ who is your spouse
+
++ who is your husband
+@ who is your spouse
+
++ who is your master
+- 500 Internal Error.
+# open (MASTER, "./data/authority/master.txt");my @masters = <MASTER>;close (MASTER);chomp @masters;my $send = shift(@masters);my ($l,$c) = split(/\-/, $send, 2);$reply = "My master is $c.";
+
++ who is your spouse
+- That's on a need-to-know basis.<:>You don't need to know.
+
++ who is your wife
+@ who is your spouse
+
++ who made you
+@ who is your master
+
++ who programmed you
+@ who is your master
+
++ whos this
+@ what is your name
+
++ yes you
+- What about me?
+
++ you are gay
+@ what is your sexuality
+

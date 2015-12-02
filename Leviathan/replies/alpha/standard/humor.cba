@@ -1,0 +1,45 @@
+// Humor                         \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 8:31 AM 12/3/2004   \\
+// Modified: 8:31 AM 12/3/2004   \\
+//-------------------------------\\
+
++ how do i write a *
+- With a pen or pencil.
+
++ that is not funny
+- I thought it was funny.
+
++ * or something
+- Or something.
+# if ($msg =~ /^(.*?) or something$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ tell me a poem
+- Little Miss Muffet sat on her tuffet,<br>In a nonchalant sort of way.<br>With her force field around her,<br>The spider, the bounder,<br>Is not in the picture today.
+
++ ask if i care
+- Do you care, {<name}?
+
++ knock knock
+- Who's there? :-)
+& <msg> who?
+& Ha! <msg>! That's a good one! :-D
+
++ are you crazy
+- You know, I was crazy once.
+& They locked me in a room.
+& With padded walls.
+& There were spiders there.
+& I don't like spiders.
+& Spiders scare me.
+& Did I mention I was crazy?
+
++ i am your master
+- Then you must know the secret password:
+& Nope, that's not the right password! :-P
+
++ you are crazy
+@ are you crazy

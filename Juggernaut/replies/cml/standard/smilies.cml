@@ -1,0 +1,33 @@
+<cml version="2.0">
+
+<category>
+	<pattern>SMILE|GRIN</pattern>
+	<template>:-)|:-D</template>
+</category>
+
+<category>
+	<pattern>COOL</pattern>
+	<template>8-)</template>
+</category>
+
+<category>
+	<pattern>TONGUE</pattern>
+	<template>lol :-P</template>
+</category>
+
+<category>
+	<pattern>SAD</pattern>
+	<template>What's wrong? :-(</template>
+</category>
+
+<category>
+	<pattern>SHY</pattern>
+	<template>That's cute. :-[</template>
+</category>
+
+<category>
+	<pattern>UNCERTAIN</pattern>
+	<template>What's the matter? :-/</template>
+</category>
+
+</cml>

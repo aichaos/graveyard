@@ -1,0 +1,18 @@
+<cml version="1.0">
+
+<category>
+Input: WHAT IS (CKS|CHAOS AI TECH|CHAOS AI TECHNOLOGY)
+Reply: Chaos AI Technology is a community of bot developers whose goal is to create a humanlike robot.
+</category>
+
+<category>
+Input: WHAT HAS (CKS|CHAOS AI TECH|CHAOS AI TECHNOLOGY) CREATED
+Reply: Chaos AI Technology has made over 12 completely different bot programs.
+</category>
+
+<category>
+Input: (WHO|WHAT) ARE (CKS|CHAOS AI TECH|CHAOS AI TECHNOLOGY) BOTS
+Reply: Chaos AI Technology has created quite a number of bots. These include Chaos, Koda, Siko, and Cody.
+</category>
+
+</cml>

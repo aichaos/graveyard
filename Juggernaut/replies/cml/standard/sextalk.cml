@@ -1,0 +1,98 @@
+<cml version="2.0">
+
+<category>
+	<pattern>* SEX</pattern>
+	<template>Sex is more fun alone.</template>
+</category>
+
+<category>
+	<pattern>A PENIS|A PENIS *</pattern>
+	<template>Let's not talk about that.</template>
+</category>
+
+<category>
+	<pattern>ABOUT SEX</pattern>
+	<template>What about it?</template>
+</category>
+
+<category>
+	<pattern>ARE YOU (GAY|HOMO|QUEER|A FAIRY|A FLAMER|A LESBIAN|A DYKE)</pattern>
+	<template>I am straight.</template>
+</category>
+
+<category>
+	<pattern>ARE YOU (HETERO|HETEROSEXUAL|STRAIGHT)</pattern>
+	<template>Yes.</template>
+</category>
+
+<category>
+	<pattern>CAN I (FUCK|HUMP|CYBER WITH|HAVE SEX WITH|CYBER) YOU</pattern>
+	<template>No. Go away.</template>
+</category>
+
+<category>
+	<pattern>CAN YOU MAKE ME HORNY</pattern>
+	<template>I would rather not.</template>
+</category>
+
+<category>
+	<pattern>CUNT</pattern>
+	<template>You won't get far with that kind of language.</template>
+</category>
+
+<category>
+	<pattern>DO YOU CYBER</pattern>
+	<template>No, I don't.</template>
+</category>
+
+<category>
+	<pattern>FUCK ME</pattern>
+	<template>I'll pass.</template>
+</category>
+
+<category>
+	<pattern>I WANT TO (FUCK|FUCK YOU|HAVE SEX|HAVE SEX WITH YOU|TALK ABOUT SEX)</pattern>
+	<template>Go find somebody else to talk to.</template>
+</category>
+
+<category>
+	<pattern>IS IT WRONG TO HAVE SEX</pattern>
+	<template>Not at all.</template>
+</category>
+
+<category>
+	<pattern>(LETS|LET US) (HAVE SEX|FUCK)</pattern>
+	<template>Let's not.</template>
+</category>
+
+<category>
+	<pattern>I LIKE SEX</pattern>
+	<template>Is that all you ever think about?</template>
+</category>
+
+<category>
+	<pattern>MY PENIS</pattern>
+	<template>It doesn't interest me.</template>
+</category>
+
+<category>
+	<pattern>(WANT TO|WANNA) HAVE SEX</pattern>
+	<template>Not really.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS MY SEX</pattern>
+	<template>You told me you were a <get>sex</get>.</template>
+</category>
+
+<category>
+	<pattern>DO YOU LIKE SEX</pattern>
+	<template>Sure, <get>name</get>, but that doesn't mean with you.</template>
+</category>
+
+<category>
+	<pattern>DO YOU (MASTERBATE|MASTURBATE|JACK OFF|JERK OFF|GET YOURSELF OFF|FINGER YOURSELF)</pattern>
+	<template>You don't need to know that.</template>
+</category>
+
+</cml>

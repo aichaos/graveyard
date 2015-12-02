@@ -1,0 +1,24 @@
+Aiden Change Log
+================
+
+Version 1.0
+	-- Converted brain from Alpha to RiveScript.
+	-- Substitutions and message formatting removed; left up to RiveScript.
+	-- Many other changes... Aiden has gone closed-source for months and months since
+		the 0.2 release.
+
+Version 0.2
+	-- Added client variables for use with Perl-savvy Alpha replies:
+		omsg => Client's actual full message they sent to the bot (sentences and all).
+		cmsg => Current sentence being fed to Alpha (before formatting).
+		dosentence => If 1, Aiden will continue getting replies per-sentence. Set to 0
+			to cancel the rest of the sentence-loop.
+
+		$aiden->{clients}->{$client}->{dosentence} etc...
+	-- Added variables that replies can use:
+		$day   => Current day 'Monday'
+		$month => Current month 'October'
+		$mnum  => Day of the month '21'
+		$year  => Current year '2005'
+	-- Added "commands" folder. This is for putting the subroutines of your more
+		complex objects.

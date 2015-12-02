@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Brains</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	This page will explain the basics on the brains: how to include them in your bot,
+how a brain file is formatted, and how to write your own brains.<p>
+
+<b class="header">:: Using the Brains</b><p>
+<blockquote>
+	Here are some details on the default brains. Each brain listed below will give
+	a short description, what to set the "Brain:" value to (in your bot files), and
+	what to set the "Replies:" value to.<p>
+
+	<b class="header">Alpha Brain</b><br>
+	<b>Description:</b> Latest creation of AiChaos, Inc. - a simple yet powerful reply language.<br>
+	<b>Author:</b> AiChaos, Inc. - Copyright 2004<br>
+	<b>Using the Brain:</b><br>
+	Brain: Alpha<br>
+	Replies: <i>point to a folder containing TXT or CBA text documents; each document is a reply set</i><p>
+
+	<b class="header">Chaos Markup Language</b><br>
+	<b>Description:</b> An enhanced CML parser for CML 2.0 (similar to AIML coding).<br>
+	<b>Author:</b> AiChaos, Inc. - Copyright 2004<br>
+	<b>Using the Brain:</b><br>
+	Brain: ChaosML<br>
+	Replies: <i>point to a folder containing CML files; each document is a reply set</i><p>
+
+	<b class="header">Eliza Brain</b><br>
+	<b>Description:</b> Perl implementation to the Eliza therapist bot brain.<br>
+	<b>Author:</b> Michal Wallace<br>
+	<b>Using the Brain:</b><br>
+	Brain: Eliza<br>
+	Replies: <i>you can leave this blank; Eliza doesn't use replies</i><p>
+
+	<b class="header">Juggernaut Brain</b><br>
+	<b>Description:</b> A basic parser for CML 1.0 - originally created for CKS Juggernaut bots.<br>
+	<b>Author:</b> AiChaos, Inc. - Copyright 2004<br>
+	<b>Using the Brain:</b><br>
+	Brain: Juggernaut<br>
+	Replies: <i>point to a folder containing CML files; each document is a reply set</i><p>
+
+	<b class="header">Nexus Brain</b><br>
+	<b>Description:</b> AiChaos' Nexus brain--a bot that learns how to chat by chatting!<br>
+	<b>Author:</b> AiChaos, Inc. - Copyright 2004<br>
+	<b>Using the Brain:</b><br>
+	Brain: Nexus<br>
+	Replies: <i>point to a TEXT DOCUMENT. The document does not need to exist initially.</i>
+</blockquote>
+
+<b class="header">:: Format of a Brain</b>
+<blockquote>
+	<b>Brain Folder</b><br>
+	All brains should go into the "brains" folder.<p>
+
+	<b>Brain File Name</b><br>
+	The file name should be the name of the brain, lowercase and without spaces, followed
+	by the .PL extension.<p>
+
+	<b>Contents</b><br>
+	The brain should contain <i>at least</i> one subroutine, for getting a reply. The "GET"
+	subroutine receives a set of variables, see below. Also, if the brain requires initialization,
+	you will need a subroutine for loading the brain.<p>
+
+	<b>Returned Hashref</b><br>
+	Brains should return a hashref containing the following keys:<br>
+	<i>
+	Type => 'brain',<br>
+	Name => 'the brain\'s name',<br>
+	Description => 'short description on the brain',<br>
+	RequireLoading => <u>1 for yes, 0 for no</u>,<br>
+	LoadingSub => '<u>if RequireLoading = 1, define the loading sub\'s name here</u>',<br>
+	ReplySub => 'sub name for getting a reply',<br>
+	Author => 'your name',<br>
+	Created => 'creation date',<br>
+	Updated => 'updated date',<br>
+	Version => 'version number',<br>
+	</i>
+</blockquote>
+
+<b class="header">:: Reply Sub Variables</b>
+<blockquote>
+	<b><u class="header">Received Variables</u></b><p>
+
+	<b>$brain</b> - the name of the brain.<br>
+	<b>$self</b> - messenger object of the current user.<br>
+	<b>$client</b> - user's client ID.<br>
+	<b>$msg</b> - user's FORMATTED message (uppercase, no puncuation, etc.)<br>
+	<b>$omsg</b> - user's ORIGINAL message.<br>
+	<b>$sn</b> - the bot's screenname.<p>
+
+	<b><u class="header">Returned Variables</u></b><p>
+
+	<b>$reply</b> - how the bot replied to the message.
+</blockquote>
+
+<b class="header">:: Loading Sub Variables</b>
+<blockquote>
+	<b><u class="header">Received Variables</u></b><p>
+
+	<b>$bot</b> - the bot's screenname<br>
+	<b>$brain</b> - the brain name<br>
+	<b>$dir</b> - the reply file/folder that the brain uses (defined with the "Replies:" in a bot file)<p>
+
+	<b><u class="header">Returned Variables</u></b><p>
+
+	<b>1;</b><br>
+	Confirmation that the brain was loaded correctly.
+</blockquote>
+
+</font>
+</body>
+</html>

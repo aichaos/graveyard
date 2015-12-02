@@ -1,0 +1,5 @@
+hello|hey===Hi <client>!
+usa===U.S.A. Rocks! :-D|Go U.S.A.! :-D
+bye===See you later, <client>.
+cody===Are you talking to me?
+is gay===The only gay person here is you, <client>.

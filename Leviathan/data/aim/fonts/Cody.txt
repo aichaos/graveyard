@@ -1,0 +1,7 @@
+Font Name=Verdana,Arial,Helvetica
+Size=2
+Color=#0099FF
+Link=#FF0000
+Style=Bold
+Background=#FFFFFF
+Smileys=AgHSEJM=

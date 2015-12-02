@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Brains Tutorial</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	This tutorial will explain how to create a new brain for your bot!<p>
+
+<b class="header">:: Creating the Brain's File</b>
+<blockquote>
+	First, go into the "templates" folder, and open "brain.pl" in a text editor such as
+	Notepad. Click "File -> Save As...", navigate to your bot's "brains" folder, and save it as
+	"<b>elsif.pl</b>" - as you may guess, this brain will be called Elsif!
+</blockquote><p>
+
+<b class="header">:: Naming the Brain</b>
+<blockquote>
+	To name the brain, you'll need to edit the sub names, and the hashref footer. You should
+	also edit the commented HEADER, since it's always a good idea to identify itself at the top
+	so it's easy for others to see what it does without scrolling through the code.<p>
+
+	<b>1. Rename <i>sub template_get {</i> to <i>sub elsif_get {</i></b><p>
+
+	<b>2. Elsif isn't going to require preloading. Delete the entire <i>template_load</i> subroutine.</b><p>
+
+	<b>3. Edit the hashref footer, insert this data:</b><br>
+	Type => 'brain',<br>
+	Name => 'Elsif',<br>
+	Description => 'Simple Elsif Brain.',<br>
+	RequireLoading => 0,<br>
+	LoadingSub => '',<br>
+	ReplySub => 'elsif_get',<br>
+	Author => '<i>your name</i>',<br>
+	Created => '<i>current date/time</i>',<br>
+	Modified => '<i>current date/time</i>',<br>
+	Version => '1.0',<p>
+
+	Note that "RequireLoading" is set to 0. For a simple brain like this elsif one, you don't
+	need to load anything. However, for brains such as Eliza, ChaosML, and Alpha, they need
+	to initialize a module and load replies. They <i>do</i> have a loading sub. View their
+	sources to see how they work.<p>
+
+	Save the file and continue.
+</blockquote><p>
+
+<b class="header">:: The Brain's Reply Sub</b>
+<blockquote>
+	Go down into the "elsif_get" sub, to the "# Return a reply." line. Delete that line, and
+	delete the line <u>DIRECTLY</u> below it (the <b>return</b> line). This is where we'll put
+	in the code.<p>
+
+	For the first couple of replies, put in this if/elsif codes:<p>
+
+	<font face="Courier New" size="2" color="#990099">
+	if ($msg eq "hello") {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Hello there!";<br>
+	}<br>
+	elsif ($msg eq "what's up") {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Not much, you?";<br>
+	}<br>
+	elsif ($msg =~ /leviathan/i) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "You mentioned my name in your message!";<br>
+	}<br>
+	elsif ($msg =~ /^one/i) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Your message started with the word \"one\"!";<br>
+	}<br>
+	elsif ($msg =~ /okay$/i) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Your message ended with the word \"okay\"!";<br>
+	}<br>
+	else {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "I don't know how to reply to that!";<br>
+	}<br>
+	</font><p>
+
+	You'll need some knowledge of Perl to add your own replies. Those few shows many
+	of the common matching techniques. (<b>eq</b> means "equals", so things like "hello" need
+	to be matched EXACTLY. <b>=~</b> means "contains", and you put slashes // around the
+	text. Put a ^ before the text for "starts with", or $ at the end for "ends with". These
+	examples should get you started).
+</blockquote><p>
+
+<b class="header">:: Test It!</b>
+<blockquote>
+	Your brain is now ready for testing! Edit a bot's file (in the "bots" folder), set their
+	brain to "Elsif" - the Replies: variable isn't important, as this brain doesn't do
+	initializations. IM your bot, and test out the replies!
+</blockquote><p>
+
+<b class="header">:: The Completed Product</b>
+<blockquote>
+	Your completed code should look something like this:<p>
+
+	<font face="Courier New" size="2" color="#990099">
+	sub elsif_get {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Incoming data for the brain.<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my ($brain,$self,$client,$msg,$omsg,$sn) = @_;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$brain = lc($brain);<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$brain =~ s/ //g;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$sn = lc($sn);<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$sn =~ s/ //g;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($msg eq "hello") {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Hello there!";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elsif ($msg eq "what's up") {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Not much, you?";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elsif ($msg =~ /leviathan/i) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "You mentioned my name in your message!";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elsif ($msg =~ /^one/i) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Your message started with the word \"one\"!";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elsif ($msg =~ /okay$/i) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Your message ended with the word \"okay\"!";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "I don't know how to reply to that!";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	}<br>
+	{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type           => 'brain',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name           => 'Elsif',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description    => 'Simple Elsif Brain.',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequireLoading => 0,<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LoadingSub     => '',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ReplySub       => 'elsif_get',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author         => 'Your Name',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Created        => '12:00 AM 01/01/2000',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updated        => '12:00 AM 01/01/2000',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Version        => '1.0',<br>
+	};
+	</font>
+</blockquote>
+
+</font>
+</body>
+</html>

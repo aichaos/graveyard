@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Commands</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	This page will give you some basic information about commands, including
+how they're formatted, what they receive, what they return, etc.<p>
+
+<b class="header">:: Naming Your Commands</b><p>
+<blockquote>
+	Command names should be kept simple: lower-case, no spaces, and minimal
+	punctuation (the underscore is acceptible). Commands can NOT begin with
+	a number.<p>
+
+	A command's file name and subroutine name must match. For example, the
+	"!google" command for Google searches, its filename is "google.pl" and
+	its subroutine is "sub google {" - or, for "!about", the filename is
+	"about.pl" and the subroutine is "sub about {"<p>
+
+	The way you name the commands is <u>VERY IMPORTANT</u>. For details:
+	<ul>
+		<li>The bot indexes the command by its file name (minus the .pl) - for example,
+			it takes "google.pl" and knows that there is a command called "google"</li>
+		<li>The bot calls subroutines named after the commands. For example, if it knows
+			"google" is a command, it will call subroutine "&google" to get a reply.</li>
+	</ul>
+	So if the names don't all match, it will cause problems.
+</blockquote>
+
+<b class="header">:: How a Good Command is Formatted</b><p>
+<blockquote>
+	Here is an example of how a good command should be formatted:<p>
+
+	<font face="Courier New" size="2" color="#990099">
+	<font style="background: #FFFF00" color="#FF0000">1) Commented Header</font><br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Leviathan&gt;<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:...::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command Name // !socks<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;.::&nbsp;&nbsp;&nbsp;::.&nbsp;&nbsp;&nbsp;&nbsp; Description // Lists all open sockets.<br>
+	#&nbsp;..:;;.&nbsp;'&nbsp;.;;:..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usage // !socks<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;'''&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permissions // Administrator Only.<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:;,:,;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listener // MSN<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright // 2004 Chaos AI Technology<p>
+
+	<font style="background: #FFFF00" color="#FF0000">2) Subroutine declaration</font><br>
+	sub socks {<br>
+	<font style="background: #FFFF00" color="#FF0000">3) Receive variables for use in the command.</font><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my ($self,$client,$msg) = @_;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Must be an admin.<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "This command may only be used by Administrators and higher!" unless &isAdmin($client);<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Get the messenger.<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my ($sender,$nick) = split(/\-/, $client, 2);<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# MSN only.<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "This command is only for MSN." unless $sender eq 'MSN';<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $sn = $self->{Msn}->{Handle};<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$sn = lc($sn);<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$sn =~ s/ //g;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $msn = $chaos->{bots}->{$sn}->{client};<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# List the sockets.<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $socks = $msn->getConvoList();<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $reply = "Open Sockets:\n\n";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach my $id (keys %{$socks}) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $convo = $msn->getConvo ($id);<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $buddies = $convo->getMembers;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $buds = join (",", keys %{$buddies});<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$reply .= "$id=$buds\n\n";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<p>
+
+	<font style="background: #FFFF00" color="#FF0000">4) Return a reply.</font><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $reply;<br>
+	}<br>
+	<font style="background: #FFFF00" color="#FF0000">5) Returned footer.</font><br>
+	{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restrict    => 'Administrators',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category    => 'Administrator Commands',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description => 'Lists all open sockets.',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usage       => '!socks',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listener    => 'MSN',<br>
+	};
+	</font><p>
+
+	<b>1) Commented Header</b><br>
+	This part is NOT required, but is useful for seeing what a command does without having
+	to scroll to the bottom.<p>
+
+	<b>2) Subroutine Declaration</b><br>
+	As stated above, it's required to have a subroutine named after the command.<p>
+
+	<b>3) Receive variables for use in the command.</b><br>
+	Variables received by commands are $self, $client, and $msg - see below for details.<p>
+
+	<b>4) Return a reply.</b><br>
+	The reply to be returned. See below for details.<p>
+
+	<b>5) Returned footer.</b><br>
+	The footer that the command returns. See below for details.
+</blockquote><p>
+
+<b class="header">:: Variables Received by Commands</b>
+<blockquote>
+	Every command receives three variables: $self, $client, and $msg. The details are as
+	follows:<p>
+
+	<b>$self</b><br>
+	This is a reference to the messenger object. On MSN, this would refer to the current
+	conversation (you would need to use it to find the MSN object if you needed to do a
+	global function). On the other messengers, $self is the same as that messenger's object.
+	See some messenger-specific command sources for examples.<p>
+
+	<b>$client</b><br>
+	This is the user's username, in the format of MESSENGER-username - as always.<p>
+
+	<b>$msg</b><br>
+	This is the message that they sent. This message is exactly how they sent it, except
+	for it doesn't have HTML codes.
+</blockquote><p>
+
+<b class="header">:: Variables Returned by Commands</b>
+<blockquote>
+	All commands <u>MUST</u> return a $reply. Some examples of this is as follows:
+	<blockquote>
+		# Return a variable containing the reply.<br>
+		return $reply;<p>
+
+		# Return a string as the reply.<br>
+		return "some reply";
+	</blockquote><p>
+
+	<b>*** Command Footers ***</b><br>
+	As shown in the above example, commands return hashref footers with details about
+	themselves. These footers are used by the !menu command to index them. Here are details:
+	<blockquote>
+		<b><font color="#FF0000">Required Keys</font></b><br>
+		Required keys are as follows:<p>
+
+		<b>Category => 'General',</b><br>
+		This defines what category it will go into in the menu.<p>
+
+		<b>Description => 'description on what the command does',</b><br>
+		This returns a description as seen in the menu.<p>
+
+		<b>Usage => 'how the command is used',</b><br>
+		This returns how to use the command, when using the !usage command.<p>
+
+		<b>Listener => 'AIM',</b><br>
+		This is what messengers it's for. If it's only for one messenger (i.e. AIM),
+		simply put that in. If it's for multiple messengers, separate by commas
+		(i.e. AIM,MSN). If it doesn't matter, simply put 'All' as its value.<p>
+
+		<b><font color="#FF0000">Optional Keys</font></b><br>
+		These keys are not required, and should only be included if you plan to
+		use them.<p>
+
+		<b>Hidden => 1,</b><br>
+		This will hide the command from the menu. For example, if you have two commands
+		that do the same thing (maybe a keep-the-idiot-occupied, sending them back and forth),
+		only one of the two needs to be listed. The other can have "Hidden => 1," to hide it
+		from the menu. This is also good for Easter Eggs commands! =)<p>
+
+		<b>Restrict => 'Administrator',</b><br>
+		This is to restrict the category this command appears in. It's a good idea to keep
+		higher-level commands in their own categories, as a category that contains just ONE
+		restricted command will not allow users to see it unless they qualify for that power.
+		Valid powers are: Botmaster, Administrator, Moderator.
+	</blockquote>
+</blockquote>
+
+</font>
+</body>
+</html>

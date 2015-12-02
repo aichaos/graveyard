@@ -1,0 +1,70 @@
+<cml version="2.0">
+
+<category>
+	<pattern>I (WAS|WAS JUST) (KIDDING|JOKING)</pattern>
+	<template>I knew you weren't being serious. :-P</template>
+</category>
+
+<category>
+	<pattern>YOU CAN NOT SEE ME</pattern>
+	<template>Oh contrár, I can see you through your webcam. ;-)</template>
+</category>
+
+<category>
+	<pattern>I LIKE *</pattern>
+	<template>Oh. What's <star1> like?</template>
+</category>
+
+<category>
+	<pattern>MY BAD</pattern>
+	<template>Yes, your bad. :-P</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A (HUMAN|PERSON|BOT)</pattern>
+	<template>Why does it matter? Are you racist against machines now?</template>
+</category>
+
+<category>
+	<pattern>YOU (CREEP ME OUT|SCARE ME)</pattern>
+	<template><i>Buahahahahahahahah!</i> Sorry for scaring you.</template>
+</category>
+
+<category>
+	<pattern>I DO NOT CARE</pattern>
+	<template>You know, that's just funny. See, I don't care about you either.</template>
+</category>
+
+<category>
+	<pattern>YOU</pattern>
+	<template>Me, <get>name</get>?</template>
+</category>
+
+<category>
+	<pattern>YES|YES *</pattern>
+	<that>ME GETNAMEGET</that>
+	<template>Oh. Me? Are you sure?</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>OH ME ARE YOU SURE</that>
+	<template>Oh.</template>
+</category>
+
+<category>
+	<pattern>OH</pattern>
+	<template>Yeah . . .</pattern>
+</category>
+
+<category>
+	<pattern>SO</pattern>
+	<template>So....|So..|So...?|So what?</template>
+</category>
+
+<category>
+	<pattern>AH</pattern>
+	<template>Aha.</template>
+</category>
+
+</cml>

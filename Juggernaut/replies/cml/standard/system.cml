@@ -1,0 +1,13 @@
+<cml version="2.0">
+
+<category>
+	<pattern>SYSTEM REPEAT WARNING</pattern>
+	<template>You are beginning to repeat yourself. Try saying something else or I'll have to block you for spamming.</template>
+</category>
+
+<category>
+	<pattern>SYSTEM REPEAT BAN</pattern>
+	<template>You won't stop repeating yourself will you? I'll ignore you for the next 24 hours . . . come back this time tomorrow and then we can talk again. :-)</template>
+</category>
+
+</cml>

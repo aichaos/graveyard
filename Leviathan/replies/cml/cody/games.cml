@@ -1,0 +1,23 @@
+<cml version="1.0">
+
+<category>
+Input: HANGMAN
+Reply: <system>$reply = hang ($self,$client,"",$listener);</system>
+</category>
+
+<category>
+Input: TIC TAC TOE
+Reply: <system>$reply = ttt ($self,$client,"",$listener);</system>
+</category>
+
+<category>
+Input: GUESS MY NUM
+Reply: <system>$reply = guess ($self,$client,"",$listener);</system>
+</category>
+
+<category>
+Input: ROLL A * SIDED DIE
+Reply: <system>$reply = &die ($self,$client,"<star1>",$listener);</system>
+</category>
+
+</cml>

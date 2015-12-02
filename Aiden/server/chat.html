@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Aiden</title>
+<link rel="StyleSheet" type="text/css" href="aiden.css">
+</head>
+<body onLoad="document.chat.msg.focus()">
+
+<table width="100%" height="100%" border="0" class="main">
+	<tr>
+		<td width="96" height="96" align="center" valign="middle">
+			<img src="dp.jpg" width="96" height="96" alt="Aiden">
+		</td>
+		<td align="center" valign="middle">
+			<img src="images/logo.jpg" width="187" height="78" alt="Aiden">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left" valign="top">
+			<form name="chat" action="chat.html" method="get">
+			<div align="center">
+			Say: <input type="text" size="20" name="msg" class="text">
+			<input type="submit" value="Send" class="bttn">
+			</div>
+			</form>
+			<p>
+
+			<b style="color: #FF4444">$user:</b> $msg<br>
+			<b style="color: #0099FF">$bot:</b> $reply
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

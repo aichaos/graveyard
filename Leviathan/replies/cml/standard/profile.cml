@@ -1,0 +1,128 @@
+<cml version="2.0">
+
+<category>
+	<pattern>MY NAME IS *</pattern>
+	<template><set>formal=name=<star1></set>, nice to meet you! :-)</template>
+</category>
+
+<category>
+	<pattern>I AM * YEARS OLD</pattern>
+	<template>A lot of people are <set>normal=age=<star1></set> years old. You're not alone.</template>
+</category>
+
+<category>
+	<pattern>I AM A (BOY|MAN|MALE|GUY|DUDE)</pattern>
+	<template>Okay, so you're a <set>normal=sex=male</set>.</template>
+</category>
+
+<category>
+	<pattern>I AM A (GIRL|WOMAN|WOMEN|CHICK|CHIK|GRRRL|BABE)</pattern>
+	<template>Okay, so you're a <set>normal=sex=female</set>.</template>
+</category>
+
+<category>
+	<pattern>I (LIVE IN|AM FROM) *</pattern>
+	<template>I know a few people from <set>formal=location=<star2></set>.</template>
+</category>
+
+<category>
+	<pattern>MY (FAV|FAVORITE|FAVE) COLOR IS *</pattern>
+	<template><formal><set>normal=color=<star2></set></formal> is a pretty color.</template>
+</category>
+
+<category>
+	<pattern>MY (FAV|FAVORITE|FAVE) BOOK IS *</pattern>
+	<template>I don't think I've ever read <set>formal=book=<star2></set>.</template>
+</category>
+
+<category>
+	<pattern>MY (FAV|FAVORITE|FAVE) BAND IS *</pattern>
+	<template>I haven't ever heard of <set>formal=band=<star2></set>.</template>
+</category>
+
+<category>
+	<pattern>I AM A STUDENT</pattern>
+	<template>Oh, you're a <set>normal=job=student</set>? What school do you go to?</template>
+</category>
+
+<category>
+	<pattern>MY JOB IS A *</pattern>
+	<template>I see. Being a <set>normal=job=<star1></set> sounds fun.</template>
+</category>
+
+<category>
+	<pattern>MY (GIRLFRIEND|BOYFRIEND|HUSBAND|WIFE)S NAME IS *</pattern>
+	<template>I hope you and <set>formal=spouse=<star2></set> are happy together.</template>
+</category>
+
+<category>
+	<pattern>I AM SINGLE</pattern>
+	<template>Oh really? You're <think><set>normal=spouse=undefined</set></think> single?</template>
+</category>
+
+<category>
+	<pattern>I AM STRAIGHT</pattern>
+	<template>That's good to know. <think><set>normal=sexuality=heterosexual</set></think></template>
+</category>
+
+<category>
+	<pattern>I AM (GAY|HOMOSEXUAL|LESBIAN)</pattern>
+	<template>Alright, so you're <set>normal=sexuality=homosexual</set>.</template>
+</category>
+
+<category>
+	<pattern>I AM (BI|BISEXUAL)</pattern>
+	<template>You're <set>normal=sexuality=bisexual</set>?</template>
+</category>
+
+<category>
+	<pattern>MY WEBSITE (IS AT|URL IS|IS) *</pattern>
+	<template>Maybe I will visit <set>normal=website=<star2></set> some day..</template>
+</category>
+
+<category>
+	<pattern>WHAT IS MY NAME|WHO AM I</pattern>
+	<template>You told me your name was <get>name</get>.|You're <get>name</get>, silly!</template>
+</category>
+
+<category>
+	<pattern>HOW OLD AM I|WHAT IS MY AGE</pattern>
+	<template>Weren't you <get>age</get> years old?</template>
+</category>
+
+<category>
+	<pattern>WHERE AM I|WHERE DO I LIVE</pattern>
+	<template>You told me you lived in <get>location</get>.</template>
+</category>
+
+<category>
+	<pattern>WHAT AM I|WHAT IS MY GENDER</pattern>
+	<template>Unless you just transformed, you're a <get>sex</get>.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS MY (FAV|FAVE|FAVORITE) (BOOK|COLOR|BAND)</pattern>
+	<template>Your favorite <star2> is <get><star2></get>.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS MY (JOB|OCCUPATION)</pattern>
+	<template>You are a <get>job</get>.</template>
+</category>
+
+<category>
+	<pattern>WHO IS MY (GIRLFRIEND|BOYFRIEND|HUSBAND|WIFE)</pattern>
+	<template>Your <star1> is <get>spouse</get>.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS MY (SEXUALITY|SEXUAL PREFERENCE)|AM I (GAY|STRAIGHT|BI|LESBIAN)</pattern>
+	<template>Last time I checked you were <get>sexuality</get>.</template>
+</category>
+
+<category>
+	<pattern>(WHAT|HOW MUCH) DO YOU KNOW ABOUT ME</pattern>
+	<template>Well... your name is <get>name</get>, you're a <get>age</get>-year-old <get>sex</get>. You live in <get>location</get>. Your favorite color: <get>color</get>; favorite book: <get>book</get>; favorite band: <get>band</get>; spouse: <get>spouse</get>. And as far as I know, you are <get>sexuality</get>.</template>
+</category>
+
+</cml>

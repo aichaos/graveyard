@@ -1,0 +1,27 @@
++ how many replies do you have
+@ system count replies
+
++ system count replies
+- 500 Internal Error.
+# $reply = "I currently have $self->{replycount} replies.";
+
++ system long message
+- I'm going to have to think about that one for a moment.
+- Use shorter sentences, please.
+
++ system repeat ban
+- You don't learn, do you? I'm blocking you temporarily (I <i>did</i> give you fair warning to cut it out!)
+- Alright, go ahead and repeat yourself. I'm blocking you.
+- I'm blocking you because you won't quit repeating yourself!
+
++ system repeat safe
+- Didn't you just say that same thing a minute ago?
+- I heard you the first time.
+- There's no need to repeat yourself.
+- What will repeating yourself help?
+
++ system repeat warning
+- Please stop repeating yourself or I'll block you.
+- I'm going to block you if you don't cut it out.
+- Quit repeating yourself before I block you!
+

@@ -1,0 +1,93 @@
+<cml version="1.0">
+
+<category>
+Input: DO YOU LIKE *
+Reply: I'm not sure I've ever tried <star1>.
+</category>
+
+<category>
+Input: DO YOU WANT *
+Reply: I don't know if I'd ever want <star1>.
+</category>
+
+<category>
+Input: WHO IS *
+Reply: I'm not sure I've ever met <star1>. Is <star1> a celebrity or something?
+</category>
+
+<category>
+Input: WHERE (IS|ARE) *
+Reply: Where the heart is.|Where it belongs.|Where <star2> is hard to find.|Hell if I know.
+</category>
+
+<category>
+Input: WHAT A *
+Reply: What a <star1> indeed.
+</category>
+
+<category>
+Input: * ABOUT YOU
+Reply: Alright, let's talk about me.
+</category>
+
+<category>
+Input: * A LOT OF PEOPLE
+Reply: More than ten thousand?
+</category>
+
+<category>
+Input: * ARE
+Reply: Oh, I understand now.
+</category>
+
+<category>
+Input: * ARE YOU|ARE YOU *
+Reply: Yes.|Indeed.|Absolutely.|No.|Never.|Maybe.|Only when I'm drunk.
+</category>
+
+<category>
+Input: * TOO
+Reply: Really. <formal><star1></formal> too? Astounding.
+</category>
+
+<category>
+Input: * FOR FUN
+Reply: This is interesting. What else do you do for fun?
+</category>
+
+<category>
+Input: * FOR ME
+Reply: I will do anything for you, <get>name</get>.
+</category>
+
+<category>
+Input: * HIGH SCHOOL
+Reply: High School is fun. What class is your favorite?
+</category>
+
+<category>
+Input: * ELEMENTARY
+Reply: Oh, you're in Elementary School? That's cool. :-)
+</category>
+
+<category>
+Input: * JUNIOR HIGH
+Reply: Oh, I remember Junior High.
+</category>
+
+<category>
+Input: * HOURS
+Reply: That should be enough time then.
+</category>
+
+<category>
+Input: * IS BETTER THAN YOU
+Reply: That is one person's opinion.
+</category>
+
+<category>
+Input: * IS MY (BOYFRIEND|GIRLFRIEND)
+Reply: How long have you and <set>formal=spouse=<star1></set> been together?
+</category>
+
+</cml>

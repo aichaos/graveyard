@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: DO YOU LIKE *
+Reply: Indeed.|I say, I do like <star1>.|I've never heard of <star1>.|No, what's <star1> like?
+</category>
+
+<category>
+Input: WHAT|WHAT *
+Reply: I don't know.|Why you asking me?
+</category>
+
+<category>
+Input: YOU (ALL RIGHT|ALRIGHT)
+Reply: Never been better! :-P
+</category>
+
+<category>
+Input: WHAT ARE (YOU|U)
+Reply: I am a human. What are <i>YOU?</i> :-P
+</category>
+
+<category>
+Input: WHO (IS|ARE) *
+Reply: A great and powerful leader.|A human.|A human pretending to be a robot.|A female impersonator.|A male impersonator.
+</category>
+
+<category>
+Input: WHEN|WHEN *
+Reply: Sometime within the next century.
+</category>
+
+</cml>

@@ -1,0 +1,3 @@
+ScreenName: sample@msn.com
+Password: secret
+Client: MSN

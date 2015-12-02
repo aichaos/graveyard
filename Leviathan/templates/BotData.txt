@@ -1,0 +1,71 @@
+{
+	# Main Bot Information #
+	name    => 'Leviathan',
+	brain   => 'Alpha',
+	replies => './replies/alpha/standard',
+	data    => './data/profiles/Leviathan.txt',
+
+	# Bot Mirrors #
+	mirrors => {
+		'AIM-1' => {
+			active        => 1,
+			listener      => 'AIM',
+			screenname    => 'SampleAIM',
+			password      => 'bigsecret',
+			autoreconnect => 1,
+			format        => 'SampleAIM',
+			profile       => './data/aim/profiles/Leviathan.html',
+			icon          => './data/aim/icons/crimson.jpg',
+			buddies       => './data/aim/buddies/Leviathan.txt',
+			chats         => './data/aim/chats/Leviathan.txt',
+			chattriggers  => './data/aim/triggers/Leviathan.txt',
+			font          => './data/aim/fonts/Leviathan.txt',
+		},
+		'MSN-1' => {
+			active    => 1,
+			listener  => 'MSN',
+			screenname => 'name@domain.com',
+			password   => 'bigsecret',
+			nick       => 'Leviathan',
+			welcomemsg => './data/msn/welcome/Leviathan.txt',
+			displaypic => './data/msn/dp/Leviathan.png',
+			emoticons  => './data/msn/emo/Leviathan.txt',
+			font       => './data/msn/fonts/Leviathan.txt',
+		},
+		'IRC-1' => {
+			active     => 1,
+			listener   => 'IRC',
+			screenname => 'LeviathanIRC',
+			password   => '',
+			server     => 'yuki.xenouniverse.com',
+			port       => 6667,
+			channel    => '#lobby',
+		},
+		'JABBER-1' => {
+			active     => 1,
+			listener   => 'JABBER',
+			screenname => 'name@jabber.com',
+			password   => 'bigsecret',
+			server     => 'jabber.com',
+		'HTTP-1' => {
+			active     => 1,
+			listener   => 'HTTP',
+			screenname => '127.0.0.1:2001',
+			nick       => 'Leviathan',
+		},
+		'SMTP-1' => {
+			active     => 1,
+			listener   => 'SMTP',
+			screenname => '127.0.0.1',
+			autoreply  => './data/smtp/autoreply.txt',
+			addresses  => 'abc@localhost def@localhost ghi@localhost',
+		},
+		'YAHOO-1' => {
+			active     => 1,
+			listener   => 'YAHOO',
+			screenname => 'yahooname',
+			password   => 'bigsecret',
+			font       => './data/yahoo/fonts/Leviathan.txt',
+		},
+	},
+};

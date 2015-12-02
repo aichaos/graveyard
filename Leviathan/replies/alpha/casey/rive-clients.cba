@@ -1,0 +1,104 @@
+// RIVE Reply Data
+// ---------------
+// User Info.
+// Created: 2:00 PM 8/12/2005
+
++ my name is *
+- {>name=<star1>}{<name}, nice to meet you.
+- {>name=<star1>}Nice to meet you, {<name}.
+
++ call me *
+- {>name=<star1>}{<name}, I will call you that from now on.
+
++ i am * years old
+- {>age=<star1>}A lot of people are <star1> years old. You're not alone.
+- {>age=<star1>}Cool, I'm {^age} myself.
+
++ i am a boy
+- {>sex=male}Alright, you're a male.
+
++ i am a girl
+- {>sex=female}Alright, you're a female.
+
++ i live in *
+- {>location=<star1>}I've spoken to people from {<location} before.
+
++ i am from *
+@ i live in <star1>
+
++ my favorite * is *
+- {>fav<star1>=<star2>}I will remember that your favorite <star1> is <star2>.
+
++ i am single
+- {>status=single}{>spouse=Nobody, you're single.}I am too.
+
++ i have a girlfriend
+- {>status=girlfriend}What's her name?
+
++ i have a boyfriend
+- {>status=boyfriend}What's his name?
+
++ my girlfriend* name is *
+- {>spouse=<star2>}That's a pretty name.
+
++ my boyfriend* name is *
+- {>spouse=<star2>}That's a cool name.
+
++ what is my name
+- Your name is {<name}.
+- You told me you're {<name}.
+- Aren't you {<name}?
+
++ how old am i
+- You are {<age} years old.
+- You're {<age}.
+
++ am i a boy or a girl
+- You're a {<sex}.
+
++ where am i
+- You are in {<location}.
+
++ what is my favorite *
+- Your favorite <star1> is {<fav<star1>}.
+
++ who is my boyfriend
+- {>spouse}
+
++ who is my girlfriend
+@ who is my boyfriend
+
++ i am male
+@ i am a boy
++ i am a male
+@ i am a boy
++ i am a guy
+@ i am a boy
++ i am a dude
+@ i am a boy
++ i am a boi
+@ i am a boy
++ i am a man
+@ i am a boy
+
++ i am female
+@ i am a girl
++ i am a female
+@ i am a girl
++ i am a chick
+@ i am a girl
++ i am a woman
+@ i am a girl
++ i am a women
+@ i am a girl
+
++ am i male or female
+@ am i a boy or a girl
++ am i a guy or a girl
+@ am i a boy or a girl
++ am i a boy or girl
+@ am i a boy or a girl
++ am i boy or girl
+@ am i a boy or a girl
++ am i a man or a woman
+@ am i a boy or a girl

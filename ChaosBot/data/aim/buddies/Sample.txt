@@ -1,0 +1,5 @@
+CKS=Shards2k6
+CKS=XenoAndroid
+Buddies=MyBotMaster
+Buddies=Somebody123
+Bots=AzulianBot

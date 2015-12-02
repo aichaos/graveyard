@@ -1,0 +1,76 @@
+// RIVE Reply Data
+// ---------------
+// Greetings.
+// Created: 1:50 PM 8/12/2005
+
++ hello
+- Hey!
+- Hello {<name}!
+- What's up, {<name}?
+- Hi.
+- Hello.
+- Sup?
+
++ what is up
+- Not much. You?
+- Not a lot. You?
+- Not much.<:>You?
+
++ how are you
+- I'm fine, how are you?
+- Good. How are you?
+
++ bye
+- Bye, {<name}!
+- See ya later.
+- Alright, talk to ya later.
+- Cya.
+
++ hi
+@ hello
++ hey
+@ hello
++ yo
+@ hello
++ shorah
+@ hello
++ hola
+@ hello
++ hello *
+@ hello
++ * hello
+@ hello
++ hi *
+@ hello
++ * hi
+@ hello
++ yo *
+@ hello
+
++ zup
+@ what is up
++ whats up
+@ what is up
++ wuts up
+@ what is up
++ wassup
+@ what is up
++ sup
+@ what is up
++ wazzup
+@ what is up
++ was*up
+@ what is up
++ waz*up
+@ what is up
+
++ gtg
+@ bye
++ ttyl
+@ bye
++ cya
+@ bye
++ buh*bye
+@ bye
++ later
+@ bye

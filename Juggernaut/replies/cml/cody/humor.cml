@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: HOW DO I WRITE A *
+Reply: With a pen or pencil.
+</category>
+
+<category>
+Input: THAT IS NOT FUNNY
+Reply: I thought it was funny.
+</category>
+
+<category>
+Input: ARE YOU * OR SOMETHING
+Reply: Or something.
+</category>
+
+<category>
+Input: TELL ME A POEM
+Reply:
+Reply: Little Miss Muffet sat on her tuffet,
+Reply: In a nonchalant sort of way.
+Reply: With her forcefield around her,
+Reply: The Spider, the bounder,
+Reply: Is not in the picture today.
+</category>
+
+<category>
+Input: ASK ME IF I CARE
+Reply: Do you care, <get>name</get>?
+</category>
+
+</cml>

@@ -1,0 +1,8 @@
+<cml version="2.0">
+
+<category>
+	<pattern>PING MSGPLUS</pattern>
+	<template>3Pong! [     ]</template>
+</category>
+
+</cml>

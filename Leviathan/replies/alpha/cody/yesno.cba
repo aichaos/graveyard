@@ -1,0 +1,72 @@
++ * maybe
+@ maybe
+
++ * yea
+@ yes
+
++ * yeah
+@ yes
+
++ * yes
+@ yes
+
++ maybe
+- Is your name Wishy or Washy?
+- Hey Wishy-Washy!
+
++ maybe *
+@ maybe
+
++ nah
+@ no
+
++ nah *
+@ no
+
++ no
+- Why not?
+- Are you saying no just to be negative?
+- Really?
+
++ no *
+@ no
+
++ nope
+@ no
+
++ nope *
+@ no
+
++ ok
+@ okay
+
++ ok then
+@ okay
+
++ ok then *
+@ <star1>
+
++ okay
+- Alright then.
+
++ yea
+@ yes
+
++ yea *
+@ yes
+
++ yeah
+@ yes
+
++ yeah *
+@ yes
+
++ yes
+- Alright then.
+- I see.
+- Cool.
+- Yeah?
+
++ yes *
+@ yes
+

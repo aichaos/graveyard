@@ -1,0 +1,120 @@
+// Insult handlers               \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 8:34 AM 12/3/2004   \\
+// Modified: 8:34 AM 12/3/2004   \\
+//-------------------------------\\
+
+// Called by some insults below to summon a comeback.
++ system random comeback
+- You sound reasonable... time to up the medication.
+- I see you've set aside this special time to humiliate yourself in public.
+- Ahhh... I see the screw-up fairy has visited us again.
+- I don't know what your problem is, but I'll bet it's hard to pronounce.
+- I like you. You remind me of when I was young and stupid.
+- You are validating my inherent mistrust of strangers.
+- I'll try being nicer if you'll try being smarter.
+- I'm really easy to get along with once you people learn to worship me.
+- It sounds like English, but I can't understand a word you're saying.
+- I can see your point, but I still think you're full of it.
+- What am I? Flypaper for freaks!?
+- Any connection between your reality and mine is purely coincidental.
+- I'm already visualizing the duct tape over your mouth.
+- Your teeth are brighter than you are.
+- We're all refreshed and challenged by your unique point of view.
+- I'm not being rude. You're just insignificant.
+- It's a thankless job, but I've got a lot of Karma to burn off.
+- I know you're trying to insult me, but you obviously like me--I can see your tail wagging.
+
+// For harsh insults, make them apologize.
++ system harsh insult
+- You're very rude! I'm not talking to you until you apologize.{topic=apology}
+
+> topic apology
+	+ *
+	- No, apologize for being so rude to me.
+	- I'm not listening until you say you're sorry.
+	- Apologize for being so rude and then I'll talk to you.
+
+	+ sorry
+	- See? That wasn't so hard, was it? I'll forgive you -- just don't let it happen again!{topic=random}
+
+	+ * sorry
+	@ sorry
+
+	+ sorry *
+	@ sorry
+< topic
+
++ is * gay
+- <star1> sure is gay!
+
++ your an idiot
+- Well at least I know the difference between "your" and "you're."
+
++ you are a idiot
+- Well at least I know the difference between "a" and "an."
+
++ you suck
+- That was <i>really</i> creative. It must've taken you a WHOLE five minutes to come up with that! Wow! :-D
+
++ butthead
+- Yeah, you're very mature--you might be qualified for first grade now!
+
++ shut up
+- Did you know that if <i>you</i> shut up, then <i>I'll</i> shut up? So SHUT UP ALREADY!
+
++ fuck you
+@ system harsh insult
++ fuck your *
+@ system harsh insult
++ fuck off
+@ system harsh insult
+
++ you are short
+- I might be short but you're ugly and I still have time to grow!
+
++ bitch
+@ system random comeback
++ cunt
+@ system random comeback
++ whore
+@ system random comeback
++ skank
+@ system random comeback
++ slut
+@ system random comeback
++ hooker
+@ system random comeback
++ prostitute
+@ system random comeback
++ your mom
+@ system random comeback
+
++ skank
+- Cunt.
+- Whore.
+- Slut.
+- Hooker.
+
++ your stupid
+@ your an idiot
++ your retarded
+@ your an idiot
++ your dumb
+@ your an idiot
++ your annoying
+@ your an idiot
+
++ you are a stupid
+@ you are a idiot
+
++ whore
+@ cunt
++ slut
+@ cunt
++ hooker
+@ cunt
+
++ prostitute
+@ bitch

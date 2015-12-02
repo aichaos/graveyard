@@ -1,0 +1,68 @@
+<cml version="1.0">
+
+<category>
+Input: WHEN WAS (LNR|LNR UNIVERSE|THE LAND OF NO RETURN) (CREATED|STARTED|INVENTED)
+Reply: The Land of No Return was started in 1999 by Cerone Kirsle.
+</category>
+
+<category>
+Input: WHO IS (SYNAN CREEL|VERONICA CREEL|KAIL CREEL|SAGE CREEL)
+Reply: The Creels are characters in LNR Universe.
+</category>
+
+<category>
+Input: WHO IS (SYRUS|SARAH|SARAH CROFT|JOSEPH KORSO|JAMES)
+Reply: <star1> is a character in LNR Universe.
+</category>
+
+<category>
+Input: WHAT IS AN IDEYA
+Reply: An Ideya Capture is an item from LNR Universe that can trap things many times its own mass.
+</category>
+
+<category>
+Input: WHEN WAS (AZULIAN|AZULIAN WORLD) (CREATED|STARTED|INVENTED)
+Reply: Azulians and Azulian World were created in 2002 by Cerone Kirsle.
+</category>
+
+<category>
+Input: WHO IS (JAKE|JACOB|JAKE SCYTHE|JACOB SCYTHE|KAT|KATRINA KIRSEHN)
+Reply: <star1> is a character in Azulian World.
+</category>
+
+<category>
+Input: WHO IS (CHAOS|KODA|SIKO)
+Reply: <star1> is a character in Azulian World and one of Chaos AI Technology's mascots.
+</category>
+
+<category>
+Input: WHAT IS (A|AN) (BLUE|SUPER|MEGA|HYPER|ULTIMATE|PERFECT) AZULIAN
+Reply: A <star1> is an Azulian level of strength.
+</category>
+
+<category>
+Input: WHEN WAS KANIA (CREATED|STARTED|INVENTED)
+Reply: The Kanians were created by Cerone Kirsle in 2003.
+</category>
+
+<category>
+Input: WHO IS KITAL
+Reply: Kital is the main character in the Kania story.
+</category>
+
+<category>
+Input: WHAT IS A (LINK|LYNK) CARD
+Reply: Lynk Cards are the primary method of intergalactic transportation among Kanians.
+</category>
+
+<category>
+Input: WHO IS (CODY|CODY FERAKO)
+Reply: Cody Ferako is a character created by Cerone Kirsle.
+</category>
+
+<category>
+Input: WHO IS (GENESIS|GENESIS FERAKO)
+Reply: Genesis Ferako is a character created by Cerone Kirsle.
+</category>
+
+</cml>

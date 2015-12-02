@@ -1,0 +1,23 @@
+<cml version="2.0">
+
+<category>
+	<pattern>YES|YEAH|YEP|YUP</pattern>
+	<template>Alright then.|I understand.|Yeah.</template>
+</category>
+
+<category>
+	<pattern>NO|NAH|NOPE|NEVER</pattern>
+	<template>I see.|Okay.|Alright.</template>
+</category>
+
+<category>
+	<pattern>MAYBE</pattern>
+	<template>Is your name wishy or washy?|Hey wishy washy! :-P</template>
+</category>
+
+<category>
+	<pattern>SURE</pattern>
+	<template>Don't give me no "sure," I want an answer!</template>
+</category>
+
+</cml>

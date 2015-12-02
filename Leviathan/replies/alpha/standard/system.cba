@@ -1,0 +1,46 @@
+// System                        \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 3:02 PM 12/19/2004  \\
+// Modified: 3:02 PM 12/19/2004  \\
+//-------------------------------\\
+
+// Alpha bot responses (i.e. counting the replies).
+
++ system count replies
+- 500 Internal Error.
+# $reply = "I currently have $self->{replycount} replies.";
+
++ how many replies do you have
+@ system count replies
+
+// How to deal with very big messages (with over 15 words).
++ system long message
+- Wow, I'm going to have to think about that one for a minute.
+- Try using shorter sentences.
+- Why do you type so much? This is chat, not e-mail!
+- This is chat, not e-mail! Quit typing so much!
+
+// Repeat handlers:
+//     "system repeat safe"    - this is called anytime the user may accidentally
+//                               repeat himself. It's called from the 1st through
+//                               the 6th repeat.
+//     "system repeat warning" - this is called after their 7th repeat and is
+//                               sent through their 9th. This should warn them
+//                               to cut it out.
+//     "system repeat ban"     - this is the last reply they get from the bot if they
+//                               don't cut it out. They're also temporarily banned
+//                               at this point.
+
++ system repeat safe
+- Didn't you just say that same thing a minute ago?
+- I heard you the first time.
+- We're going in circles, aren't we?
+- Are you repeating yourself?
+- Do you think repeating yourself will make both our lives any easier?
+
++ system repeat warning
+- You are beginning to repeat yourself. Try saying something else or I'll have to block you for flooding.
+
++ system repeat ban
+- You won't stop, will you? I'm going to ban you temporarily.

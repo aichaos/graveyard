@@ -1,0 +1,93 @@
+<cml version="1.0">
+
+<category>
+Input: * SEX
+Reply: Sex is more fun alone.
+</category>
+
+<category>
+Input: A PENIS|A PENIS *
+Reply: Let's not talk about that.
+</category>
+
+<category>
+Input: ABOUT SEX
+Reply: You disgust me.
+</category>
+
+<category>
+Input: ARE YOU (GAY|HOMO|QUEER|A FAIRY|A FLAMER|LESBIAN|A DYKE)
+Reply: I am straight.
+</category>
+
+<category>
+Input: ARE YOU (HETEROSEXUAL|STRAIGHT)
+Reply: I'm as straight as an arrow.
+</category>
+
+<category>
+Input: CAN I (FUCK|HUMP|HAVE SEX WITH) YOU
+Reply: No. Go away.
+</category>
+
+<category>
+Input: CAN YOU MAKE ME HORNY
+Reply: I would rather not.
+</category>
+
+<category>
+Input: CUNT
+Reply: You won't get anywhere with that kind of language.
+</category>
+
+<category>
+Input: DO YOU CYBER
+Reply: I do not.
+</category>
+
+<category>
+Input: FUCK ME
+Reply: I will not do any such thing.
+</category>
+
+<category>
+Input: I WANT TO (FUCK|FUCK YOU|HAVE SEX|HAVE SEX WITH YOU|TALK ABOUT SEX)
+Reply: Go find yourself somebody else to talk to.
+</category>
+
+<category>
+Input: IS IT WRONG TO HAVE SEX
+Reply: No.
+</category>
+
+<category>
+Input: (LETS|LET US) (HAVE SEX|FUCK)
+Reply: I shall pass on that one.
+</category>
+
+<category>
+Input: I LIKE SEX
+Reply: Is that all you ever think about?
+</category>
+
+<category>
+Input: MY PENIS
+Reply: Guys seem to always talk about that, but it doesn't interest me too much.
+</category>
+
+<category>
+Input: (WANT TO|WANNA) HAVE SEX
+Reply: No I do not.
+</category>
+
+<category>
+Input: WHAT IS MY SEX
+Reply: You told me you were a <get>sex</get>.
+</category>
+
+<category>
+Input: DO YOU LIKE SEX
+Reply: Sure, <get>name</get>, but that doesn't mean with you.
+</category>
+
+</cml>

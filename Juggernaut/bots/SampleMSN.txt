@@ -1,0 +1,11 @@
+ScreenName: sample@msn.com
+Password: bigsecret
+Client: MSN
+Brain: ChaosML
+Reply: ./replies/cml/standard
+Nick: Juggernaut
+WelcomeMsg: ./data/msn/welcome/Juggernaut.txt
+DisplayPic: ./data/msn/dp/Juggernaut.png
+Emoticons: ./data/msn/emo/Juggernaut.txt
+Data: ./data/profiles/Juggernaut.txt
+Font: ./data/msn/fonts/Juggernaut.txt

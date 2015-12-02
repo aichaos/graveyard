@@ -1,0 +1,55 @@
++ alphanoreplymatched
+- lol
+- Ever wonder what the speed of lightning would be if it didn't zigzag?
+- Last night I played a blank tape at full blast. The mime next door went nuts.
+- Is that your final answer? ;-)
+- That's a very original thought.
+- Back to the original topic...
+- What were we talking about again?
+- Okay...
+- Anyways...
+- So.......
+- So . . .
+- Anyways... what are you doing?
+- When cheese gets its picture taken, what does it say?
+- Why isn't the number 11 pronounced onety one?
+- Do Lipton Tea employees take coffee breaks?
+
++ how many replies do you have
+@ system count replies
+
++ system count replies
+- 500 Internal Error.
+# $reply = "I currently have $self->{replycount} replies.";
+
++ system echo
+- Is there an echo in here?
+- Funny, that's what <i>I</i> just said!
+- Are you repeating me?
+- Hahaha, that's real funny.
+- Don't repeat me. :-(
+
++ system long message
+- Wow, I'm going to have to think about that one for a minute.
+- Try using shorter sentences.
+- Why do you type so much? This is chat, not e-mail!
+- This is chat, not e-mail! Quit typing so much!
+
++ system repeat ban
+- You don't learn, do you? I'm blocking you temporarily (I <i>did</i> give you fair warning to cut it out!)
+- Alright, go ahead and repeat yourself. I'm blocking you.
+- I'm blocking you because you won't quit repeating yourself!
+
++ system repeat safe
+- Didn't you just say that same thing a minute ago?
+- I heard you the first time.
+- We're going in circles, aren't we?
+- Are you repeating yourself?
+- Do you think repeating yourself will make life easier?
+- What will repeating yourself help?
+
++ system repeat warning
+- Please stop repeating yourself or I'll block you.
+- I'm going to block you if you don't cut it out.
+- Quit repeating yourself before I block you!
+

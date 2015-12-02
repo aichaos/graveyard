@@ -1,0 +1,43 @@
+A {
+	COLOR: #000099;
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0000ff;
+	TEXT-DECORATION: none
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #ffffff;
+	SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+	SCROLLBAR-SHADOW-COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff;
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-TRACK-COLOR: #ffffff;
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+	SCROLLBAR-BASE-COLOR: #ffffff
+}
+.title {
+	FONT-SIZE: 48pt;
+	COLOR: #000000;
+	FONT-FAMILY: Arial
+}
+.nav {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: Verdana,Arial;
+}
+.font {
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: Verdana,Arial;
+}
+.header {
+	COLOR: #0099ff
+}
+.navpage {
+	BORDER-LEFT: 1px solid #000000;
+	BORDER-RIGHT: 1px solid #000000
+}
+.viewpage {
+	BORDER-RIGHT: 1px solid #000000
+}
+#foldheader{margin-left: 0px; cursor:pointer; cursor:hand; font-weight:bold; list-style-image:url(fold.gif)}
+#foldinglist{margin-left: 5px; list-style-image:url(list.gif)}

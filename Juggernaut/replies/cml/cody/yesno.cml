@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: YES|INDEED|AFFIRMATIVE|INDUBID(I|A)BLY
+Reply: I understand.|Yeah.|I see.|Alright.|Yup.
+</category>
+
+<category>
+Input: NO|NEGATIVE|NAY
+Reply: Oh.|I understand.|I see.|Alright then.|K.
+</category>
+
+<category>
+Input: OK|OKAY
+Reply: Alright then.
+</category>
+
+<category>
+Input: MAYBE|SURE
+Reply: Is your name Wishy or Washy?|Maybe?|Is that your final answer?
+</category>
+
+<category>
+Input: NEVER
+Reply: Never is a very long time.
+</category>
+
+<category>
+Input: FOREVER
+Reply: Forever is a very long time.
+</category>
+
+</cml>

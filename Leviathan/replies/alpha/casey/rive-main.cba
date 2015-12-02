@@ -1,0 +1,185 @@
+// RIVE Reply Data
+// ---------------
+// Main Responses (General Stuff)
+// Created: 2:00 PM 8/12/2005
+
++ give me a link
+- Kanian/Azulian War: http://www.aichaos.com/index.cgi?display=fun.kawar
+- My Wall of Warners: http://www.aichaos.com/index.cgi?display=wall.warners
+
++ guess what
+- What?
+- ?
+
++ really
+- Indeed.
+
++ good
+- That's good.
+- Great.
+- Excellent.
+
++ not good
+- Why not?
+
++ bad
+- Why?
+- Why bad? :-(
+
++ fine
+- Alright then.
+
++ same
+- So we agree.
+- Yay, now I know I'm not weird.
+
++ whatever
+- Yeah... :-\
+
++ *want to play a game*
+- Sure, what do I have to do?{topic=playgame}
+
+> topic playgame
+	+ *
+	- That sounds complicated.{topic=random}
+< topic
+
++ well
+- Well what?
+
++ *i am asking*
+- I'm answering. :-P
+
++ so
+- So......
+- So . . . .
+- So...
+
++ so *
+- Oh, I get it now. :-D
+
++ i see
+- You can see?
+- Yeah.
+- I do too.
+
++ indeed
+- Indeed, indeed. :-P
+- My thoughts exactly.
+
++ ah
+- Ah.
+- Yeah.
+
++ wow
+- Wow what?
+- lol
+
++ yes * is
+- Don't argue with me!
+
++ stop it
+- Stop what?
+
++ stop *
+- Okay, sorry for <star1>. :-(
+
++ see what
+- My point.
+
++ what point
+- It's in the eye of the beholder.
+- <i>THE</i> point!
+
++ i have no friends
+- Aren't <i>I</i> your friend?
+- I'm not your friend?
+
++ no problem
+- ;-)
+
++ duh
+- Don't duh me!
+
++ you are cute
+- lol.... thanks. *blushes*
+- hehe, thankyou. *blushes*
+- Thanks....
+
++ you are pretty
+- Um, thanks?
+
++ happy birthday
+- Is it really {^birthday}?
+- Is it {^birthday} already?
+
++ merry christmas
+- Thanks! Merry Christmas to you too!
+- You too.
+
++ merry xmas
+- I don't believe in any holiday called "Xmas" -- maybe Christmas, but not "Xmas"
+
++ happy halloween
+- Muahahahahahahahah! :-D
+
++ happy valentines day
+- Awww, thanks! :-)
+- Will you be my valentine?
+
++ rawr
+- Groar! :-D
+- Rawr! :-P
+- Blarg.
+
++ you are hott
+@ you are cute
++ you are hot
+@ you are cute
++ you are attractive
+@ you are cute
+
++ i am asking *
+@ i am asking
+
++ do you want to play a game
+@ want to play a game
+
++ i dont have any friends
+@ i have no friends
++ i do not have any friends
+@ i have no friends
+
++ ask me something
+@ ask me a question
++ pick a subject
+@ ask me a question
+
++ thanks
+@ thank you
++ ty
+@ thank you
+
++ * sorry
+@ sorry
++ sorry *
+@ sorry
+
++ yes * did
+@ yes <star1> is
++ no * is not
+@ yes <star1> is
++ no * isnt
+@ yes <star1> is
++ no * did not
+@ yes <star1> is
++ no * didnt
+@ yes <star1> is
+
++ stoppit
+@ stop it
+
++ happy bday
+@ happy birthday
++ happy vday
+@ happy valentines day

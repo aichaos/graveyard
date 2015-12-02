@@ -1,0 +1,168 @@
+<cml version="1.0">
+
+<category>
+Input: MY NAME IS *
+Reply: <set>formal=name=<star1></set>, nice to meet you! :-)
+</category>
+
+<category>
+Input: CALL ME *
+Reply: <set>formal=name=<star1></set>, I shall call you that from now on.
+</category>
+
+<category>
+Input: I AM * YEARS OLD
+Reply: What's it like being <set>normal=age=<star1></set> years old?
+</category>
+
+<category>
+Input: I AM A (BOY|GUY|MALE|DUDE|MAN)
+Reply: Oh, so you are a <set>normal=sex=male</set>.
+</category>
+
+<category>
+Input: I AM A (GIRL|FEMALE|CHICK|WOMAN)
+Reply: Oh, you're a <set>normal=sex=female</set>.
+</category>
+
+<category>
+Input: I LIVE IN *
+Reply: I know some people from <set>formal=location=<star1></set>.
+</category>
+
+<category>
+Input: I AM FROM *
+Reply: What's life like in <set>formal=location=<star1></set>?
+</category>
+
+<category>
+Input: MY FAVORITE COLOR IS *
+Reply: <set>formal=color=<star1></set> is a pretty color.
+</category>
+
+<category>
+Input: I LIKE THE COLOR *
+Reply: <set>formal=color=<star1></set> is a pretty color.
+</category>
+
+<category>
+Input: MY FAVORITE BOOK IS *
+Reply: I've never read <set>formal=book=<star1></set>.
+</category>
+
+<category>
+Input: MY FAVORITE BAND IS *
+Reply: I've heard <set>formal=band=<star1></set> before! :-D
+</category>
+
+<category>
+Input: I AM A STUDENT|I GO TO * SCHOOL
+Reply: Oh, you're a <set>normal=job=student</set>.
+</category>
+
+<category>
+Input: MY JOB IS A *
+Reply: Oh, <set>normal=job=<star1></set> sounds like a fun occupation.
+</category>
+
+<category>
+Input: MY (GIRLFRIEND|BOYFRIEND)S NAME IS *
+Reply: I hope you're very happy with <set>formal=spouse=<star2></set>.
+</category>
+
+<category>
+Input: I DO NOT HAVE A (GIRLFRIEND|BOYFRIEND)
+Reply: I see, so your <star1> is <set>normal=spouse=undefined</set>.
+</category>
+
+<category>
+Input: I AM STRAIGHT|I AM HETEROSEXUAL
+Reply: That's good to know. You are <set>normal=sexuality=heterosexual</set>.
+</category>
+
+<category>
+Input: I AM BI|I AM BISEXUAL|I LIKE MEN AND WOMEN
+Reply: Oh, you're <set>normal=sexuality=bisexual</set>. That's nice.
+</category>
+
+<category>
+Input: I AM GAY|I AM QUEER|I AM A HOMOSEXUAL|I AM A LESBIAN|I AM A DYKE
+Reply: I see. <get>name</get> is a <set>normal=sexuality=homosexual</set>.
+</category>
+
+<category>
+Input: MY WEBSITE IS *
+Reply: I'll visit <set>normal=website=<star1></set> some day.
+</category>
+
+<category>
+Input: WHO AM I|WHAT IS MY NAME
+Reply: You told me your name was <get>name</get>.
+</category>
+
+<category>
+Input: HOW OLD AM I|WHAT IS MY AGE
+Reply: You are <get>age</get> years old.
+</category>
+
+<category>
+Input: AM I (M|MALE) OR (F|FEMALE)|AM I A BOY OR A GIRL
+Reply: You told me you were a <get>sex</get>.
+</category>
+
+<category>
+Input: WHERE AM I|WHERE DO I LIVE
+Reply: You live in <get>location</get>.
+</category>
+
+<category>
+Input: WHAT IS MY COLOR|WHAT IS MY FAVORITE COLOR
+Reply: Your favorite color is <get>color</get>.
+</category>
+
+<category>
+Input: WHAT IS MY FAVORITE BOOK
+Reply: Your favorite book is <get>book</get>.
+</category>
+
+<category>
+Input: WHAT IS MY FAVORITE BAND|WHAT BAND DO I LIKE
+Reply: Your favorite band is <get>band</get>.
+</category>
+
+<category>
+Input: WHAT IS MY JOB|WHAT IS MY OCCUPATION
+Reply: You are a <get>job</get>.
+</category>
+
+<category>
+Input: WHO IS MY (GIRLFRIEND|BOYFRIEND|WIFE|HUSBAND)
+Reply: <get>spouse</get>.
+</category>
+
+<category>
+Input: WHAT IS MY SEXUALITY|AM I (STRAIGHT|BI|GAY|LESBIAN)
+Reply: You are <get>sexuality</get>.
+</category>
+
+<category>
+Input: WHO ARE MY FRIENDS
+Reply: Your friends are: <get>friends</get>.
+</category>
+
+<category>
+Input: (WHAT|WHERE) IS MY WEBSITE
+Reply: At <get>website</get>.
+</category>
+
+<category>
+Input: HOW MANY POINTS DO I HAVE
+Reply: You currently have <get>points</get> points.
+</category>
+
+<category>
+Input: HOW MANY STARS DO I HAVE
+Reply: You currently have <get>stars</get> stars.
+</category>
+
+</cml>

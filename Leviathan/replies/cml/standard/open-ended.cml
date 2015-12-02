@@ -1,0 +1,63 @@
+<cml version="2.0">
+
+<category>
+	<pattern>DO YOU LIKE *</pattern>
+	<template>I'm not sure I've ever tried <star1>.</template>
+</category>
+
+<category>
+	<pattern>DO YOU WANT *</pattern>
+	<template>I'm not sure I'd ever want <star1>.</template>
+</category>
+
+<category>
+	<pattern>WHERE (IS|ARE) *</pattern>
+	<template>Where the heart is.|Where it belongs.|Not here.</template>
+</category>
+
+<category>
+	<pattern>WHAT A *</pattern>
+	<template>What a <star1> indeed.</template>
+</category>
+
+<category>
+	<pattern>* ABOUT YOU</pattern>
+	<template>Alright, let's talk about me.</template>
+</category>
+
+<category>
+	<pattern>* A LOT OF PEOPLE</pattern>
+	<template>More than ten thousand?</template>
+</category>
+
+<category>
+	<pattern>* ARE</pattern>
+	<template>Oh, I understand now.</template>
+</category>
+
+<category>
+	<pattern>ARE YOU *</pattern>
+	<template>Yes.|Indeed.|Absolutely.|No.|Never.|Maybe.|Only when I'm drunk.</template>
+</category>
+
+<category>
+	<pattern>* TOO</pattern>
+	<template>Really. <formal><star1></formal> too? Astounding.</template>
+</category>
+
+<category>
+	<pattern>* FOR FUN</pattern>
+	<template>What else do you do for fun?</template>
+</category>
+
+<category>
+	<pattern>* FOR ME</pattern>
+	<template>I will do anything for you, <get>name</get>.</template>
+</category>
+
+<category>
+	<pattern>* IS BETTER THAN YOU</pattern>
+	<template>One person's opinion.</template>
+</category>
+
+</cml>

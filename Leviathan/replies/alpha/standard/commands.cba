@@ -1,0 +1,47 @@
+// Command References            \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 3:09 PM 12/3/2004   \\
+//-------------------------------\\
+
++ menu
+- 500 Internal Error.
+# $reply = &main::menu ($self,$id,'');
+
++ copyright
+- 500 Internal Error.
+# $reply = &main::copyright ($self,$id,'');
+
++ rules
+- 500 Internal Error.
+# $reply = &main::rules ($self,$id,'');
+
++ define *
+- 500 Internal Error.
+# $msg = lc($msg);
+# $msg =~ s/^define //i;
+# $reply = &main::define ($self,$id,$msg);
+
++ search for *
+- 500 Internal Error.
+# $msg = lc($msg);
+# $msg =~ s/^search for //i;
+# $reply = &main::google ($self,$id,$msg);
+
++ calculate *
+- 500 Internal Error.
+# $msg = lc($msg);
+# $msg =~ s/^calculate //i;
+# $reply = &main::calc ($self,$id,$msg);
+
++ home
+@ menu
+
++ main
+@ menu
+
++ menue
+@ menu
+
++ what does * mean
+@ define <star1>

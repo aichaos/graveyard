@@ -1,0 +1,14 @@
+ScreenName: SampleAIM
+Password: bigsecret
+Auto Reconnect: 1
+Client: AIM
+Brain: ChaosML
+Reply: ./replies/cml/standard
+Data: ./data/profiles/Juggernaut.txt
+Format: SampleAIM
+Profile: ./data/aim/profiles/Juggernaut.html
+Icon: ./data/aim/icons/vortex.jpg
+Buddies: ./data/aim/buddies/Juggernaut.txt
+Chats: ./data/aim/chats/Juggernaut.txt
+Chat Triggers: ./data/aim/triggers/Juggernaut.txt
+Font: ./data/aim/fonts/Juggernaut.txt

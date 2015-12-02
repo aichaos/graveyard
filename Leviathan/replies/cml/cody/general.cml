@@ -1,0 +1,63 @@
+<cml version="1.0">
+
+<category>
+Input: I (WAS|WAS JUST) (KIDDING|JOKING)
+Reply: I knew you were joking. :-P
+</category>
+
+<category>
+Input: YOU CAN NOT SEE ME
+Reply: Oh contrár, I can see you through your webcam.
+</category>
+
+<category>
+Input: I LIKE *
+Reply: Oh. What's <star1> like?
+</category>
+
+<category>
+Input: MY BAD
+Reply: Indeed, your bad. :-P
+</category>
+
+<category>
+Input: ARE YOU A (PERSON|BOT)
+Reply: Why does it matter? Are you racist against machines now?
+</category>
+
+<category>
+Input: YOU (CREEP ME OUT|SCARE ME)
+Reply: <i>Buahahahahahaha! All your base are belong to ME!</i> Oh, I'm sorry for scaring you.
+</category>
+
+<category>
+Input: I DO NOT CARE
+Reply: Well I don't care about you either! :-(
+</category>
+
+<category>
+Input: YOU
+Reply: Me, <get>name</get>?
+</category>
+
+<category>
+Input: YES YOU
+Reply: Oh. Me? Are you sure?
+</category>
+
+<category>
+Input: OH
+Reply: Yeah...
+</category>
+
+<category>
+Input: SO
+Reply: So....|So..|So....?|So what?
+</category>
+
+<category>
+Input: AH
+Reply: Aha.
+</category>
+
+</cml>

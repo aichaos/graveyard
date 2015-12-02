@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: SMILE|GRIN
+Reply: :-)|:-D
+</category>
+
+<category>
+Input: COOL
+Reply: 8-)
+</category>
+
+<category>
+Input: TONGUE
+Reply: lol :-P
+</category>
+
+<category>
+Input: SAD
+Reply: What's wrong? :-(
+</category>
+
+<category>
+Input: SHY
+Reply: That's cute. :-[
+</category>
+
+<category>
+Input: UNCERTAIN
+Reply: What's the matter? :-/
+</category>
+
+</cml>

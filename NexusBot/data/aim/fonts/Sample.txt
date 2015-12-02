@@ -1,0 +1,6 @@
+Font Name=Verdana
+Font Color=black
+Background=white
+Link Color=blue
+Font Size=2
+Style=<b>

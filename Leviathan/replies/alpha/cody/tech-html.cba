@@ -1,0 +1,90 @@
++ * in html
+@ <star1>
+
++ * with html
+@ <star1>
+
++ how do i do italics
+@ how do i make text italic
+
++ how do i do links
+@ how do i make a hyperlink
+
++ how do i do tables
+@ how do tables work
+
++ how do i insert an image
+- <lt>img src="filename.jpg" width="400" height="250" alt="on-mouse-over tooltip"<gt>
+
++ how do i italicize *
+@ how do i make text italic
+
++ how do i link
+@ how do i make a hyperlink
+
++ how do i make a hyperlink
+- <lt>a href="http://url/"<gt>click here!<lt>/a<gt>
+
++ how do i make a link
+@ how do i make a hyperlink
+
++ how do i make a table
+@ how do tables work
+
++ how do i make bold *
+@ how do i make text bold
+
++ how do i make text bold
+- <lt>b<gt>bold text<lt>/b<gt>
+
++ how do i make text italic
+- <lt>i<gt>italic text<lt>/i<gt>
+
++ how do i make text underlined
+- <lt>u<gt>underlined text<lt>/u<gt>
+
++ how do i underline
+@ how do i make text underlined
+
++ how do i underline *
+@ how do i make text underlined
+
++ how do i use images
+@ how do i insert an image
+
++ how do tables work
+- <br><lt>table<gt><br><lt>tr<gt><br><lt>td<gt>Cell 1<lt>/td<gt><lt>td<gt>Cell 2<lt>/td<gt><br><lt>/tr<gt><br><lt>tr<gt><br><lt>td<gt>Cell 3<lt>/td<gt><lt>td<gt>Cell 4<lt>/td<gt><br><lt>/tr<gt><br><lt>/table<gt>
+
++ in html *
+@ <star1>
+
++ what does html mean
+@ what is html
+
++ what does http mean
+@ what is http
+
++ what does uri mean
+@ what is uri
+
++ what does url mean
+@ what is url
+
++ what is a uri
+@ what is uri
+
++ what is a url
+@ what is url
+
++ what is html
+- That's the HyperText Markup Language.
+
++ what is http
+- HyperText Transfer Protocol.
+
++ what is uri
+- Uniform Resource Indicator.
+
++ what is url
+- Uniform Resource Locator.
+

@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Anatomy of $chaos</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	This is a basic overview of how the $chaos hashref is organized.<p>
+
+<b class="header">:: Top-Level Key/Values</b><br>
+<i>These keys are top-levels that contain a single value.</i><p>
+
+<blockquote>
+	<b>$chaos->{version}</b><br>
+	Contains the current version number.<p>
+
+	<b>$chaos->{author}</b><br>
+	Contains the program author's name (Cerone Kirsle).<p>
+
+	<b>$chaos->{debug}</b><br>
+	Boolean flag; 1 will show debug messages (there's a lot of them).<p>
+
+	<b>$chaos->{games}</b><br>
+	Holds the Games::Manager object for multiplayer games.
+</blockquote>
+
+<b class="header">:: The System Key</b><br>
+<i>These keys are for global systemic things.</i><p>
+
+<blockquote>
+	<b>$chaos->{system}->{restrict_listeners}</b><br>
+	This key will equal 1 if you started Juggernaut with a "/aim /msn /irc" etc. flag to only
+	sign on certain listeners.<p>
+
+	<b>$chaos->{system}->{suppress}</b><br>
+	Boolean flag; if 1, warnings will not be shown on console, but only printed to the log.
+	This can be activated by putting the "/s" flag when starting the bot.<p>
+
+	<b>$chaos->{system}->{maintain}->{on}</b><br>
+	<b>$chaos->{system}->{maintain}->{msg}</b><br>
+	Maintenance mode settings. <b>{on}</b> will be 1 for on, 0 for off. <b>{msg}</b> is the
+	message that the bots will return on IM while maintenance mode is on.<p>
+
+	<b>$chaos->{system}->{active_loops}</b><br>
+	This should not be tampered with; the bot keeps track of how many times it loops in the
+	&active sub (every so many loops it will log its activity time to a file).<p>
+
+	<b>$chaos->{system}->{queue}</b><br>
+	Used for queued events. Sub-keys are named after (usually) the bot's screenname that is
+	using the key; although for non-bot-related events, sub-keys may be named after whatever
+	that event identified itself as.<p>
+
+	<b>$chaos->{system}->{signon}</b><br>
+	The time() that the bot signed on.<p>
+
+	<b>$chaos->{system}->{substitution}</b><br>
+	Sub-keys are the search text of a substitution (i.e. "ISN'T"). Substitution sub-keys contain
+	{replace} -- the text to replace it with -- and {level}, the replace level (0 = replace anywhere,
+	1 = replace only if alone).<p>
+
+	<b>$chaos->{system}->{commands}</b><br>
+	Sub-keys are named after each command (minus the .PL extensions). Command sub-keys are
+	the returned data from those commands.<p>
+
+	<b>$chaos->{system}->{brains}</b><br>
+	Sub-keys are named after the brains (minus the .PL extensions). Brain sub-keys are the
+	returned data from those brains.<p>
+
+	<b>$chaos->{system}->{handlers}</b><br>
+	Sub-keys are named after each handler file (<i>including</i> the .PL extensions). Handler
+	sub-keys are returned data from those handlers.<p>
+
+	<b>$chaos->{system}->{subroutines}</b><br>
+	Sub-keys are named after each subroutine file (<i>including</i> the .PL extensions).
+	Subroutine sub-keys are returned data from those subroutines.
+</blockquote>
+
+<b class="header">:: The Data Key</b><br>
+<i>These keys are global data for the bots to all share.</i><p>
+
+<blockquote>
+	<b>$chaos->{data}->{blocks}</b><br>
+	Not used.<p>
+
+	<b>$chaos->{data}->{substitutions}</b><br>
+	Not used; moved to $chaos->{system}->{substitution}<p>
+
+	<b>$chaos->{data}->{aim}->{chats}</b><br>
+	General AIM chatroom settings. First-level keys are the name of the chat room, lowercased
+	and without spaces. Sub-key contains the current room's "topic" - this is so multiple bots
+	in the same room will have the same topic for that room.
+</blockquote>
+
+<b class="header">:: The Clients Key</b><br>
+<i>These keys are for holding user data.</i><p>
+
+<blockquote>
+	<b>$chaos->{clients}</b><br>
+	Sub-keys are the client's User ID (formatted as MESSENGER-username). Sub-keys of each
+	user contain all the data as found in their profile (name, age, location, etc.)<p>
+
+	<b>$chaos->{clients}->{*}->{callback}</b><br>
+	Callbacks, usually used with commands. Their callback is inserted to the front of their
+	message if they didn't trigger a command, and then a command is tried with the new
+	callback. That's so commands (like !menu) can send you back to them without having to
+	type !menu every time.<p>
+
+	<b>$chaos->{clients}->{*}->{mute}</b><br>
+	If mute-mode is on. This key will be 1 if they're muted; bots won't send replies to
+	muted users.<p>
+
+	<b>$chaos->{clients}->{*}->{cloak}</b><br>
+	Cloaking mode. Only botmasters have access to the !cloak command for activating or
+	deactivating cloaking mode. When cloaked, your conversation logs are not printed to
+	the DOS console, nor are they logged to files.
+</blockquote>
+
+<b class="header">:: The Bots Key</b><br>
+<i>These keys are for holding bot data.</i><p>
+
+<blockquote>
+	<b>$chaos->{bots}</b><br>
+	Sub-keys would be the bot's username (i.e. name@domain.com for MSN, screenname for AIM,
+	name@jabber.com for Jabber, etc.). Sub-keys for each bot would contain their data, as
+	found in their bot file in the "bots" folder.<p>
+
+	<b>$chaos->{bots}->{*}->{client}</b><br>
+	This holds the bot's messenger object, and is used to execute top-level commands (only
+	applies to MSN... the other messengers can simply use $self as received in the handlers).<p>
+
+	<b>$chaos->{bots}->{*}->{_data}</b><br>
+	Contains keys for your <i>bot's</i> personal profile data. Similar to client data.
+</blockquote>
+
+</font>
+</body>
+</html>

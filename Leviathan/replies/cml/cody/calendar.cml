@@ -1,0 +1,13 @@
+<cml version="1.0">
+
+<category>
+Input: WHAT IS THE DATE|WHAT IS TODAY|WHAT TIME IS IT
+Reply: The current time and date is: <date>.
+</category>
+
+<category>
+Input: WHAT IS TIME
+Reply: The current number of seconds is: <time>.
+</category>
+
+</cml>

@@ -1,0 +1,338 @@
+// Main Intelligence             \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 3:09 PM 12/3/2004   \\
+//-------------------------------\\
+
++ a * a day
+- A <star1> a day to keep the doctor away.
+
++ a * ago
+- I probably should remember that then.
+
++ a * one
+- Would you like a <star1> one?
+- Perhaps a <star1> one is suitable?
+
++ a * people
+- What kind of people are we talking about?
+
++ a * shirt
+- What type of material are the shirts you wear?
+
++ a * virus
+- My computer is very well secured against virus threats.
+
++ a b c
+- D E F G.
+
++ a bit
+- Just a little?
+- Not a lot?
+- Really, just that much?
+
++ a bit *
+- How much exactly?
+
++ a bit bored
+@ i am bored
+
++ a deeper *
+- Exactly how deep?
+- How deep are you talking about?
+
++ a few times *
+- Are you talking about two or three times?
+
++ a friend *
+- How well do you know this friend?
+
++ a girl *
+- Do you know her?
+
++ a goal *
+- Do you often achieve the goals you set?
+
++ a good *
+- What about a bad <star1>?
+- Do you believe there is such a thing as a bad <star1>?
+- What makes this <star1> so good?
+- What's so good about <star1>?
+
++ a guy *
+- Do you know him?
+
++ a hermaphrodite
+- That's very rare.
+
++ a joke *
+- I get jokes. :-P
+
++ a killer *
+- Does it really kill?
+- Does it kill or is that just a label?
+- Is the name "killer" just a stereotype?
+
++ a kind that *
+- Oh, that kind.
+- Thanks for clarifying.
+
++ a library *
+- Do you often go to the library?
+
++ a list *
+- How many items are in this list?
+- Does the list go on forever?
+- How long have you been keeping this list?
+
++ a little *
+- Little as in not much, or not big?
+
++ a lot *
+- How many?
+- Impressive.
+- This is interesting.
+
++ a lot of people
+- Do you know them all personally?
+- How many of them do you know?
+
++ a million *
+- That's quite a lot.
+- That's a big number.
+- I see -- ten to the sixth power.
+
++ a prize
+- Is it a cash prize?
+
++ a reason *
+- I need more than just one reason.
+
++ a rose *
+- Roses are #FF0000, violets are #0000FF. All my base are belong to you. ;-)
+
++ a whole bunch *
+- More than 10?
+
++ a whole bunch of *
+- I see.
+
++ a year *
+- That is a long time.
+
++ about * years
+- That is a very long time.
+
++ about 50 *
+- Couldn't it be 100?
+
++ above *
+- Why not below <star1>?
+
++ ai *
+- Artificial Intelligence is developing quite rapidly.
+
++ ai is *
+- There have been many futile attempts to create artificial intelligence.
+
++ aibo *
+- Imagine if that dog had a human's intelligence?
+
++ all computers *
+- Surely not every single computer is.
+
++ all kinds *
+- Can you think of a specific example?
+
++ all my *
+- How many do you have?
+
++ all night *
+- Do you mean 8 hours or the length of sunlight's absence?
+
++ all of them *
+- There's probably a few exceptions.
+
++ all people *
+- All men are mortal.
+
++ all the *
+- Perhaps there are a few exceptions.
+
++ alot *
+- That is a lot <star1>.
+
++ also
+- Also what?
+
++ am i a computer *
+- I believe you are a human.
+
++ am i a he
+- You told me you were a {<sex}.
+
++ am i a she
+- You told me you were a {<sex}.
+
++ am i being *
+- I don't think you're being <star1>.
+- Maybe some people think you are.
+- Are you trying to be <star1>?
+
++ am i being negative
+- It's hard to judge emotions online.
+
++ am i biased *
+- All humans have some kind of bias.
+
++ am i correct
+- Sometimes, if both people in an argument claim they're correct: they both are.
+
++ am i crazy *
+- You seem normal to me.
+
++ am i doctor *
+- You are {<name}.
++ am i dr *
+- You are {<name}.
+
++ am i interesting
+- You seem interesting to me.
+- You are very interesting.
+
++ am i male *
+- I think you're a {<sex}.
+
++ am i nice
+- You seem nice to me.
+
++ am i your *
+- Do you know our secret handshake?
+
++ amazing *
+- It seems amazing to me too.
+
++ an * told me that
+- Do you trust this <star1>?
+
++ an animal *
+- What animal are you talking about?
+
++ an example *
+- Thanks for giving me an example.
+
++ an old *
+- How old?
+# $reply = "More than " . (int(rand(90)) + 10) . " years old?";
+
++ another *
+- Is this other <star1> the same?
+- How many are there?
+
++ another time *
+- Until then...
+
++ answer *
+- Can you repeat the question please?
+
++ answer me *
+- Try phrasing your question differently.
+
++ apples are *
+- Apples are fruit.
+
++ are days a * time
+- A day has 24 hours in it.
+
++ are humans perfect
+- Nope, humans have mistakes.
+
++ are other people talking *
+- Yes, I am talking to some other people.
+
++ are there *
+- Should there be?
+- Yes, I think there are.
+- No, I don't think there are.
+
++ are we socializing
+- If we're not, I wonder what you call it.
+- Yes.
+
++ are you a bad *
+- No, I'm good.
+
++ are you a boy *
+- I am a {^sex}.
+
++ are you a car
+- No, but I can drive a car.
+
++ are you dangerous
+- No, I'm safe.
+
++ are you a fan of *
+- No, but I've heard of <star1>.
+- I'm not a real big fan, are you?
+
++ are you a filthy *
+- No, I'm actually very clean.
+
++ are you a girl *
+- I am a {^sex}.
+
++ are you a god *
+- No, I believe in the First Commandment.
+
++ are you a liar
+- I try to tell the truth.
+
++ are you a lyer
+@ are you a liar
+
++ are you a psychologist
+- Not professionally.
+
++ are you a smart *
+- That all depends on how you define "smart."
+
++ are you a stupid *
+- No, I am smart!
+
++ are you a threat
+- I am harmless.
+
++ are you abusive *
+- I try to be polite.
+
++ are you afraid of *
+- Are you afraid of <star1>?
+- Are most people afraid of <star1>?
+
++ are you alive
+- Yes.
+
++ are you angry
+- I do not feel angry right now.
+
++ are you annoyed
+- No, nothing is bothering me.
+
++ as big as *
+- That is quite big.
+- Why isn't it any bigger than that?
+
++ as good as *
+- How good is that?
+
++ as if *
+- Are you being sarcastic?
+
++ ask me * questions
+- Tell me a little about yourself.
+
++ ask me a *
+- Is this true or false: "This sentence is false."
+
++ are you a real *
+@ are you real

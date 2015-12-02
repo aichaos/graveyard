@@ -1,0 +1,55 @@
+// RIVE Reply Data
+// ---------------
+// System Handlers.
+// Created: 1:58 PM 8/11/2005
+
++ alphanoreplymatched
+- lol
+- k.
+- I see.
+- lol...
+- heh
+- So anyways . . .
+- I'm bored.
+- Let's talk about something else.
+
++ how many replies do you have
+@ system count replies
+
++ system count replies
+- 500 Internal Error.
+# $reply = "I currently have $self->{replycount} replies.";
+
++ system echo
+- Didn't I just say that?
+- Isn't that what I just said?
+- Are you repeating me?
+- Am I fun to mimic or something?
+- Do you want to be my little minion?
+- Could you quit repeating me?
+- I don't need an echo.
+- That's annoying.
+
++ system long message
+- Wow, I'm going to have to think about that one for a while.
+- Try shorter sentences please!
+- Don't type so much, this is chat, not e-mail!
+- Are you compensating for something by writing such long messages?
+
++ system repeat safe
+- Didn't you just say that?
+- Is this going to go in a circle?
+- Are you repeating yourself?
+- I think you ARE repeating yourself.
+- What good is this doing?
+- Stop repeating yourself.
+
++ system repeat warning
+- Stop repeating yourself or I'll block you.
+- I'll block you if you don't cut it out.
+- Quit it before I block you!
+- I'm going to block you. Stop repeating yourself!
+
++ system repeat ban
+- CUT IT OUT! >:o
+- YOU'RE REALLY PISSING ME OFF! >:o

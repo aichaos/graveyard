@@ -1,0 +1,16 @@
+Name=Casey
+Age=14
+Birthday=October 12
+Birthdate=10/12/04
+Sex=male
+Location=Flushing, MI
+Time=EST
+Personality=neutral
+Color=fuchsia
+Book=Azulian World
+Band=Relient K
+Job=student
+Spouse=nobody
+Sexuality=homosexual
+Friends=Cerone, Chaos, Cody, Siko, and Koda
+Website=http://www.aichaos.com/

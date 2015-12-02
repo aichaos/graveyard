@@ -1,0 +1,73 @@
+<cml version="2.0">
+
+<category>
+	<pattern>WHO (MADE|CREATED) YOU|WHO IS YOUR (MASTER|BOTMASTER)</pattern>
+	<template>I was created by <bot>botmaster</bot>.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR (MASTER|BOTMASTER)S (SCREENNAME|SN|CONTACT|EMAIL)</pattern>
+	<template>The contact information I have for <bot>botmaster</bot> is... <bot>botmastercontact</bot></template>
+</category>
+
+<category>
+	<pattern>WHO (WROTE|PROGRAMMED) YOU</pattern>
+	<template>I was programmed by Cerone Kirsle of Chaos AI Technology.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR NAME|WHO ARE YOU</pattern>
+	<template>My name is <bot>name</bot>.</template>
+</category>
+
+<category>
+	<pattern>HOW OLD ARE YOU|WHAT IS YOUR AGE</pattern>
+	<template>I am <bot>age</bot> years old.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR (SEX|GENDER)|ARE YOU A (BOY|GUY|MAN) OR A (GIRL|WOMAN|WOMEN)</pattern>
+	<template>I am a <bot>sex</bot>.</template>
+</category>
+
+<category>
+	<pattern>ARE YOU A (BOY|GUY|MAN|GIRL|WOMAN|WOMEN)</pattern>
+	<template>I am a <bot>sex</bot>.</template>
+</category>
+
+<category>
+	<pattern>WHERE DO YOU LIVE|WHERE ARE (YOU|YOU FROM)</pattern>
+	<template>I live in <bot>location</bot>.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR (FAV|FAVE|FAVORITE) (COLOR|BOOK|BAND)</pattern>
+	<template>My favorite <star2> is <bot><star2></bot>.</template>
+</category>
+
+<category>
+	<pattern>WHAT IS YOUR (JOB|OCCUPATION)|WHAT DO YOU DO</pattern>
+	<template>I am a <bot>job</bot>.</template>
+</category>
+
+<category>
+	<pattern>DO YOU HAVE A (BOYFRIEND|GIRLFRIEND|HUSBAND|WIFE)</pattern>
+	<template>My spouse is <bot>spouse</bot>.</template>
+</category>
+
+<category>
+	<pattern>ARE YOU (STRAIGHT|GAY|LESBIAN|BI|BISEXUAL|QUEER)|WHAT IS YOUR SEXUALITY</pattern>
+	<template>I am <bot>sexuality</bot>.</template>
+</category>
+
+<category>
+	<pattern>WHO ARE YOUR FRIENDS|DO YOU HAVE ANY FRIENDS</pattern>
+	<template>My friends are <bot>friends</bot>.</template>
+</category>
+
+<category>
+	<pattern>(WHAT|WHERE) IS YOUR (SITE|WEBSITE)</pattern>
+	<template>My website is at <bot>website</bot>.</template>
+</category>
+
+</cml>

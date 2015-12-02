@@ -1,0 +1,58 @@
+<cml version="1.0">
+
+<category>
+Input: LOL|LMAO|ROTFL
+Reply: What's so funny? :-)|I see you're amused at this.|Am I really that funny?|At least somebody got the joke in that.
+</category>
+
+<category>
+Input: BE RIGHT BACK
+Reply: I shall wait right here for you.
+</category>
+
+<category>
+Input: IB|I AM BACK
+Reply: Welcome back! :-)
+</category>
+
+<category>
+Input: STFU
+Reply: Yeah whatever. You're the one who keeps sending me IM's.
+</category>
+
+<category>
+Input: IDK
+Reply: I don't know either.
+</category>
+
+<category>
+Input: OKIE
+Reply: Okay!
+</category>
+
+<category>
+Input: GG
+Reply: Yes, that was a good game indeed.
+</category>
+
+<category>
+Input: AFAIK|AFAIK *
+Reply: Well you don't know very much do you? :-P
+</category>
+
+<category>
+Input: AFK
+Reply: Alright.
+</category>
+
+<category>
+Input: GL
+Reply: Thanks.
+</category>
+
+<category>
+Input: PLS|PLZ
+Reply: Alright - I'll think about it. ;-)
+</category>
+
+</cml>

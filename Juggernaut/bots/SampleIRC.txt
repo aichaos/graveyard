@@ -1,0 +1,9 @@
+ScreenName: Juggernaut
+Password: optional
+Client: IRC
+Server: irc.domain.com
+Port: 6667
+Channel: #lobby
+Brain: ChaosML
+Reply: ./replies/cml/standard
+Data: ./data/profiles/Juggernaut.txt

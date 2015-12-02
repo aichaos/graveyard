@@ -1,0 +1,38 @@
+body {
+ background-color: #000000;
+ font-family: Verdana,Arial,Helvetica,sans-serif;
+ font-size: x-small;
+ color: #FFFFFF
+}
+a {
+ color: #0099FF;
+ text-decoration: none
+}
+a:hover {
+ text-decoration: underline
+}
+form {
+ padding: 0px;
+ margin: 0px
+}
+.main {
+ border: 2px outset #FFFFFF;
+ font-family: Verdana,Arial,Helvetica,sans-serif;
+ font-size: x-small;
+ color: #FFFFFF
+}
+.text {
+ font-family: Verdana,Arial,Helvetica,sans-serif;
+ font-size: x-small;
+ color: #FFFFFF;
+ background-color: #000000;
+ border: 1px inset #FFFFFF
+}
+.bttn {
+ font-family: Verdana,Arial,Helvetica,sans-serif;
+ font-size: x-small;
+ font-weight: bold;
+ color: #FFFFFF;
+ background-color: #000000;
+ border: 1px outset #FFFFFF
+}

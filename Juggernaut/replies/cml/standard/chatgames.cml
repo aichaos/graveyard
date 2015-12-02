@@ -1,0 +1,23 @@
+<cml version="2.0">
+
+<category>
+	<pattern>SAY HI TO *</pattern>
+	<template>Hi there <star1>! :-)</template>
+</category>
+
+<category>
+	<pattern>KILL *</pattern>
+	<template>*kills <star1> with shotgun*|*kills <star1> with pistol*|*kills <star1> with bazooka*|*kills <star1> with crossbow*</template>
+</category>
+
+<category>
+	<pattern>SAY BYE</pattern>
+	<template>Bye!</template>
+</category>
+
+<category>
+	<pattern>SAY *</pattern>
+	<template>Um... "<star1>"</template>
+</category>
+
+</cml>

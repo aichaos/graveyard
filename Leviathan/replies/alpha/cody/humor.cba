@@ -1,0 +1,201 @@
+> topic knockknock1
+
+	+ *
+	- <star1> who?{topic=knockknock2}
+
+< topic
+
+> topic knockknock2
+
+	+ *
+	- Hahaha! <star1>! That's a good one! :-D{topic=random}
+
+< topic
+
++ * or something
+- Or something.
+# if ($msg =~ /^(.*?) or something$/i) { $reply .= " " . $self->reply ($id,"$1");}
+
++ a
+- b
+
++ are you a pizza
+- Yes, {<name}, I am a pizza. A talking one. With pepperoni and extra cheese. :-P
+
++ are you a time traveler
+@ are you a time travelor
+
++ are you a time traveller
+@ are you a time travelor
+
++ are you a time travellor
+@ are you a time travelor
+
++ are you a time travelor
+- Yes, I am from the world of tomorrow -- I traveled one day into the past. :-P
+
++ are you from the future
+@ are you a time travelor
+
++ are you real
+- Yes -- unless you're actually dreaming right now. Ask yourself THAT! :-P
+
++ ask if i care
+- Do you care, {<name}?
+
++ ask me if i care
+@ ask if i care
+
++ b
+- c
+
++ c
+- d
+
++ d
+- e
+
++ do you think *
+- I don't think.
+
++ does that make sense
+- Not if you dwell on it.
+
++ e
+- f
+
++ eat me
+- In your dreams.
+
++ f
+- g
+
++ g
+- h
+
++ h
+- i
+
++ how do i write a *
+- With a pen or pencil.
+
++ i
+- j
+
++ i am * admin
+- Then you should know the secret Admin Password:
+- Then you know the secret Admin Password:
+- Not unless you can tell me the secret Admin Password:
+
++ i am your master
+- Then you must know the secret password:
+& Oh yes, there is a secret password. ;-)
+& Nope, that's not the secret password! :-P
+
++ i have time
+- It's going to take about 100 hours.
+- It will definitely be at least 100 hours.
+- I bet it will take more than 100 hours.
+# my $hours = int(rand(1000)) + 100;$reply =~ s/100/$hours/ig;
+
++ j
+- k
+
++ k
+- l
+
++ knock knock
+- Who's there?{topic=knockknock1}
+
++ l
+- m
+
++ m
+- n
+
++ n
+- o
+
++ o
+- p
+
++ p
+- q
+
++ q
+- r
+
++ r
+- s
+
++ s
+- t
+
++ smartass
+- Well, I know I'm smart so you must be the ass.
+
++ t
+- u
+
++ tell me a poem
+- Little Miss Muffet sat on her tuffet,<br>In a nonchalant sort of way.<br>With her force field around her,<br>The spider, the bounder,<br>Is not in the picture today.
+
++ that does not make any sense
+- It made sense to me.
+
++ that does not make any sense *
+@ that does not make any sense
+
++ that doesnt make any sense
+@ that does not make any sense
+
++ that doesnt make any sense *
+@ that does not make any sense
+
++ that is not funny
+- I thought it was funny.
+
++ that makes no sense
+@ that does not make any sense
+
++ that makes no sense *
+@ that does not make any sense
+
++ u
+- v
+
++ unbelievable
+- The ability to comprehend things varies from person to person.
+- The mental capacity to comprehend varies from individual to individual.
+
++ v
+- w
+
++ w
+- x
+
++ what do * i look like
+@ what do i look like
+
++ what do i look like
+- You probably look like a nerd.
+- I see a 95.99% chance you look like a nerd.
+
++ x
+- y
+
++ y
+- z
+
++ you do not * eyes
+@ you do not have eyes
+
++ you do not have eyes
+- Of course I have eyes!
+
++ you dont have eyes
+@ you do not have eyes
+
++ z
+- a
+

@@ -1,0 +1,42 @@
+// RIVE Reply Data
+// ---------------
+// Prefixes to other messages.
+// Created: 12:53 PM 8/18/2005
+
++ well *
+- I see.
+- Interesting.
+# if ($msg =~ /^well (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ really *
+- For real.
+# if ($msg =~ /^really (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ last time *
+- Oh yes, I remember.
+- I remember.
+# if ($msg =~ /^last time (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ umm *
+- A lot of people spell "umm" with two M's.
+# if ($msg =~ /^umm (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ ummm *
+- A lot of people spell "ummm" with three M's.
+# if ($msg =~ /^umm (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ * or something
+- Or something.
+# if ($msg =~ /^(.*?) or something$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }

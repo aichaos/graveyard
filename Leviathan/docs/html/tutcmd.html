@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Commands Tutorial</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	This tutorial will explain how to make a simple command: a "Guess My Number!" game.<p>
+
+<b class="header">:: The Command Template</b>
+<blockquote>
+	<ol>
+		<li>First, there should be a file called "command.pl" found in the "templates" folder. Edit
+			this file in a text editor such as Notepad, and click "File -> Save As"</li>
+		<li>Navigate to your bot's "commands" folder; save the file as
+			<font face="Courier New" size="2" color="#0000FF">"tutorial.pl"</font> (<i>with</i>
+			the quotation marks).</li>
+	</ol>
+	Now you have your command's file.
+</blockquote><p>
+
+<b class="header">:: Identifying the Command</b>
+<blockquote>
+	Now it's time to put some identification to your command. In the commented header, edit
+	the data to say something about your command. This is only for show; it's easier when editing
+	a command if you can see the data at the top of the file without scrolling to the bottom.<p>
+
+	The header should now look like this:<br>
+	<font face="Courier New" size="2" color="#990099">
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Leviathan&gt;<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:...::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command Name // !tutorial<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::&nbsp;&nbsp;&nbsp;::.&nbsp;&nbsp;&nbsp;&nbsp;Description // Guess My Number Tutorial<br>
+	#&nbsp;..:;;.&nbsp;'&nbsp;.;;:..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usage // !tutorial &lt;number&gt;<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;'''&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permissions // Public<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:;,:,;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listener // All<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright // 2004 Command Author's Name
+	</font><p>
+
+	Next, go down to where it has "sub command {", and change the word "command" to read "tutorial"... it should
+	now look like:<br>
+	<font face="Courier New" size="2" color="#990099">sub tutorial {</font><p>
+
+	Now, scroll to the bottom of the command, and edit the hashref with pretty much the same data
+	as above. You can leave the "Category" alone, or you may want to put it in a different category.
+	The completed footer should now look like this:<br>
+	<font face="Courier New" size="2" color="#990099">
+	{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category => 'General',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description => 'Guess My Number Tutorial',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usage => '!tutorial &lt;number&gt;',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listener => 'All',<br>
+	};</font><p>
+
+	The hashref footer will make sure your command gets a place in the menu. Save, and proceed to the
+	next step.
+</blockquote><p>
+
+<b class="header">:: The Command Body</b>
+<blockquote>
+	Take note how $self, $client, and $msg were received through @_ (an array containing all data sent
+	to a subroutine), and how a reply was returned. These are very important.<p>
+
+	Remove the <b>return</b> line; we'll put it back in later on in the command.<p>
+
+	Below the <b>my ($self,$client,$msg) = @_;</b> line is where we'll want to put the command's
+	body into.<p>
+
+	<ol>
+		<li>First, make sure that the user has a message. You can check that with this code:<p>
+			<font face="Courier New" size="2" color="#990099">
+			return "You must give me a number when calling this command!" unless length $msg > 0;
+			</font></li>
+		<li>Second, we'll need to make sure the message doesn't contain anything except for
+			numbers. To do this, we'll check if the message contains <b>[^0-9]</b> (read as
+			"anything that is not in the range 0 to 9"). That's done like this:<p>
+			<font face="Courier New" size="2" color="#990099">
+			return "You can only give me NUMBERS!" if $msg =~ /[^0-9]/;
+			</font></li>
+		<li>The next thing to do is pick a random number. We'll use a random number between 1
+			and 10 for this example; change the "10" to any number you'd rather do:<p>
+			<font face="Courier New" size="2" color="#990099">
+			my $choice = int(rand(<font color="#0000FF">10</font>)) + 1;
+			</font></li>
+		<li>Finally... we'll do an IF/ELSE statement to determine if their message is correct.<p>
+			<font face="Courier New" size="2" color="#990099">
+			if ($msg == $choice) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Yes! You got my number! :-D";<br>
+			}<br>
+			else {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Sorry! :-( My number was $choice!";<br>
+			}</font></li>
+		<li>Save the command.</li>
+	</ol>
+</blockquote><p>
+
+<b class="header">:: Test The Command</b>
+<blockquote>
+	If your bot is already online, and you are set as its master, you can send it the <b>!reload</b>
+	command to load the command. If it's not online, start it up now.<p>
+
+	When your bot is online and has the command loaded, type <b>!tutorial</b> followed by a number
+	(i.e. <b>!tutorial 6</b>) to test out the command!<p>
+
+	If you run into errors (for example, "Syntax error at ./commands/tutorial.pl line 16"), this
+	will also be good practice to handle Perl errors. It's telling you what file the error happened
+	in (./commands/tutorial.pl), and what line it's on (line 16). In this case, a syntax error means
+	something's wrong with your code (maybe you forgot a semicolon at the end of a line, or missed
+	a parenthese).<p>
+
+	If you have errors, or want to see how your coding compares with this tutorial's directions, see
+	below for what the finished product should look like.
+</blockquote><p>
+
+<b class="header">:: The Finished Product</b>
+<blockquote>
+	This is how the command's source should look:<p>
+
+	<font face="Courier New" size="2" color="#990099">
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Leviathan&gt;<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.:...::&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command Name // !tutorial<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.::&nbsp;&nbsp;&nbsp;::.&nbsp;&nbsp;&nbsp;&nbsp;Description // Guess My Number Tutorial<br>
+	#&nbsp;..:;;.&nbsp;'&nbsp;.;;:..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usage // !tutorial &lt;number&gt;<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;'''&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permissions // Public<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:;,:,;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listener // All<br>
+	#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright // 2004 Command Author's Name<p>
+
+	sub tutorial {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my ($self,$client,$msg) = @_;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "You must give me a number when calling this command!" unless length $msg > 0;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "You can only give me NUMBERS!" if $msg =~ /[^0-9]/;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my $choice = int(rand(10)) + 1;<p>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($msg == $choice) {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Yes! You got my number! :-D";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Sorry! :-( My number was $choice!";<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	}<br>
+	{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category => 'General',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description => 'Guess My Number Tutorial',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usage => '!tutorial &lt;number&gt;',<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Listener => 'All',<br>
+	};</font>
+</blockquote>
+
+</font>
+</body>
+</html>

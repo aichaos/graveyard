@@ -1,0 +1,5 @@
+ScreenName: Sample@hotmail.com
+Password: bigsecretpassword
+Client: MSN
+Nick: Nexus Bot
+Font: ./data/msn/fonts/Sample.txt

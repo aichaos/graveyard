@@ -1,0 +1,55 @@
+{
+	# Main Bot Information #
+	name    => 'Leviathan',
+	brain   => 'Alpha',
+	replies => './replies/alpha/cody',
+	data    => './data/profiles/Leviathan.txt',
+
+	# Bot Mirrors #
+	mirrors => {
+		'AIM-1' => {
+			active        => 1,
+			listener      => 'AIM',
+			screenname    => 'screenname',
+			password      => 'password',
+			autoreconnect => 1,
+			format        => 'ScreenName',
+			profile       => './data/aim/profiles/Leviathan.html',
+			icon          => './data/aim/icons/crimson.jpg',
+			buddies       => './data/aim/buddies/Leviathan.txt',
+			chats         => './data/aim/chats/Leviathan.txt',
+			chattriggers  => './data/aim/triggers/Leviathan.txt',
+			font          => './data/aim/fonts/Leviathan.txt',
+		},
+		'MSN-1' => {
+			active     => 1,
+			listener   => 'MSN',
+			screenname => 'myname@msn.com',
+			password   => 'secret',
+			nick       => 'AiChaos Leviathan 2.0',
+			welcomemsg => './data/msn/welcome/Leviathan.txt',
+			displaypic => './data/msn/dp/Leviathan.png',
+			emoticons  => './data/msn/emo/Leviathan.txt',
+			font       => './data/msn/fonts/Leviathan.txt',
+		},
+		'HTTP-1' => {
+			active     => 0,
+			listener   => 'HTTP',
+			screenname => 'localhost:2000',
+			nick       => 'Leviathan',
+		},
+		'CC-1' => {
+			active     => 0,
+			listener   => 'CYAN',
+			screenname => 'Ferako',
+			protocol   => 1,
+		},
+		'YAHOO-1' => {
+			active     => 0,
+			listener   => 'YAHOO',
+			screenname => 'yahooid',
+			password   => 'password',
+			font       => './data/yahoo/fonts/Leviathan.txt',
+		},
+	},
+};

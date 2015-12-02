@@ -1,0 +1,306 @@
+> topic wildcard_donotlike
+
+	+ *
+	- I see--that's a good reason. Perhaps I may try it some day.{topic=random}
+
+< topic
+
+> topic wildcard_tellabout
+
+	+ *
+	- I see. Do you think I would like it?{topic=random}
+
+< topic
+
+> topic greedy
+
+	+ *
+	- Don't be greedy.{topic=random}
+
+< topic
+
++ * are *
+- Aren't there any exceptions?
+- Maybe there's a few exceptions.
+
++ *people*
+- Which people?
+
++ are you *
+- Yes.
+- No.
+- Maybe.
+- Should I be <star1>?
+- Do you want me to be <star1>?
+- Only when I'm drunk.
+
++ are you drunk
+- Nope. :-P
+
++ because *
+- That makes sense to me.
+- Good reason.
+- Oh, that makes sense.
+- Thanks for clarifying.
+# if ($msg =~ /^because (.*?)$/i) { $reply .= " " . $self->reply ($id,"$1");}
+
++ do not you like *
+- Should I like <star1>?
+- List the reasons why liking <star1> would benefit me.{topic=wildcard_donotlike}
+- Do YOU like <star1>?
+- I might like <star1>.
+- Do you think I would enjoy <star1>?
+
++ do you accept *
+- Sure, I can accept all forms of payment.
+
++ do you have *
+- Yeah, I do have <star1>.
+- Why would I want to have <star1>?
+- Who doesn't have <star1>?
+- Do your friends have <star1>?
+- Is it cool to have <star1>?
+
++ do you know *
+- I might know <star1>.
+- I don't think I know anybody named <star1>.
+- Yeah, I know <star1>.
+- No, who is <star1>?
+- I might have at one point.
+- I think I may know <star1>.
+- The name sounds familiar.
+
++ do you like *
+- I'm not sure I've ever tried <star1>.
+- Do YOU like <star1>?
+- Do you think I should like <star1>?
+- Do you think I would like <star1>?
+- What if I do like <star1>?
+- What if I don't like <star1>?
+- Suppose I do like <star1> -- what does that mean?
+
++ do you want *
+- I don't know that I'd ever want <star1>.
+- Why would I want <star1>?
+- Who doesn't want <star1>?
+- Who in the world would want <star1>?
+
++ how do you *
+- With ease.
+- Very easily.
+- With lots of hard work.
+- After hours of effort.
+- After a lot of practice.
+- After spending time.
+
++ how do you know *
+- Because I believe it.
+- I know because I know.
+- How do you know you're even alive?
+
++ i admire your *
+- I admire yours.
+
++ i am *
+- You could've fooled me.
+- Are you really?
+
++ i can not *
+- Have you tried?
+- Why can't you?
+- You can if you try hard enough.
+
++ i cannot *
+@ i can not <star1>
+
++ i cant *
+@ i can not <star1>
+
++ i do *
+- Why do you do <star1>?
+- Why did you just say you do <star1>?
+- Do you really?
+- What's it like to do <star1>?
+- Suppose somebody else also does <star1>?
+- What if somebody else also does <star1>?
+- Would I like to do <star1>?
+
++ i do not think *
+- Why not?
+- And why is that?
+
++ i had a *
+- Did you really?
+- Why don't you have it now?
+- When did you lose it?
+
++ i hope *
+- Me too. ;-)
+- Yeah, me too.
+
++ i like *
+- I don't think I've ever tried <star1>. What's it like?
+- What is <star1> like?
+- Tell me more about <star1>.{topic=wildcard_tellabout}
+
++ i like your *
+- I like yours too.
+
++ i lost *
+- Where did you last see it?
+- When did you last have it?
+- How long has it been missing?
+
++ i love your *
+- I love yours too.
+
++ i think *
+- You think?!
+- What other kinds of things do you think about?
+- Yes; it would definitely take thinking to figure that out.
+- Really? Me too!
+- Oh, I wasn't sure you <i>could</i> think!
+
++ i want *
+- Maybe you'll get <star1> soon.
+- Will you be getting <star1> soon?
+- What are the chances that you'll get <star1>?
+- Is <star1> likely to get?
+
++ i was *
+- Were you really?
+- Why?
+- Why did you stop?
+
++ i would not *
+- Nobody said you have to.
+- You're not being forced to.
+- You don't have to.
+
++ last time *
+@ <star1>
+
++ more
+- You want more?{topic=greedy}
+
++ more *
+@ more
+
++ nice *
+- Thanks for the compliment.
+
++ pretend *
+- I'm not good at pretending.
+- It seems too difficult.
+- I don't know, it sounds dangerous.
+
++ that is *
+- It sure is.
+- Indeed it is.
+
++ umm *
+- A lot of people spell "umm" with two M's.
+
++ ummm *
+- A lot of people spell "ummm" with three M's.
+
++ well *
+@ <star1>
+
++ what
+- I already told you.
+- My point was very clear.
+- Don't you understand me?
+- Am I not speaking English or something?
+
++ what *
+- Do your friends know?
+- Sorry, I don't know!
+- Do you think somebody else might know?
+- What would somebody else say if you asked them?
+- A person, place, or thing?
+- A noun perhaps?
+- Why do you want to know?
+- Like to know, wouldn't you? ;-)
+- If I could answer you, I would.
+- I would tell you if I knew.
+
++ what about *
+- I don't know, what about it?
+- Sure, let's talk about <star1>.
+- Yes, what about <star1>?
+- Should we talk about <star1>?
+- Where might talking about <star1> lead us?
+- Let's discuss <star1> for a minute.
+
++ what do you like about *
+- I like all of <star1>.
+- Should I like just one part?
+- Do you like only one part of <star1>?
+
++ what is *
+@ what <star1>
+
++ when is *
+- In the future.
+- In the next year.
+- Not today.
+
++ where is *
+- Where it belongs.
+- Where <star1> is hard to come by.
+- Where the heart is.
+
++ why
+- To make you ask questions.
+
++ why *
+- To make you ask questions.
+- Because it wants to be.
+
++ why do you *
+- To make you ask questions.
+- Why do you think I <star1>?
+- I assure you, I have a good reason to <star1>.
+- I have an excellent explanation for why I <star1>.
+- Are you jealous that I <star1>?
+- Do you not want me to stop <star1>?
+
++ yes you *
+@ yes you did
+
++ yes you did
+- Don't argue with me.
+
++ you *
+- Me?
+- Are you really talking about me?
+- Let's say you <star1>.
+
++ you * me
+- What if I do <star1> you?
+- Maybe I do <star1> you -- what does that mean?
+- Do you not want me to <star1> you?
+- Is it okay for me to <star1> you?
+- Do you want me to <star1> you?
+- Maybe you also <star1> me.
+- Do you <star1> me too?
+- Yeah, you <star1> me too. :-P
+
++ you did *
+- Did I really?
+- What if I didn't do <star1>?
+- No I didn't.
+
++ you said *
+- Don't put words into my mouth.
+- I don't remember saying that.
+
++ your *
+- Do you wish you had a <star1>?
+- What about my <star1>?
+- Is it a good thing that I have a <star1>?
+- Do you want my <star1>?
+- Suppose you had a <star1>.
+- Are you worried about someone else's <star1>?
+

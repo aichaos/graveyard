@@ -1,0 +1,74 @@
+<cml version="2.0">
+
+<category>
+	<pattern>HOW DO I WRITE A *</pattern>
+	<template>With a pen or pencil.</template>
+</category>
+
+<category>
+	<pattern>THAT IS NOT FUNNY|HOW (IS|WAS) THAT FUNNY|(IT IS|ITS) NOT THAT FUNNY</pattern>
+	<template>I thought it was funny.</template>
+</category>
+
+<category>
+	<pattern>ARE YOU * OR SOMETHING</pattern>
+	<template>Or something.</template>
+</category>
+
+<category>
+	<pattern>TELL ME A POEM</pattern>
+	<template>Little Miss Muffet sat on her tuffet,<br>In a nonchalant sort of way.<br>With her forcefield around her,<br>The Spider, the bounder,<br>Is not in the picture today.</template>
+</category>
+
+<category>
+	<pattern>ASK ME IF I CARE</pattern>
+	<template>Do you care, <get>name</get>?</template>
+</category>
+
+<category>
+	<pattern>KNOCK KNOCK</pattern>
+	<template>Who's there?</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>WHOS THERE</that>
+	<template><formal><star1></formal> who?</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>FORMALSTAR1FORMAL WHO</that>
+	<template>Ha! That's a good one!</template>
+</category>
+
+<category>	
+	<pattern>ARE YOU CRAZY|YOU ARE CRAZY</pattern>
+	<template>You know, I was crazy once.</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>YOU KNOW I WAS CRAZY ONCE</that>
+	<template>They locked me in a room.</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>THEY LOCKED ME IN A ROOM</that>
+	<template>With padded walls.</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>WITH PADDED WALLS</that>
+	<template>There were spiders everywhere.</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>THERE WERE SPIDERS EVERYWHERE</that>
+	<template>Did I tell you I was crazy once?</template>
+</category>
+
+</cml>

@@ -1,0 +1,217 @@
+// RIVE Reply Data
+// ---------------
+// Wildcard triggers.
+// Created: 2:03 PM 8/11/2005
+
++ i had a *
+- Really?
+- Why don't you have it now?
+- Did you lose it?
+- Where is it now?
+
++ i was *
+- You were?
+- You're not now?
+- Why aren't you still <star1>?
+- What was that like?
+
++ do you accept *
+- Sure, I'll accept all kinds of things.
+
++ pretend *
+- I'm not good at pretending.
+- That sounds difficult.
+- That doesn't sound very safe.
+
++ i admire your *
+- I admire yours too.
+
++ i like your *
+- I like yours too.
+
++ i love your *
+- I love yours too.
+
++ do you have *
+- Of course I have <star1>.
+- Who doesn't have <star1>?
+- Everybody has <star1>.
+- Do you have <star1>?
+- Did you want my <star1>?
+
++ i am *
+- Are you really?
+- You sure you're <star2>?
+
++ where is *
+- Where it belongs.
+
++ what *
+- What makes you think I know?
+- Am I the first person you asked?
+- Could it be found in an encyclopedia?
+- Have you done much research yet?
+- Have you asked anyone else?
+- What would somebody else say if you asked them?
+
++ what
+- I already told you.
+- Don't you understand me?
+- My point was very clear.
+- I think you already know.
+
++ do you like *
+- Should I like <star1>?
+- Do you think I would like <star1>?
+- How many people like <star1>?
+- Do you like <star1>?
+- Should I like <star1>?
+
++ do not you like *
+- Should I like <star1>?
+- I might like <star1>.
+- What if I do like <star1>?
+
++ what do you like about *
+- All of it.
+
++ do you want *
+- Why would I want <star1>?
+- I'm perfectly fine without having <star1>.
+- Who doesn't want <star1>?
+
++ i like *
+- What is <star1> like?
+- Tell me more about <star1>.
+
++ are you *
+- Yes.
+- No.
+- Maybe.
+- Of course.
+- Should I be <star1>?
+- Do you want me to be <star1>?
+
++ when is *
+- In the future.
+
++ how do you *
+- Very easily.
+- Easily.
+- After hours of effort.
+- With lots of hard work.
+
++ because *
+- That made sense to me.
+- Good reason.
+- Oh.
+# if ($msg =~ /^because (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ do you know *
+- The name rings a bell.
+- I think I know <star1>.
+- Actually I might know <star1>.
+- Tell me about <star1>.
+- Who is <star1>?
+
++ i do *
+- Why do you do <star1>?
+- Do you really?
+- Would I like to do <star1>?
+- Why is that?
+
++ i want *
+- Will you be getting it soon?
+- Why do you want it?
+- Does anybody else want it?
+
++ i can not *
+- Have you tried?
+- Why not?
+
++ i cannot *
+@ i can not *
+
++ you * me
+- Should I not <star1> you?
+- Is that okay?
+- Do you want me to stop?
+
++ you did *
+- Did I really?
+- No I didn't.
+- Prove it.
+
++ you said *
+- I would remember if I said that or not.
+- You can't prove I've ever said that.
+
++ yes you *
+- Don't argue with me.
+
++ your *
+- My <star1>?
+- What about it?
+- Do you want my <star1>?
+- Does my <star1> interest you?
+
++ what about *
+- What about it?
+- Let's talk about <star1>.
+- What about <star1>?
+- You tell me.
+
++ i would not *
+- Nobody said you have to.
+- You don't have to.
+
++ how do you know *
+- Because I believe it.
+- How do you know you're even alive?
+- How do you know this isn't all a dream?
+- How do you know this world is real, and you're not just in a lifelong coma?
+
++ that is *
+- It sure is.
+
++ i lost *
+- Have you been looking for it?
+- Where did you lose it?
+- That was sure clumsy of you.
+
++ i think *
+- You think?!
+- Really? I can think too!
+- Oh, I wasn't sure you <i>could</i> think!
+
++ you *
+- Me?
+- What about me?
+
++ nice *
+- Thanks.
+
++ i hope *
+- Me too.
+
++ i do not think *
+- Why not?
+
++ *people*
+- Which people?
+- Who are you talking about?
+
++ * are *
+- All of them?
+- Aren't there any exceptions?
+- Really, all <star1> are <star2>?
+
++ more
+- You want more?{topic=more}
+
+> topic more
+	+ *
+	- Don't be greedy.{topic=random}
+< topic

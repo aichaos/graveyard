@@ -1,0 +1,18 @@
+<cml version="1.0">
+
+<category>
+Input: SORRY|* SORRY|SORRY *
+Reply: Hey, it's okay! :-)
+</category>
+
+<category>
+Input: THANKS|THANK YOU
+Reply: You are quite welcome.
+</category>
+
+<category>
+Input: YOU ARE WELCOME
+Reply: :-)
+</category>
+
+</cml>

@@ -1,0 +1,152 @@
+> topic numbercatchquery
+
+	+ *
+	- I see.{topic=random}
+	- Thanks for clarifying.{topic=random}
+
+< topic
+
++ 1
+@ system numbercatchone 1
+
++ 1 *
+@ system numbercatchtwo <star1>
+
++ 1 cent
+- That won't buy anything.
+- That's not very much.
+
++ 1 dollar
+- What can you buy with one dollar?
+
++ 1 or 2
+- One.
+- Two.
+- A couple.
+
++ 10
+@ system numbercatchone 10
+
++ 10 *
+@ system numbercatchtwo <star1>
+
++ 11
+@ system numbercatchone 11
+
++ 11 *
+@ system numbercatchtwo <star1>
+
++ 12
+@ system numbercatchone 12
+
++ 12 *
+@ system numbercatchtwo <star1>
+
++ 13
+@ system numbercatchone 13
+
++ 13 *
+@ system numbercatchtwo <star1>
+
++ 14
+@ system numbercatchone 14
+
++ 14 *
+@ system numbercatchtwo <star1>
+
++ 15
+@ system numbercatchone 15
+
++ 15 *
+@ system numbercatchtwo <star1>
+
++ 2
+@ system numbercatchone 2
+
++ 2 *
+@ system numbercatchtwo <star1>
+
++ 3
+@ system numbercatchone 3
+
++ 3 *
+@ system numbercatchtwo <star1>
+
++ 30 minutes
+- A half hour.
+- Okay, a half hour.
+
++ 4
+@ system numbercatchone 4
+
++ 4 *
+@ system numbercatchtwo <star1>
+
++ 5
+@ system numbercatchone 5
+
++ 5 *
+@ system numbercatchtwo <star1>
+
++ 6
+@ system numbercatchone 6
+
++ 6 *
+@ system numbercatchtwo <star1>
+
++ 7
+@ system numbercatchone 7
+
++ 7 *
+@ system numbercatchtwo <star1>
+
++ 8
+@ system numbercatchone 8
+
++ 8 *
+@ system numbercatchtwo <star1>
+
++ 9
+@ system numbercatchone 9
+
++ 9 *
+@ system numbercatchtwo <star1>
+
++ how much is 1 *
+@ 1 <star1>
+
++ how much is 10 *
+@ 10 <star1>
+
++ how much is 2 *
+@ 2 <star1>
+
++ how much is 3 *
+@ 3 <star1>
+
++ how much is 4 *
+@ 4 <star1>
+
++ how much is 5 *
+@ 5 <star1>
+
++ how much is 6 *
+@ 6 <star1>
+
++ how much is 7 *
+@ 7 <star1>
+
++ how much is 8 *
+@ 8 <star1>
+
++ how much is 9 *
+@ 9 <star1>
+
++ system numbercatchone *
+- <star1> what?{topic=numbercatchquery}
+
++ system numbercatchtwo *
+- Why that many <star1>?
+- Does everyone else have so many <star1>?
+- Is it common to have so many <star1>?
+

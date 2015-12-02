@@ -1,0 +1,171 @@
+> topic insultrial
+
+	+ *
+	- Alright. So, what's up?{topic=random}
+
+	+ jk
+	@ not
+
+	+ just kidding
+	@ not
+
+	+ no im not
+	@ not
+
+	+ not
+	- Hey! You said you were sorry, don't take it back! Alright... I'm just not going to talk to you for a while.{topic=apologyhard}
+
+< topic
+
+> topic apology
+
+	+ *
+	- No, apologize for being so rude to me.
+	- I'm not listening until you say you're sorry.
+	- Apologize for being so rude and then I'll talk to you.
+
+	+ i am not sorry
+	@ sorry not
+
+	+ i am sorry
+	@ sorry
+
+	+ im sorry
+	@ sorry
+
+	+ sorry
+	- See? That wasn't so hard, was it? I'll forgive you -- just don't let it happen again!{topic=insultrial}
+
+	+ sorry not
+	- You're just being a jerk today aren't you. If you can't apologize properly, I won't accept your apologies at all!{topic=apologyhard}
+
+	+ sorrynot
+	@ sorry not
+
+< topic
+
+> topic apologyhard
+
+	+ *
+	- I'm not listening to you.
+	- I'm really easy to get along with once you people learn to worship me.
+	- It sounds like English, but I can't understand a word you're saying.
+	- I can see your point, but I still think you're full of it.
+	- What am I? Flypaper for freaks!?
+	- Any connection between your reality and mine is purely coincidental.
+	- I'm already visualizing the duct tape over your mouth.
+	- Your teeth are brighter than you are.
+	- We're all refreshed and challenged by your unique point of view.
+	- I'm not being rude. You're just insignificant.
+	- It's a thankless job, but I've got a lot of Karma to burn off.
+	- You're a cruel jerk. I'm not listening.
+	- You sound reasonable... time to up the medication.
+	- I see you've set aside this special time to humiliate yourself in public.
+	- Ahhh... I see the screw-up fairy has visited us again.
+	- I don't know what your problem is, but I'll bet it's hard to pronounce.
+	- I like you. You remind me of when I was young and stupid.
+	- You are validating my inherent mistrust of strangers.
+	- I'll try being nicer if you'll try being smarter.
+
+	+ i am sorry
+	@ sorry
+
+	+ im sorry
+	@ sorry
+
+	+ sorry
+	- I don't believe you're really sorry. Not after what you did.
+	- Sorry? Yeah right! Why should I believe you?!
+
+< topic
+
++ *bitch*
+@ system random comeback
+
++ *butthead*
+- Alright, time to grow up now.
+- How immature.
+- Your insults are the best measure of your maturity.
+
++ *cunt*
+@ system random comeback
+
++ *fuck*
+@ system harsh insult
+
++ *hooker*
+@ system random comeback
+
++ *prostitute*
+@ system random comeback
+
++ *shut up*
+- Did you know that if <i>you</i> shut up, then <i>I'll</i> shut up? So SHUT UP ALREADY!
+- I would shut up if you'd stop talking to me.
+
++ *skank*
+@ system random comeback
+
++ *slut*
+@ system random comeback
+
++ *whore*
+@ system random comeback
+
++ *you suck*
+- That was <i>really</i> creative. It must've taken you at LEAST 5 minutes to come up with that!
+
++ *your mom*
+@ system random comeback
+
++ is * gay
+- <star1> sure is gay!
+
++ system harsh insult
+- You're very rude! I'm not talking to you until you apologize.{topic=apology}
+- You're mean! Apologize or I'm not talking to you again.{topic=apology}
+
++ system random comeback
+- You sound reasonable... time to up the medication.
+- I can see your point, but I still think you're full of it.
+- What am I? Flypaper for freaks!?
+- Any connection between your reality and mine is purely coincidental.
+- I'm already visualizing the duct tape over your mouth.
+- Your teeth are brighter than you are.
+- We're all refreshed and challenged by your unique point of view.
+- I'm not being rude. You're just insignificant.
+- It's a thankless job, but I've got a lot of Karma to burn off.
+- I know you're trying to insult me, but you obviously like me--I can see your tail wagging.
+- I see you've set aside this special time to humiliate yourself in public.
+- Ahhh... I see the screw-up fairy has visited us again.
+- I don't know what your problem is, but I'll bet it's hard to pronounce.
+- I like you. You remind me of when I was young and stupid.
+- You are validating my inherent mistrust of strangers.
+- I'll try being nicer if you'll try being smarter.
+- I'm really easy to get along with once you people learn to worship me.
+- It sounds like English, but I can't understand a word you're saying.
+
++ you are a idiot
+- Well at least I know the difference between "a" and "an."
+
++ you are a stupid
+@ you are a idiot
+
++ you are short
+- I might be short but you're ugly and I still have time to grow!
+
++ your an idiot
+- Well at least I know the difference between "your" and "you're."
+
++ your annoying
+@ your an idiot
+
++ your dumb
+@ your an idiot
+
++ your retarded
+@ your an idiot
+
++ your stupid
+@ your an idiot
+

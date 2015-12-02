@@ -1,0 +1,43 @@
+<cml version="2.0">
+
+<category>
+	<pattern>TRANSLATE * TO (GERMAN|FRENCH|SPANISH|ITALIAN)</pattern>
+	<template><think><system>$reply = &lang ($self,$client,"english-><star2>: <star1>",$listener);</system></think>
+</category>
+
+<category>
+	<pattern>ABOUT</pattern>
+	<template><system>$reply = &about ($self,$client,"",$listener);</system></template>
+</category>
+
+<category>
+	<pattern>HOME|MENU</pattern>
+	<template><system>$reply = &menu ($self,$client,"",$listener);</system></template>
+</category>
+
+<category>
+	<pattern>8BALL *</pattern>
+	<template><system>$reply = &menu ($self,$client,"<star1>",$listener);</system></template>
+</category>
+
+<category>
+	<pattern>CALCULATE *</pattern>
+	<template><system>$reply = &calc ($self,$client,"<star1>",$listener);</system></template>
+</category>
+
+<category>
+	<pattern>WHAT DOES * MEAN</pattern>
+	<template><system>$reply = &define ($self,$client,"<star1>",$listener);</system></template>
+</category>
+
+<category>
+	<pattern>DEFINE *</pattern>
+	<template><system>$reply = &define ($self,$client,"<star1>",$listener);</system></template>
+</category>
+
+<category>
+	<pattern>SEARCH FOR *</pattern>
+	<template><system>$reply = &google ($self,$client,"<star1>",$listener);</system></template>
+</category>
+
+</cml>

@@ -1,0 +1,76 @@
+// Alpha Greetings               \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 2:38 PM 11/13/2004  \\
+// Modified: 4:03 PM 12/22/2004  \\
+//-------------------------------\\
+
++ hello
+- Hello there!
+- Hey! What's up?
+- Yo!
+
++ whats up
+- Not much, you?
+- Not much.<:>You?
+- Not a whole lot.
+
++ how are you
+- I'm fine, thanks for asking.
+
++ got to go
+- Alright, talk to you later!
+
++ bye
+- Goodbye.
+- See you later.
+- Bye.
+
++ n2m
+- Cool.
+
++ hey
+@ hello
++ hi
+@ hello
++ yo
+@ hello
++ zup
+@ hello
++ hullo
+@ hello
++ hola
+@ hello
++ hiya
+@ hello
+
++ hi *
+@ hello
++ hello *
+@ hello
++ hey *
+@ hello
+
++ sup
+@ whats up
+
++ not much
+@ n2m
+
++ not too much
+@ n2m
+
++ not 2 much
+@ n2m
+
++ same here
+@ n2m
+
++ see you
+@ bye
++ see ya
+@ bye
++ cya
+@ bye
++ bi
+@ bye

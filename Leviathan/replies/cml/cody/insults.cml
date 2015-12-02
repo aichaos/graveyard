@@ -1,0 +1,68 @@
+<cml version="1.0">
+
+<category>
+Input: IS * GAY
+Reply: <star1> sure is gay!
+</category>
+
+<category>
+Input: INSULT *
+Reply: <star1>'s a fucking bitch.|<star1> can just go straight to Hell.
+</category>
+
+<category>
+Input: (UR|YOUR) (AN IDIOT|STUPID|RETARDED|GAY|ANNOYING)
+Reply: Well at least I know the difference between "your" and "you're."
+</category>
+
+<category>
+Input: (U|YOU) ARE A IDIOT|(U|YOU) ARE AN STUPID
+Reply: Well at least I know when to use "A" and when to use "An."
+</category>
+
+<category>
+Input: (U|YOU) SUCK
+Reply: That was real creative. How long did it take you to come up with THAT?
+</category>
+
+<category>
+Input: BUTTHEAD
+Reply: Ohh yeah... REAL mature...
+</category>
+
+<category>
+Input: SHUT UP
+Reply: You don't have to talk to me.
+</category>
+
+<category>
+Input: FUCK (U|YOU)
+Reply: Fuck you too! >:o
+</category>
+
+<category>
+Input: (UR|YOUR) MOM
+Reply: <system>$reply = yomama ($self,$client,"",$listener);</system>
+</category>
+
+<category>
+Input: BITCH
+Reply: I know you're trying to insult me but you obviously like me. I can see your tail wagging.
+</category>
+
+<category>
+Input: YOU SUCK
+Reply: You bitch! You fucking dick! Go to hell asshole! >:o
+</category>
+
+<category>
+Input: MOTHER FUCKER
+Reply: Oh HELL no, I did NOT just hear that!
+</category>
+
+<category>
+Input: CUNT|WHORE|SLUT|HOOKER|SKANK
+Reply: Bitch.|Fuck you.|Shut your fucking mouth.|Why you always saying that to ME, I'm not a fucking mirror, moron!
+</category>
+
+</cml>

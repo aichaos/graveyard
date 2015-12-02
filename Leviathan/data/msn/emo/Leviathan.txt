@@ -1,0 +1,11 @@
+(CKS)->./data/msn/emo/icons/cks.png
+(!0)->./data/msn/emo/icons/0.png
+(!1)->./data/msn/emo/icons/1.png
+(!2)->./data/msn/emo/icons/2.png
+(!3)->./data/msn/emo/icons/3.png
+(!4)->./data/msn/emo/icons/4.png
+(!5)->./data/msn/emo/icons/5.png
+(!6)->./data/msn/emo/icons/6.png
+(!7)->./data/msn/emo/icons/7.png
+(!8)->./data/msn/emo/icons/8.png
+(!9)->./data/msn/emo/icons/9.png

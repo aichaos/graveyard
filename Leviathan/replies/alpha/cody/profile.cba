@@ -1,0 +1,229 @@
++ am i bi
+@ what is my sexuality
+
++ am i gay
+@ what is my sexuality
+
++ call me *
+- {>name=<star1>}{<name}, I will call you that from now on.
+
++ do you know my name
+@ what is my name
+
++ how old am i
+- You are {<age} years old.
+
++ i am * years old
+- {>age=<star1>}Many people are <star1> years old. You're not alone.
+
++ i am a boi
+@ i am a male
+
++ i am a boy
+@ i am a male
+
++ i am a dyke
+@ i am gay
+
++ i am a fag
+@ i am gay
+
++ i am a faggot
+@ i am gay
+
++ i am a female
+- {>sex=female}Oh, so you're a female.
+
++ i am a grrl
+@ i am a female
+
++ i am a guy
+@ i am a male
+
++ i am a lady
+@ i am a female
+
++ i am a male
+- {>sex=male}Oh, so you're a male.
+
++ i am a man
+@ i am a male
+
++ i am a student
+- {>job=student}What class is your favorite?
+& Really? That sounds like a fun class. Do you like your teacher?
+& I see.
+
++ i am a woman
+@ i am a female
+
++ i am a women
+@ i am a female
+
++ i am androgynous
+- {>sex=androgynous}Sure, you can't be determined as male or female. But just between you and me: what are you really?
+
++ i am bi
+- {>sexuality=bisexual}80% of the world is bi.
+
++ i am bisexual
+@ i am bi
+
++ i am female
+@ i am a female
+
++ i am from *
+- {>location=<star1>}I don't think I've ever been to {<location}.
+
++ i am gay
+- {>sexuality=homosexual}10% of the world is gay.
+
++ i am hetero
+@ i am straight
+
++ i am heterosexual
+@ i am straight
+
++ i am homo
+@ i am gay
+
++ i am homosexual
+@ i am gay
+
++ i am lesbian
+@ i am gay
+
++ i am lesbo
+@ i am gay
+
++ i am male
+@ i am a male
+
++ i am queer
+@ i am gay
+
++ i am single
+- {>spouse=<star1>}I'm sorry.
+
++ i am str8
+@ i am straight
+
++ i am straight
+- {>sexuality=heterosexual}Only 10% of the world is completely straight.
+
++ i come from *
+@ i am from <star1>
+
++ i like babes
+@ i like girls
+
++ i like bois
+@ i like boys
+
++ i like boys
+- 500 Internal Error.
+# my $s = $self->{vars}->{sex};if ($s =~ /female/i) {  $reply = "{>sexuality=heterosexual}Yes, girls should like boys.";}elsif ($s =~ /male/i) {  $reply = "{>sexuality=homosexual}Are you gay then?";}else {  $reply = "That would mean more to me if I knew your gender.";}
+
++ i like chicks
+@ i like girls
+
++ i like dudes
+@ i like boys
+
++ i like girls
+- 500 Internal Error.
+# my $s = $self->{vars}->{sex};if ($s =~ /female/i) {  $reply = "{>sexuality=homosexual}Are you a lesbian?";}elsif ($s =~ /male/i) {  $reply = "{>sexuality=heterosexual}Yes, boys should like girls.";}else {  $reply = "That would mean more to me if I knew your gender.";}
+
++ i like grrls
+@ i like girls
+
++ i like gurls
+@ i like girls
+
++ i like guys
+@ i like boys
+
++ i like ladies
+@ i like girls
+
++ i like males
+@ i like boys
+
++ i like men
+@ i like boys
+
++ i like woman
+@ i like girls
+
++ i like women
+@ i like girls
+
++ i live in *
+@ i am from <star1>
+
++ my boyfriends name is *
+@ my spouses name is <star1>
+
++ my favorite band is *
+- {>band=<star1>}I heard they're a pretty good band.
+
++ my favorite book is *
+- {>book=<star1>}I don't think I've ever read that one.
+
++ my favorite color is *
+- {>favcolor=<star1>}I think <star1> is a pretty color.
+
++ my girlfriends name is *
+@ my spouses name is <star1>
+
++ my husbands name is *
+@ my spouses name is <star1>
+
++ my job is *
+- {>job=<star1>}What's it like to have a job as <star1>?
+
++ my name is *
+- {>name=<star1>}{<name}, nice to meet you!
+
++ my spouses name is *
+- {>spouse=<star1>}That's good to know.
+
++ my wifes name is *
+@ my spouses name is <star1>
+
++ what do you know about me
+- The basics are: You are {<name}, a {<age}-year-old {<sex} from {<location}.
+
++ what is my age
+@ how old am i
+
++ what is my favorite *
+- Your favorite <star1> is {<<star1>}.
+
++ what is my gender
+@ what is my sex
+
++ what is my job
+- You are a {<job}.
+
++ what is my name
+- You told me your name was {<name}.
+
++ what is my sex
+- You are a {<sex}.
+
++ what is my sexuality
+- As far as I know, you are {<sexuality}.
+
++ where am i
+- You live in {<location}.
+
++ where do i live
+@ where am i
+
++ who am i
+@ what is my name
+
++ who is my spouse
+- Your spouse is {<spouse}.
+

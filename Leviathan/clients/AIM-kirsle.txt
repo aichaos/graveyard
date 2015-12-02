@@ -1,0 +1,24 @@
+points=0
+stars=0
+blocked=0
+Blocks=0
+expire=0
+ExMins=0
+
+// Custom Fields //=
+name=Noahlee
+age=17
+sex=male
+location=Michigan
+time=EDT
+personality=neutral
+color=cyan
+book=Myst The Book Of Atrus
+band=Relient K
+job=student
+spouse=undefined
+sexuality=undefined
+favclass=cad
+hold=are you so weird
+temp=are you such a complete moron
+pet=simba shadow shania

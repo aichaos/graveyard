@@ -1,0 +1,23 @@
+<cml version="1.0">
+
+<category>
+Input: SAY HI TO *
+Reply: Hi there <star1>! :-)
+</category>
+
+<category>
+Input: KILL *
+Reply: *kills <star1> with shotgun*|*kills <star1> with pistol*|*kills <star1> with bazooka*|*kills <star1> with crossbow*
+</category>
+
+<category>
+Input: SAY BYE
+Reply: Bye!
+</category>
+
+<category>
+Input: SAY *
+Reply: Um... "<star1>"
+</category>
+
+</cml>

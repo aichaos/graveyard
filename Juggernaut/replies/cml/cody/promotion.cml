@@ -1,0 +1,33 @@
+<cml version="1.0">
+
+<category>
+Input: HOW DO I BECOME (A|AN) ADMIN
+Reply: You can type !apply to leave an application. Your application would then be reviewed sometime later and the botmaster will determine whether or not you would make a good Admin.
+</category>
+
+<category>
+Input: WHAT CAN (ADMIN|ADMINS) DO
+Reply: Admins basicly control the bot. Admins can do commands such as block, unblock, and send MSN alerts. For more information, type !menu 6
+</category>
+
+<category>
+Input: HOW DO I BECOME (A|AN) CLIENT
+Reply: All users are clients, silly! :-P
+</category>
+
+<category>
+Input: WHAT CAN (CLIENT|CLIENTS) DO
+Reply: Clients can use all public commands.
+</category>
+
+<category>
+Input: HOW DO I BECOME (A|AN) MASTER
+Reply: There may be only one Master.
+</category>
+
+<category>
+Input: WHAT CAN (MASTER|MASTERS) DO
+Reply: Masters can control the machine that the bot is running on.
+</category>
+
+</cml>

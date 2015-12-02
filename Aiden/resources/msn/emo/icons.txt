@@ -1,0 +1,7 @@
+(CKS)===./resources/msn/emo/icons/cks.png
+>:o===./resources/msn/emo/icons/cks-angry.png
+8-)===./resources/msn/emo/icons/cks-cool.png
+:-!===./resources/msn/emo/icons/cks-foot.png
+:-x===./resources/msn/emo/icons/cks-silent.png
+:-\===./resources/msn/emo/icons/cks-confused.png
+:-/===./resources/msn/emo/icons/cks-confused.png

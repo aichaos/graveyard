@@ -1,0 +1,6 @@
+hello|hey===Hi <name>!|Hey.|Sup?
+usa===U.S.A. Rocks! :-D|Go U.S.A.! :-D|U.S.A. Rocks my Socks!
+gtg|gotta go===See you later, <name>.|Alright, talk to ya later.
+is gay===The only gay person here is you, <name>.
+what time is it|anybody know what (time it|the time) is===My clock says <local-time>.
+what day is it|what is the date===It's <local-date>.

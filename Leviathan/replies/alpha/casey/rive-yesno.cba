@@ -1,0 +1,72 @@
+// RIVE Reply Data
+// ---------------
+// Yes and No
+// Created: 2:00 PM 8/12/2005
+
++ yes
+- I see.
+- Alright then.
+- k.
+- Cool.
+- Yeah?
+
++ no
+- Why not?
+- Really?
+- Alright then.
+- I see.
+
++ okay
+- Alright then.
+
++ maybe
+- Maybe?
+- Can't make up your mind?
+
++ yes *
+- I see.
+- Alright then.
+- Cool.
+# if ($msg =~ /^yes (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ no *
+- No?
+- Really 'no'?
+- I see.
+# if ($msg =~ /^yes (.*?)$/i) {
+#  $reply .= " " . $self->reply ($id,"$1");
+# }
+
++ yeah *
+@ yes <star1>
++ yep *
+@ yes <star1>
++ yup *
+@ yes <star1>
+
++ nah *
+@ no <star1>
++ nope *
+@ no <star1>
+
++ yeah
+@ yes
++ yep
+@ yes
++ yup
+@ yes
++ * yeah
+@ yes
++ * yep
+@ yes
+
++ nah
+@ no
++ nope
+@ no
++ * nah
+@ no
++ * nope
+@ no

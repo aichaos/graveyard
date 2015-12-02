@@ -1,0 +1,32 @@
+// Handles no-replies.           \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 3:32 PM 1/4/2005    \\
+// Modified: 3:52 PM 1/4/2005    \\
+//-------------------------------\\
+
+// The reply below is called when the user asks your bot a question,
+// and the bot is not able to respond. If the reply below is not found
+// (i.e. you delete this reply), an ugly default message will be given.
+
++ alphanoreplymatched
+- lol
+- Okay...
+- Know what?<:>I'm bored.
+- So......
+- So . . .
+- Anyways... what are you doing?
+- We need to think of an interesting topic to talk about.
+- ..........
+- Ummm...........
+- Huh.... interesting......
+- Mmmm.......
+- Huh... intriguing.
+- Oh, really?
+- Huh... really?
+- Mmmm... really?
+- Is that your final answer? ;)
+- That's a very original thought...
+- Back to the original topic...
+- What were we talking about again?
+- What color are your eyes?

@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>AiChaos Leviathan :: Documentation</title>
+<link rel="StyleSheet" type="text/css" href="../sources/styles.css">
+</head>
+<body class="viewpage" bgcolor="#FFFFFF" link="#000099" vlink="#000099" alink="#FF0000" text="#000000">
+<font face="Verdana,Arial" size="2" color="#000000" class="font">
+
+<b class="header">:: Bot Configuration</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	The first thing you'll probably need to do is configure your bot. By "configure," I
+don't necessarily mean "putting in your bot's log-on information." That part comes later.<p>
+
+<b class="header">:: Main Configuration File</b><p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	The main configuration file in AiChaos Leviathan is found in "config/settings.cfg" -
+edit this file with a text editor such as Notepad to configure it.<p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>Note:</b> This configuration file <i>is</i> Perl code, so you need at least
+a <i>little</i> bit of knowledge. Here are some little tips, for if you have no experience
+with Perl codes:<p>
+
+<ul>
+	<li>A line beginning with the pound sign <b>#</b> are comments. The config file is
+		full of comments to explain what to do. You shouldn't need to touch, edit,
+		or add comments here.</li>
+	<li>Setting a variable goes in the format <b>$variable = 'value';</b> - that's
+		exactly how they're formatted here.</li>
+	<li>All command lines (lines that don't begin with a <b>#</b>) must END with a
+		semicolon <b>;</b></li>
+	<li>The value for a variable can be in "quotes", OR 'apostrophes'. The default
+		settings all use apostrophes, because they're simpler. If the value you
+		want to insert contains an apostrophe itself, put a backslash <b>\</b>
+		before it. Example:<p>
+
+		# Default sender of e-mails.<br>
+		$chaos->{config}->{email}->{from} = 'Dave<font color="#0000FF">\'</font>s Bot &lt;bot@davesite.com&gt;';</li>
+	<li>Variables with number values do not need quotes or apostrophes, nor should
+		they. Putting quotes or apostrophes around a number may cause problems
+		later in the bot.</li>
+</ul>
+
+</font>
+</body>
+</html>

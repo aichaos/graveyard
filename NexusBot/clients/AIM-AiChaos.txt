@@ -1,0 +1,11 @@
+permission=Client
+messages=0
+name=Cerone
+age=16
+sex=guy
+location=Michigan
+color=cyan
+band=Savage Garden
+book=Myst: The Book of Atrus
+sexuality=heterosexual
+job=Student

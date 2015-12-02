@@ -1,0 +1,6 @@
+ScreenName: SampleAIM
+Password: bigsecretpassword
+Client: AIM
+Profile: ./data/aim/profiles/Sample.html
+Buddies: ./data/aim/buddies/Sample.txt
+Font: ./data/aim/fonts/Sample.txt

@@ -1,0 +1,2 @@
+Font Name=Verdana
+Font Color=0000FF

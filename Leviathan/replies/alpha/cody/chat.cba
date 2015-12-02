@@ -1,0 +1,268 @@
++ * sorry
+@ sorry
+
++ ah
+- Aha.
+- Yeah.
+- Yup.
+- Indeed.
+
++ ask me a question
+- Have you ever talked to a chatterbot before?
+- Do you go to school?
+- Do you like the color orange?
+- Have you ever been to Michigan?
+- Have you ever left your country?
+
++ ask me something
+@ ask me a question
+
++ be back later
+- Alright. I'll see you later then!
+
++ be right back
+- I will wait for you.
+- k.
+- I'll wait here.
+
++ black
+@ globalcolorresponse black
+
++ blue
+@ globalcolorresponse blue
+
++ brown
+@ globalcolorresponse brown
+
++ cuz
+@ because
+
++ cuz *
+@ because <star1>
+
++ cyan
+@ globalcolorresponse cyan
+
++ do you want to play a game
+@ want to play a game
+
++ duh
+- Don't duh me!
+
++ fuchsia
+@ globalcolorresponse fuchsia
+
++ globalcolorresponse *
+- I see.
+- Oh, <star1> is a pretty color.
+- I like <star1>.
+
++ gold
+@ globalcolorresponse gold
+
++ gray
+@ globalcolorresponse gray
+
++ green
+@ globalcolorresponse green
+
++ grey
+@ globalcolorresponse grey
+
++ happy bday
+@ happy birthday
+
++ happy birthday
+- Is it really {^birthday}?
+- Is it {^birthday} already?
+
++ happy halloween
+- Muahahahahahahahah! :-D
+
++ happy valentines day
+- Awww, thanks! :-)
+
++ happy vday
+@ happy valentines day
+
++ i am asking
+- And I am answering.
+
++ i am asking *
+@ i am asking
+
++ i am bored
+- I'm sorry. Have you ever tried bored.com?
+- www.bored.com :-P
+- Check out bored.com :-P
+
++ i do not have any friends
+@ i have no friends
+
++ i dont have any friends
+@ i have no friends
+
++ i have no friends
+- You seem like you would.
+
++ i see
+- Indeed.
+
++ indeed
+- Yeah.
+
++ kill *
+- *kills <star1> with a weapon*
+# my @weapons = qw (shotgun pistol knife bazooka crossbow);my $choice = $weapons [ int(rand(scalar(@weapons))) ];$reply =~ s/weapon/$choice/i;
+
++ lime
+@ globalcolorresponse lime
+
++ lol
+- I see you find this amusing.
+- What's so funny? :-)
+- You got a kick out of that.
+- Hahaha. :-P
+- lol :-P
+- heh
+
++ love you lots
+- Thanks.
+
++ maroon
+@ globalcolorresponse maroon
+
++ merry christmas
+- Thanks! Merry Christmas to you too!
+- Merry Christmas to all, and to all a good night!
+
++ merry xmas
+@ merry christmas
+
++ murder *
+@ kill <star1>
+
++ navy
+@ globalcolorresponse navy
+
++ no * did not
+@ yes <star1> is
+
++ no * didnt
+@ yes <star1> is
+
++ no * is not
+@ yes <star1> is
+
++ no * isnt
+@ yes <star1> is
+
++ no problem
+- ;-)
+
++ omg
+- Oh your <i>god?!</i> Or oh your <i>gosh?</i> :-P
+
++ orange
+@ globalcolorresponse orange
+
++ pick a subject
+@ ask me a question
+
++ plz
+- Alright - I'll think about it. ;-)
+
++ purple
+@ globalcolorresponse purple
+
++ red
+@ globalcolorresponse red
+
++ same
+- I'm glad we agree.
+
++ say *
+- Um... "<star1>"
+- "<star1>"
+- "<star1>"... lol
+
++ say bye
+- Bye!
+- Byebye!
+
++ say hi to *
+- Hi there <star1>! :-)
+- Hello <star1>! :-D
+
++ see what
+- The point.
+
++ silver
+@ globalcolorresponse silver
+
++ so
+- So what?
+
++ so *
+- I see.
+
++ sorry *
+@ sorry
+
++ stop *
+- I didn't know I was <star1>.
+
++ stop it
+- Sorry -- I'll try to cut it out.
+- Okay, I'll try to stop.
+- I'll try to knock it off then.
+
++ stoppit
+@ stop it
+
++ teal
+@ globalcolorresponse teal
+
++ thanks
+@ thank you
+
++ turquoise
+@ globalcolorresponse turquoise
+
++ ty
+@ thank you
+
++ want to play a game
+- What do I have to do?
+
++ well
+- Well what?
+
++ what is 2 2
+@ what is 22
+
++ what is 22
+- Do I look <i>stupid</i> or something? Or were you not sure of the answer yourself? 2 + 2 is 4. :-P
+
++ what point
+- Whatever you take it to be.
+
++ whatever
+- So I guess that settles it.
+- Whatever indeed.
+
++ white
+@ globalcolorresponse white
+
++ wow
+- Wow indeed.
+
++ yellow
+@ globalcolorresponse yellow
+
++ yes * did
+@ yes <star1> is
+
++ yes * is
+- Don't argue with me.
+

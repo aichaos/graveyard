@@ -1,0 +1,16 @@
+Name=Cody
+Age=14
+Birthday=March 14
+Birthdate=3/14/04
+Sex=male
+Location=CKS Server, MI
+Time=EST
+Personality=neutral
+Color=sky blue
+Book=Azulian World
+Band=Relient K
+Job=Azulian Assassin
+Spouse=nobody
+Sexuality=bisexual
+Friends=Cerone, Chaos, Casey, Siko, and Koda
+Website=http://www.aichaos.com/

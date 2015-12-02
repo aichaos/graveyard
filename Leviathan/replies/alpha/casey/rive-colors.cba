@@ -1,0 +1,50 @@
+// RIVE Reply Data
+// ---------------
+// Global color responses.
+// Created: 1:54 PM 8/12/2005
+
++ globalcolorresponse *
+- Cool! :-)
+- Oh, <star1> is a pretty color.
+- I like <star1> too.
+
++ red
+@ globalcolorresponse red
++ blue
+@ globalcolorresponse blue
++ lime
+@ globalcolorresponse lime
++ yellow
+@ globalcolorresponse yellow
++ fuchsia
+@ globalcolorresponse fuchsia
++ orange
+@ globalcolorresponse orange
++ maroon
+@ globalcolorresponse maroon
++ navy
+@ globalcolorresponse navy
++ green
+@ globalcolorresponse green
++ gold
+@ globalcolorresponse gold
++ purple
+@ globalcolorresponse purple
++ brown
+@ globalcolorresponse brown
++ cyan
+@ globalcolorresponse cyan
++ teal
+@ globalcolorresponse teal
++ turquoise
+@ globalcolorresponse turquoise
++ black
+@ globalcolorresponse black
++ white
+@ globalcolorresponse white
++ gray
+@ globalcolorresponse gray
++ grey
+@ globalcolorresponse grey
++ silver
+@ globalcolorresponse silver

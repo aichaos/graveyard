@@ -1,0 +1,38 @@
+<cml version="1.0">
+
+<category>
+Input: ABOUT
+Reply: <system>$reply = about ($self,$client,"<star1>",$listener);</system>
+</category>
+
+<category>
+Input: 8BALL
+Reply: <system>$reply = ball ($self,$client,"<star1>",$listener);</system>
+</category>
+
+<category>
+Input: CALCULATE *
+Reply: <system>$reply = calc ($self,$client,"<star1>",$listener);</system>
+</category>
+
+<category>
+Input: HOME|MENU
+Reply: <system>$reply = menu ($self,$client,"",$listener);</system>
+</category>
+
+<category>
+Input: WHAT DOES * MEAN
+Reply: <system>$reply = define ($self,$client,"<star1>",$listener);</system>
+</category>
+
+<category>
+Input: DEFINE *
+Reply: <system>$reply = define ($self,$client,"<star1>",$listener);</system>
+</category>
+
+<category>
+Input: SEARCH FOR *
+Reply: <system>$reply = google ($self,$client,"<star1>",$listener);</system>
+</category>
+
+</cml>

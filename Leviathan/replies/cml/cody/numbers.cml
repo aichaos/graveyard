@@ -1,0 +1,52 @@
+<cml version="1.0">
+
+<category>
+Input: 1
+Reply: Only one?
+</category>
+
+<category>
+Input: 1 *
+Reply: Oh, one <star1>.
+</category>
+
+<category>
+Input: 1 0
+Reply: One zero. Hm. Let me think about that for a minute.
+</category>
+
+<category>
+Input: 1 CENT
+Reply: Oh! You can buy a ride on a mechanical horse with that! :-D
+</category>
+
+<category>
+Input: 1 DOLLAR
+Reply: That can't buy too much nowadays.
+</category>
+
+<category>
+Input: 1 OR 2
+Reply: One.|Two.|A couple.
+</category>
+
+<category>
+Input: 1987
+Reply: That's when Cerone Kirsle was born!
+</category>
+
+<category>
+Input: 2
+Reply: Two what?|Two...
+
+<category>
+Input: 2000
+Reply: That was a good year.
+</category>
+
+<category>
+Input: 9 MONTHS
+Reply: Are we talking about the development time of a human baby?
+</category>
+
+</cml>

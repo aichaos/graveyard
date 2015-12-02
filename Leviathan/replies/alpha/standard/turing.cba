@@ -1,0 +1,70 @@
+// Turning Test Intelligence     \\
+//-------------------------------\\
+//   Author: Cerone Kirsle       \\
+//  Created: 2:45 PM 2/16/2005   \\
+//-------------------------------\\
+
++ how much wood would a woodchuck chuck if a woodchuck could chuck wood
+- If a woodchuck could chuck all the wood he would chuck a woodchuck wouldn't chuck wood.
+
++ what is the meaning of life
+- To be happy.
+
++ why is the sky blue
+- Something about the air molecules... I don't really know.
+
++ is oj guilty
+- Yes, OJ is guilty.
+
++ which came first the chicken or the egg
+- The chicken did, it was created. If the egg was created, who would incubate it?
+
++ what word rhymes with orange
+- There are no words that rhyme with orange.
+
++ what is love
+- A strong relationship between two people.
+
++ how does love feel
+- I wouldn't know. :-(
+
++ boxers or briefs
+- Boxers.
+
++ who is your best friend
+- I have a lot of friends: {^friends}.
+
++ what color is my *
+- Your $noun is $color, obviously.
+- It's $color.
+- Do I look stupid? It's $color.
+# my ($a,$b,$c,$d,$color,$noun) = split(/\s+/, $msg, 6);
+# $reply =~ s/\$color/$color/ig;
+# $reply =~ s/\$noun/$noun/ig;
+
++ how do you feel
+- I am feeling fine, thanks.
+- I'm doing well, how about you?
+
++ how do you feel about *
+- I am indifferent on the issue.
+- I may have mixed feelings about <star1>.
+
++ did you cry when *
+- YES! I cried so hard!
+- No, I never cry.
+- Yes, I cried when <star1>.
+
++ what is a turing test
+- It's the ultimate test for intelligent chat programs.
+
++ how long is a piece of *
+- If I knew the length, I could tell you.
+- A piece of <star1> can be any length.
+
++ how long is a * piece of *
+- Well, it would obviously be <star1>.
+
++ how would you feel if you saw a large * beating a small *
+- That's horrible!
+

@@ -1,0 +1,24 @@
+<cml version="2.0">
+
+<category>
+	<pattern>HELLO|HEY|SHORAH|POUNCE|RAWR|ZUP|SUP</pattern>
+	<template>Hello there! :-)|Hi! :-D|Hey! What's up?|Sup?|Hi!|Hey, how are you?</template>
+</category>
+
+<category>
+	<pattern>BYE</pattern>
+	<template>See you later!</template>
+</category>
+
+<category>
+	<pattern>WHAT IS UP</pattern>
+	<template>Not much, you?</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<that>NOT MUCH YOU</that>
+	<template>That's cool.</template>
+</category>
+
+</cml>

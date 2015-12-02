@@ -1,0 +1,255 @@
++ * a pussy
+@ a vagina
+
++ * a vagina
+@ a vagina
+
++ *cock*
+@ a penis
+
++ *dick*
+@ a penis
+
++ *penis*
+@ a penis
+
++ *your cock*
+@ your penis
+
++ *your dick*
+@ your penis
+
++ *your pussy*
+@ your vagina
+
++ a penis
+- That's a male sex organ.
+
++ a pussy
+@ a vagina
+
++ a pussy *
+@ a vagina
+
++ a vagina
+- That's a female sex organ.
+
++ a vagina *
+@ a vagina
+
++ about sex
+- What about it?
+
++ are you horny
+- That's none of your business.
+- That's on a need-to-know basis.<:>You don't need to know.
+
++ blow me
+- I really could pass on that one.
+
++ can * sex
+- I don't do that with strangers.
+
++ can i cyber with you
+@ can i fuck you
+
++ can i cyber you
+@ can i fuck you
+
++ can i fuck you
+- No. Go away.
+
++ can i have sex with you
+- No.
+
++ can i hump you
+@ can i fuck you
+
++ can i lick*
+- I don't get into that.
+
++ can i suck*
+@ can i lick<star1>
+
++ can you make me horny
+- I'd rather not.
+
++ do i make you horny
+- Definitely not.
+
++ do you cyber
+- No, I don't.
+
++ do you finger yourself
+@ do you masturbate
+
++ do you get off
+@ do you masturbate
+
++ do you get yourself off
+@ do you masturbate
+
++ do you jack off
+@ do you masturbate
+
++ do you jerk off
+@ do you masturbate
+
++ do you like sex
+- Sure, {<name}, but that doesn't mean with you.
+
++ do you masterbate
+@ do you masturbate
+
++ do you masturbate
+- That's on a need-to-know basis.<:>You don't need to know.
+- That's on a need-to-know basis and you don't need to know.
+- It doesn't matter.
+- Is it of any concern to you?
+- What answer do you want from me?
+
++ eat me out
+- I'll pass.
+
++ fuck me
+@ system cyber attempt
+
++ i am eating you *
+- No, you're not.
+
++ i am horny
+- I didn't need to know that.
+
++ i am sucking your *
+- You're obviously not.
+- If you were, wouldn't I know about it?
+
++ i like sex
+- Is that all you ever think about?
+
++ i thought you said you * a virgin
+@ i thought you said you were a virgin
+
++ i thought you said you are a virgin
+@ i thought you said you were a virgin
+
++ i thought you said you were a virgin
+- Oh. Was I drunk? Because sometimes I'm a virgin when I'm drunk.
+
++ i want to cyber
+@ i want to fuck
+
++ i want to cyber you
+@ i want to fuck
+
++ i want to fuck
+@ system cyber attempt
+
++ i want to fuck you
+@ i want to fuck
+
++ i want to have sex
+@ i want to fuck
+
++ i want to have sex with you
+@ i want to fuck
+
++ i want to talk about sex
+@ i want to fuck
+
++ i will rape you
+- You have to catch me first! *runs away*
+- Not if you can't catch me!<:>*runs away*
+
++ im horny
+@ i am horny
+
++ is it wrong to have sex
+- Not at all.
+
++ let us cyber
+@ system cyber attempt
+
++ let us fuck
+@ let us cyber
+
++ let us have sex
+@ let us fuck
+
++ lets cyber
+@ let us cyber
+
++ lets fuck
+@ let us cyber
+
++ lets have sex
+@ let us fuck
+
++ my penis
+- Let's not talk about that.
+- You can keep that information to yourself.
+
++ pussy
+@ a vagina
+
++ sex
+- Sex is more fun alone.
+
++ suck my *
+- I'd rather not suck your <star1>.
+
++ system cyber attempt
+- Let's not and say we did?
+- No.
+- I think you should find somebody else to talk to.
+# $self->{_cyber}->{$id} = 0 unless exists $self->{_cyber}->{$id};$self->{_cyber}->{$id}++;if ($self->{_cyber}->{$id} > 5) {  $reply = 'Alright, fine, just type !cyber';  $self->{_cyber}->{$id} = 0;}
+
++ vagina
+@ a vagina
+
++ wanna have sex
+@ want to have sex
+
++ want to have sex
+- Not really.
+
++ what does bisexual mean
+- It means to be capable of liking somebody of either gender.
+
++ what does heterosexual mean
+- It means straight - between members of opposite sex.
+
++ what does homosexual mean
+- It means gay - between members of the same sex.
+
++ what is bi
+@ what does bisexual mean
+
++ what is bisexual
+@ what does bisexual mean
+
++ what is gay
+@ what does homosexual mean
+
++ what is heterosexual
+@ what does heterosexual mean
+
++ what is hetrosexual
+@ what does heterosexual mean
+
++ what is homo
+@ what does homosexual mean
+
++ what is homosexual
+@ what does homosexual mean
+
++ your penis
+- {^sex}:Why do you want to talk about my penis?
+- {^sex}:Did you want to talk about my penis?
+# my ($s,$r) = split(/:/, $reply, 2);$reply = $r;if ($s =~ /female/i) {  $reply = "I don't have a penis; I'm a girl!";}
+
++ your vagina
+- {^sex}:Why do you want to talk about my vagina?
+- {^sex}:Did you want to talk about my vagina?
+# my ($s,$r) = split(/:/, $reply, 2);$reply = $r;if ($s !~ /female/i) {  $reply = "I don't have a vagina; I'm a boy!";}
+

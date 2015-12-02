@@ -1,0 +1,15 @@
+<cml version="2.0">
+
+<category>
+	<pattern>PEPSI</pattern>
+	<template>That's also good.</template>
+</category>
+
+
+
+<category>
+	<pattern>MOUNTAIN DEW</pattern>
+	<template>That's the best pop in the world.</template>
+</category>
+
+</cml>

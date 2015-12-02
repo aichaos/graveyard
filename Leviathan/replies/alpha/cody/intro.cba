@@ -1,0 +1,163 @@
+> topic reg_name
+
+	+ *
+	- {>name=<star1>}So you are {<name}? Cool! How old are you?{topic=reg_age}
+	# if ($msg =~ /^(no|nothing)$/i) { my $username = $id; $username =~ s/^(.*?)\-//i; $reply = "{topic=reg_age}{>name=$username}Okay then, I'll just call you {<name}. How old are you?";}elsif ($msg =~ /\s/) { $reply = "I only need your first name!";}elsif ($msg =~ /^(sup|whatsup|wassup|zup|wazzup)$/i) { $reply = "{topic=reg_age}{>name=<star1>}Haha, nice name. :-P How old are you?";}
+
+	+ quit
+	- Okay. You can tell me your name later by typing "my name is _____".{topic=random}
+
+< topic
+
+> topic reg_location
+
+	+ *
+	- {>location=<star1>}I don't think I've ever been to {<location}. What's your favorite color?{topic=reg_color}
+
+	+ quit
+	- You can tell me where you live later by saying "I am from _____."{topic=random}
+
+< topic
+
+> topic reg_sex
+
+	+ *
+	- I need to know if you're a boy or a girl (or type "quit" to exit the interview).
+
+	+ * boi
+	@ boy
+
+	+ * boy
+	@ boy
+
+	+ * chick
+	@ girl
+
+	+ * dude
+	@ boy
+
+	+ * female
+	@ girl
+
+	+ * girl
+	@ girl
+
+	+ * grrl
+	@ girl
+
+	+ * guy
+	@ boy
+
+	+ * male
+	@ boy
+
+	+ * man
+	@ boy
+
+	+ androgynous
+	@ neither
+
+	+ boi
+	@ boy
+
+	+ boi *
+	@ boy
+
+	+ both
+	- {>sex=hermaphrodite}I see... you're a hermaphrodite then? That's not very common. Anyway, where are you from?{topic=reg_location}
+
+	+ boy
+	- {>sex=male}Cool--you're a boy. Where are you from?{topic=reg_location}
+
+	+ boy *
+	@ boy
+
+	+ chick
+	@ girl
+
+	+ chick *
+	@ girl
+
+	+ dude
+	@ boy
+
+	+ dude *
+	@ boy
+
+	+ female
+	@ girl
+
+	+ female *
+	@ girl
+
+	+ girl
+	- {>sex=female}Cool--you're a girl. Where are you from?{topic=reg_location}
+
+	+ girl *
+	@ girl
+
+	+ grrl
+	@ girl
+
+	+ grrl *
+	@ girl
+
+	+ guy
+	@ boy
+
+	+ guy *
+	@ boy
+
+	+ male
+	@ boy
+
+	+ male *
+	@ boy
+
+	+ man
+	@ boy
+
+	+ man *
+	@ boy
+
+	+ neither
+	- {>sex=androgynous}So you're androgynous then. Where are you from?{topic=reg_location}
+
+	+ quit
+	- Alright, you can tell me your gender later then.{topic=random}
+
+< topic
+
+> topic reg_age
+
+	+ *
+	- {>age=<star1>}{<name} is {<age} years old. Are you a boy or a girl?{topic=reg_sex}
+	# $msg =~ s/^(i am|im)\s+//i;if ($msg =~ /[^0-9]/) { $reply = "I would prefer the NUMERICAL version of your age (i.e. 13). Now how old are you?";}elsif (length $msg > 3) { $reply = "I don't think anybody has lived past a thousand years. Now how old are you really?";}elsif ($msg > 115) { $reply = "I don't believe you're really that old. Tell me your real age.";}
+
+	+ quit
+	- You can tell me your age later by saying "I am ____ years old."{topic=random}
+
+< topic
+
+> topic reg_color
+
+	+ *
+	- {>color=<star1>}Cool, {<color} is a pretty color. That's all I need to know for now. What's up?{topic=random}
+
+	+ quit
+	- You can tell me your favorite color later by saying "My favorite color is _____."{topic=random}
+
+< topic
+
++ * interview
+@ interview
+
++ interview
+- Alright, let's interview you. Type "quit" to end the interview. First question: What is your name?{topic=reg_name}
+
++ interview *
+@ interview
+
++ system reg new user
+- Hey! I don't know if we've met, so I have a few questions. To end the interview, type "quit" - Now, what is your name?{topic=reg_name}
+
